@@ -73,9 +73,59 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_Register {
+            get {
+                object obj = ResourceManager.GetObject("Button Register", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Header {
             get {
                 object obj = ResourceManager.GetObject("Header", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Inputan {
+            get {
+                object obj = ResourceManager.GetObject("Inputan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Label_Login {
+            get {
+                object obj = ResourceManager.GetObject("Label Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Puspita {
+            get {
+                object obj = ResourceManager.GetObject("Logo Puspita", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGO_PUSPITA_BG_Kuning {
+            get {
+                object obj = ResourceManager.GetObject("LOGO PUSPITA BG Kuning", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
