@@ -89,13 +89,13 @@
             pictureBox5.TabIndex = 7;
             pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // LgnButton
             // 
             LgnButton.BackgroundImage = Properties.Resources.Background;
-            LgnButton.Image = (Image)resources.GetObject("LgnButton.Image");
-            LgnButton.Location = new Point(969, 585);
-            LgnButton.Name = "pictureBox6";
-            LgnButton.Size = new Size(314, 80);
+            LgnButton.Image = Properties.Resources.Button_Login;
+            LgnButton.Location = new Point(996, 585);
+            LgnButton.Name = "LgnButton";
+            LgnButton.Size = new Size(271, 62);
             LgnButton.SizeMode = PictureBoxSizeMode.StretchImage;
             LgnButton.TabIndex = 9;
             LgnButton.TabStop = false;

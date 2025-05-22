@@ -73,6 +73,26 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_Log_out {
+            get {
+                object obj = ResourceManager.GetObject("Button Log out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_Login {
+            get {
+                object obj = ResourceManager.GetObject("Button Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Register {
             get {
                 object obj = ResourceManager.GetObject("Button Register", resourceCulture);
@@ -93,9 +113,39 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap History_Transaksi_Button {
+            get {
+                object obj = ResourceManager.GetObject("History Transaksi Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Image_Admin {
+            get {
+                object obj = ResourceManager.GetObject("Image Admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inputan {
             get {
                 object obj = ResourceManager.GetObject("Inputan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kelola_Produk_Button {
+            get {
+                object obj = ResourceManager.GetObject("Kelola Produk Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +176,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap LOGO_PUSPITA_BG_Kuning {
             get {
                 object obj = ResourceManager.GetObject("LOGO PUSPITA BG Kuning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap selamat_datang__Admin_ {
+            get {
+                object obj = ResourceManager.GetObject("selamat datang {Admin}", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
