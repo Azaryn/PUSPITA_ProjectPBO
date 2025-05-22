@@ -33,7 +33,7 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
+            LgnButton = new PictureBox();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             pictureBox7 = new PictureBox();
@@ -43,7 +43,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LgnButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -53,9 +53,8 @@
             // 
             pictureBox2.Image = Properties.Resources.Header;
             pictureBox2.Location = new Point(2, -1);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1813, 240);
+            pictureBox2.Size = new Size(1586, 180);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -63,10 +62,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.LOGO_PUSPITA_BG_Kuning;
-            pictureBox3.Location = new Point(128, 247);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Location = new Point(112, 185);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(536, 616);
+            pictureBox3.Size = new Size(469, 462);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -74,10 +72,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Inputan;
-            pictureBox4.Location = new Point(1002, 491);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Location = new Point(877, 368);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(561, 67);
+            pictureBox4.Size = new Size(491, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 6;
             pictureBox4.TabStop = false;
@@ -85,54 +82,50 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Inputan;
-            pictureBox5.Location = new Point(1002, 640);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
+            pictureBox5.Location = new Point(877, 480);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(561, 67);
+            pictureBox5.Size = new Size(491, 50);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 7;
             pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
-            pictureBox6.BackgroundImage = Properties.Resources.Background;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1107, 780);
-            pictureBox6.Margin = new Padding(3, 4, 3, 4);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(359, 107);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 9;
-            pictureBox6.TabStop = false;
+            LgnButton.BackgroundImage = Properties.Resources.Background;
+            LgnButton.Image = (Image)resources.GetObject("LgnButton.Image");
+            LgnButton.Location = new Point(969, 585);
+            LgnButton.Name = "pictureBox6";
+            LgnButton.Size = new Size(314, 80);
+            LgnButton.SizeMode = PictureBoxSizeMode.StretchImage;
+            LgnButton.TabIndex = 9;
+            LgnButton.TabStop = false;
+            LgnButton.Click += Lgn_Button;
             // 
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(1019, 509);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(892, 382);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(525, 27);
+            textBox1.Size = new Size(459, 22);
             textBox1.TabIndex = 10;
             // 
             // textBox2
             // 
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(1019, 663);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Location = new Point(892, 497);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(525, 27);
+            textBox2.Size = new Size(459, 22);
             textBox2.TabIndex = 11;
             // 
             // pictureBox7
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Background;
             pictureBox7.Image = Properties.Resources.Label_Login;
-            pictureBox7.Location = new Point(1107, 271);
-            pictureBox7.Margin = new Padding(3, 4, 3, 4);
+            pictureBox7.Location = new Point(969, 203);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(359, 105);
+            pictureBox7.Size = new Size(314, 79);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 12;
             pictureBox7.TabStop = false;
@@ -141,10 +134,9 @@
             // 
             pictureBox8.BackgroundImage = Properties.Resources.Background;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(1002, 453);
-            pictureBox8.Margin = new Padding(3, 4, 3, 4);
+            pictureBox8.Location = new Point(877, 340);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(123, 32);
+            pictureBox8.Size = new Size(108, 24);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 13;
             pictureBox8.TabStop = false;
@@ -153,37 +145,37 @@
             // 
             pictureBox9.BackgroundImage = Properties.Resources.Background;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(1002, 603);
-            pictureBox9.Margin = new Padding(3, 4, 3, 4);
+            pictureBox9.Location = new Point(877, 452);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(123, 32);
+            pictureBox9.Size = new Size(108, 24);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 14;
             pictureBox9.TabStop = false;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1810, 1055);
+            ClientSize = new Size(1584, 791);
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(pictureBox6);
+            Controls.Add(LgnButton);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "PUSPITA";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LgnButton).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -196,7 +188,7 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private PictureBox LgnButton;
         private TextBox textBox1;
         private TextBox textBox2;
         private PictureBox pictureBox7;

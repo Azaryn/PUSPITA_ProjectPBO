@@ -6,5 +6,11 @@ namespace PUSPITA
         {
             InitializeComponent();
         }
+
+        private void Lgn_Button(object sender, EventArgs e)
+        {
+            //string username = ;
+            //string password = ;
+        }
     }
 }

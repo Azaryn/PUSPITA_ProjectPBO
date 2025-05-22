@@ -8,7 +8,7 @@ namespace PUSPITA
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            //Application.Run(new Login());
+            Application.Run(new Login());
             //Application.Run(new Register());
         }
     }
