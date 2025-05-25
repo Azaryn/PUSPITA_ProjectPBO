@@ -150,6 +150,11 @@
   </data>
   <data name="Button Update Produk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Update Produk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kembali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kembali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kembali1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kembali1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Text Harga (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Harga (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -162,6 +167,9 @@
   </data>
   <data name="Image petani" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image petani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button Check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button Check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button Check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,6 +249,9 @@
   <data name="Titik dua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Titik dua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Login Admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -294,5 +305,7 @@
   </data>
   <data name="Text Rekomendasi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Rekomendasi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="But Register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\But Register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

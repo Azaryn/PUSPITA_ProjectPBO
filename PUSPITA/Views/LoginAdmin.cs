@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace PUSPITA.Views
 {
-    public partial class Register : Form
+    public partial class LoginAdmin: Form
     {
-        public Register()
+        public LoginAdmin()
         {
             InitializeComponent();
-        }
-
-        private void BtnKembali_Click(object sender, EventArgs e)
-        {
-            FormLogin formLogin = new FormLogin();
-            this.Hide();
-            formLogin.Show();
         }
     }
 }

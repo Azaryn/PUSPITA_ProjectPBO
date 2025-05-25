@@ -41,7 +41,8 @@
             textBox3 = new TextBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            pictureBox11 = new PictureBox();
+            BtnRegister = new PictureBox();
+            BtnKembali = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -51,7 +52,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -187,17 +189,28 @@
             pictureBox6.TabIndex = 20;
             pictureBox6.TabStop = false;
             // 
-            // pictureBox11
+            // BtnRegister
             // 
-            pictureBox11.BackgroundImage = Properties.Resources.Background;
-            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(1155, 821);
-            pictureBox11.Margin = new Padding(3, 4, 3, 4);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(308, 99);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 24;
-            pictureBox11.TabStop = false;
+            BtnRegister.BackgroundImage = Properties.Resources.Background;
+            BtnRegister.Image = Properties.Resources.But_Register;
+            BtnRegister.Location = new Point(1179, 815);
+            BtnRegister.Margin = new Padding(3, 4, 3, 4);
+            BtnRegister.Name = "BtnRegister";
+            BtnRegister.Size = new Size(308, 99);
+            BtnRegister.SizeMode = PictureBoxSizeMode.StretchImage;
+            BtnRegister.TabIndex = 24;
+            BtnRegister.TabStop = false;
+            // 
+            // BtnKembali
+            // 
+            BtnKembali.Image = Properties.Resources.Kembali;
+            BtnKembali.Location = new Point(300, 888);
+            BtnKembali.Name = "BtnKembali";
+            BtnKembali.Size = new Size(154, 62);
+            BtnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
+            BtnKembali.TabIndex = 25;
+            BtnKembali.TabStop = false;
+            BtnKembali.Click += BtnKembali_Click;
             // 
             // Register
             // 
@@ -205,7 +218,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
-            Controls.Add(pictureBox11);
+            Controls.Add(BtnKembali);
+            Controls.Add(BtnRegister);
             Controls.Add(textBox3);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox6);
@@ -229,7 +243,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnRegister).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,6 +263,7 @@
         private TextBox textBox3;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox11;
+        private PictureBox BtnRegister;
+        private PictureBox BtnKembali;
     }
 }

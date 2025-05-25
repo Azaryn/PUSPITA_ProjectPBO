@@ -1,6 +1,6 @@
 ﻿namespace PUSPITA
 {
-    partial class Login
+    partial class FormLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             LgnButton = new PictureBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            InputUsername = new TextBox();
+            InputPassword = new TextBox();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
             RegisterP = new LinkLabel();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -49,6 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -108,25 +110,25 @@
             LgnButton.TabStop = false;
             LgnButton.Click += Lgn_Button;
             // 
-            // textBox1
+            // InputUsername
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(1019, 509);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(525, 27);
-            textBox1.TabIndex = 10;
+            InputUsername.BorderStyle = BorderStyle.None;
+            InputUsername.Font = new Font("Segoe UI", 12F);
+            InputUsername.Location = new Point(1019, 509);
+            InputUsername.Margin = new Padding(3, 4, 3, 4);
+            InputUsername.Name = "InputUsername";
+            InputUsername.Size = new Size(525, 27);
+            InputUsername.TabIndex = 10;
             // 
-            // textBox2
+            // InputPassword
             // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(1019, 663);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(525, 27);
-            textBox2.TabIndex = 11;
+            InputPassword.BorderStyle = BorderStyle.None;
+            InputPassword.Font = new Font("Segoe UI", 12F);
+            InputPassword.Location = new Point(1019, 663);
+            InputPassword.Margin = new Padding(3, 4, 3, 4);
+            InputPassword.Name = "InputPassword";
+            InputPassword.Size = new Size(525, 27);
+            InputPassword.TabIndex = 11;
             // 
             // pictureBox7
             // 
@@ -173,6 +175,7 @@
             RegisterP.TabIndex = 15;
             RegisterP.TabStop = true;
             RegisterP.Text = "Registrasi";
+            RegisterP.LinkClicked += RegisterP_LinkClicked;
             // 
             // label1
             // 
@@ -184,25 +187,38 @@
             label1.TabIndex = 16;
             label1.Text = "Anda belum mempunya akun ?";
             // 
-            // Login
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.Background;
+            pictureBox1.Image = Properties.Resources.Login_Admin;
+            pictureBox1.Location = new Point(271, 907);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(238, 57);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 17;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // FormLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(RegisterP);
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(InputPassword);
+            Controls.Add(InputUsername);
             Controls.Add(LgnButton);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
-            Name = "Login";
+            Name = "FormLogin";
             Text = "PUSPITA";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -212,6 +228,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -222,12 +239,13 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox LgnButton;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox InputUsername;
+        private TextBox InputPassword;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
         private LinkLabel RegisterP;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }
