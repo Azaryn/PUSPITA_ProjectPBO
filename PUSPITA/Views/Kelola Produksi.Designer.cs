@@ -80,7 +80,7 @@
             // 
             pictureBox4.BackgroundImage = Properties.Resources.Background;
             pictureBox4.Image = Properties.Resources.Button_Update_Produk;
-            pictureBox4.Location = new Point(-58, 295);
+            pictureBox4.Location = new Point(1030, 552);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(768, 180);
             pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -91,7 +91,7 @@
             // 
             pictureBox5.BackgroundImage = Properties.Resources.Background;
             pictureBox5.Image = Properties.Resources.Button_Tambah_Produk;
-            pictureBox5.Location = new Point(1030, 552);
+            pictureBox5.Location = new Point(-68, 295);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(768, 180);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;

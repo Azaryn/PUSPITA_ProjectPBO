@@ -483,9 +483,29 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Text_Deskripsi {
+            get {
+                object obj = ResourceManager.GetObject("Text Deskripsi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Text_Harga__2_ {
             get {
                 object obj = ResourceManager.GetObject("Text Harga (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Harga_Produk {
+            get {
+                object obj = ResourceManager.GetObject("Text Harga Produk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +543,16 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Text_Nama_Produk {
+            get {
+                object obj = ResourceManager.GetObject("Text Nama Produk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap text_OUR_PRODUCT__2_ {
             get {
                 object obj = ResourceManager.GetObject("text OUR PRODUCT (2)", resourceCulture);
@@ -546,6 +576,26 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap Text_Quantity__2_ {
             get {
                 object obj = ResourceManager.GetObject("Text Quantity (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Rekomendasi {
+            get {
+                object obj = ResourceManager.GetObject("Text Rekomendasi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Text_Stock_Produk__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Text Stock Produk (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

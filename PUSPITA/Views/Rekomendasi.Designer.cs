@@ -37,6 +37,7 @@
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
+            pictureBox10 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -46,6 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -53,7 +55,7 @@
             pictureBox1.Image = Properties.Resources.persegi_panjang_hijau;
             pictureBox1.Location = new Point(-10, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1830, 189);
+            pictureBox1.Size = new Size(1830, 186);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -136,12 +138,23 @@
             // 
             pictureBox9.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox9.Image = Properties.Resources.Button_Kembali;
-            pictureBox9.Location = new Point(1332, 42);
+            pictureBox9.Location = new Point(1482, 50);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(237, 87);
             pictureBox9.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox9.TabIndex = 9;
             pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            pictureBox10.Image = Properties.Resources.Text_Rekomendasi;
+            pictureBox10.Location = new Point(565, 12);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(638, 140);
+            pictureBox10.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox10.TabIndex = 10;
+            pictureBox10.TabStop = false;
             // 
             // Rekomendasi
             // 
@@ -149,6 +162,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(pictureBox10);
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
@@ -169,6 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -184,5 +199,6 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
+        private PictureBox pictureBox10;
     }
 }

@@ -32,7 +32,7 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            Buttonpur = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
@@ -40,7 +40,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Buttonpur).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -89,16 +89,16 @@
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
             // 
-            // pictureBox5
+            // Buttonpur
             // 
-            pictureBox5.BackgroundImage = Properties.Resources.Background;
-            pictureBox5.Image = Properties.Resources.Button_Puspita_Shop__2_;
-            pictureBox5.Location = new Point(923, 328);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(640, 153);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 5;
-            pictureBox5.TabStop = false;
+            Buttonpur.BackgroundImage = Properties.Resources.Background;
+            Buttonpur.Image = Properties.Resources.Button_Puspita_Shop__2_;
+            Buttonpur.Location = new Point(923, 328);
+            Buttonpur.Name = "Buttonpur";
+            Buttonpur.Size = new Size(640, 153);
+            Buttonpur.SizeMode = PictureBoxSizeMode.StretchImage;
+            Buttonpur.TabIndex = 5;
+            Buttonpur.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -142,7 +142,7 @@
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
+            Controls.Add(Buttonpur);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
@@ -153,7 +153,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Buttonpur).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -167,7 +167,7 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
+        private PictureBox Buttonpur;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
