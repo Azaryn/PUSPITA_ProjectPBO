@@ -39,6 +39,8 @@
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
+            RegisterP = new LinkLabel();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -162,12 +164,54 @@
             pictureBox9.TabIndex = 14;
             pictureBox9.TabStop = false;
             // 
+            // RegisterP
+            // 
+            RegisterP.AutoSize = true;
+            RegisterP.Location = new Point(1343, 738);
+            RegisterP.Name = "RegisterP";
+            RegisterP.Size = new Size(73, 20);
+            RegisterP.TabIndex = 15;
+            RegisterP.TabStop = true;
+            RegisterP.Text = "Registrasi";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.Info;
+            label1.Location = new Point(1123, 738);
+            label1.Name = "label1";
+            label1.Size = new Size(214, 20);
+            label1.TabIndex = 16;
+            label1.Text = "Anda belum mempunya akun ?";
+            // 
+            // RegisterP
+            // 
+            RegisterP.AutoSize = true;
+            RegisterP.Location = new Point(1343, 738);
+            RegisterP.Name = "RegisterP";
+            RegisterP.Size = new Size(73, 20);
+            RegisterP.TabIndex = 15;
+            RegisterP.TabStop = true;
+            RegisterP.Text = "Registrasi";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.Info;
+            label1.Location = new Point(1123, 738);
+            label1.Name = "label1";
+            label1.Size = new Size(214, 20);
+            label1.TabIndex = 16;
+            label1.Text = "Anda belum mempunya akun ?";
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(label1);
+            Controls.Add(RegisterP);
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
@@ -203,5 +247,7 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
+        private LinkLabel RegisterP;
+        private Label label1;
     }
 }
