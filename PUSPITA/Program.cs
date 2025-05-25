@@ -8,9 +8,9 @@ namespace PUSPITA
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            //Application.Run(new Login());
+            Application.Run(new FormLogin());
             //Application.Run(new Register());
-            Application.Run(new Dashboard_Admin());
+            //Application.Run(new Dashboard_Admin());
         }
     }
 }

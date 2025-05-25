@@ -1,16 +1,35 @@
+using PUSPITA.Model;
+using PUSPITA.Views;
+
 namespace PUSPITA
 {
-    public partial class Login : Form
+    public partial class FormLogin : Form
     {
-        public Login()
+        AdminContext adminContext = new AdminContext();
+        public FormLogin()
         {
             InitializeComponent();
+
         }
 
         private void Lgn_Button(object sender, EventArgs e)
         {
-            //string username = ;
-            //string password = ;
+            string username = InputUsername.Text;
+            string password = InputPassword.Text;
+            bool Valid = adminContext.Validate(username, password, out int userId);
+            //try
+            //{
+                if (Valid)
+                {
+                    Dashboard_Admin Dadmin = new Dashboard_Admin();
+                    this.Hide();
+                    Dadmin.Show();
+                }
+            //}
+            //catch (np)
+            //{ 
+
+            //}
         }
     }
 }
