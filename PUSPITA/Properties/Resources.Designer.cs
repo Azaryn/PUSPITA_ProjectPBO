@@ -83,6 +83,16 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap But_Register {
+            get {
+                object obj = ResourceManager.GetObject("But Register", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Bayar {
             get {
                 object obj = ResourceManager.GetObject("Button Bayar", resourceCulture);
@@ -393,6 +403,26 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kembali {
+            get {
+                object obj = ResourceManager.GetObject("Kembali", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kembali1 {
+            get {
+                object obj = ResourceManager.GetObject("Kembali1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kotak_chcekbox {
             get {
                 object obj = ResourceManager.GetObject("kotak chcekbox", resourceCulture);
@@ -406,6 +436,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap Label_Login {
             get {
                 object obj = ResourceManager.GetObject("Label Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Login_Admin {
+            get {
+                object obj = ResourceManager.GetObject("Login Admin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

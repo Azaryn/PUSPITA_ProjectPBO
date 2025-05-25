@@ -41,6 +41,7 @@
             pictureBox9 = new PictureBox();
             RegisterP = new LinkLabel();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -49,6 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -173,6 +175,7 @@
             RegisterP.TabIndex = 15;
             RegisterP.TabStop = true;
             RegisterP.Text = "Registrasi";
+            RegisterP.LinkClicked += RegisterP_LinkClicked;
             // 
             // label1
             // 
@@ -184,25 +187,17 @@
             label1.TabIndex = 16;
             label1.Text = "Anda belum mempunya akun ?";
             // 
-            // RegisterP
+            // pictureBox1
             // 
-            RegisterP.AutoSize = true;
-            RegisterP.Location = new Point(1343, 738);
-            RegisterP.Name = "RegisterP";
-            RegisterP.Size = new Size(73, 20);
-            RegisterP.TabIndex = 15;
-            RegisterP.TabStop = true;
-            RegisterP.Text = "Registrasi";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.Info;
-            label1.Location = new Point(1123, 738);
-            label1.Name = "label1";
-            label1.Size = new Size(214, 20);
-            label1.TabIndex = 16;
-            label1.Text = "Anda belum mempunya akun ?";
+            pictureBox1.BackgroundImage = Properties.Resources.Background;
+            pictureBox1.Image = Properties.Resources.Login_Admin;
+            pictureBox1.Location = new Point(271, 907);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(238, 57);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 17;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // FormLogin
             // 
@@ -210,6 +205,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(RegisterP);
             Controls.Add(pictureBox9);
@@ -232,6 +228,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -249,5 +246,6 @@
         private PictureBox pictureBox9;
         private LinkLabel RegisterP;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }

@@ -1,18 +1,23 @@
 ﻿using Npgsql;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PUSPITA.Model
 {
-    class AdminContext
+    class UserContext
     {
         private readonly string KoneksiString;
-        public AdminContext()
+        public UserContext()
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
-        public bool Validate(string username, string password, out int adminId)
+        public bool Validate(string username, string password, out int petaniId)
         {
-            adminId = 0;
-            string query = "SELECT ID_admin, Username FROM admins WHERE Username = @username AND Password_admin = @password";
+            petaniId = 0;
+            string query = "SELECT ID_Petani, Username FROM petani WHERE Username = @username AND Password_petani = @password";
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
                 Kon.Open();
@@ -24,7 +29,7 @@ namespace PUSPITA.Model
                     {
                         if (reader.Read())
                         {
-                            adminId = reader.GetInt32(0);
+                            petaniId = reader.GetInt32(0);
                             return true;
                         }
                     }
