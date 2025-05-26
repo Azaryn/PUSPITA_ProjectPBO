@@ -30,8 +30,8 @@
         {
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            btnKembali = new PictureBox();
+            btnCheckout = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
@@ -41,8 +41,8 @@
             pictureBox11 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCheckout).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -73,27 +73,27 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // btnKembali
             // 
-            pictureBox3.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
-            pictureBox3.Image = Properties.Resources.Button_Kembali;
-            pictureBox3.Location = new Point(40, 49);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(237, 87);
-            pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            btnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            btnKembali.Image = Properties.Resources.Button_Kembali;
+            btnKembali.Location = new Point(40, 49);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(237, 87);
+            btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnKembali.TabIndex = 2;
+            btnKembali.TabStop = false;
             // 
-            // pictureBox4
+            // btnCheckout
             // 
-            pictureBox4.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
-            pictureBox4.Image = Properties.Resources.Button_Checkout_;
-            pictureBox4.Location = new Point(1502, 49);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(267, 81);
-            pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            btnCheckout.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            btnCheckout.Image = Properties.Resources.Button_Checkout_;
+            btnCheckout.Location = new Point(1502, 49);
+            btnCheckout.Name = "btnCheckout";
+            btnCheckout.Size = new Size(267, 81);
+            btnCheckout.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnCheckout.TabIndex = 3;
+            btnCheckout.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -182,16 +182,16 @@
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
+            Controls.Add(btnCheckout);
+            Controls.Add(btnKembali);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "Keranjang";
             Text = "Keranjang";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCheckout).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -207,8 +207,8 @@
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
+        private PictureBox btnKembali;
+        private PictureBox btnCheckout;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;

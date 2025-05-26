@@ -43,7 +43,7 @@ namespace PUSPITA
             register.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnLoginSebagaiAdmin(object sender, EventArgs e)
         {
             this.Hide();
             LoginAdmin loginAdmin = new LoginAdmin();
