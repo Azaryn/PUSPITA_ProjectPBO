@@ -38,6 +38,8 @@
             btnLogin = new PictureBox();
             pictureBox8 = new PictureBox();
             btnLoginPetani = new PictureBox();
+            tbUser = new TextBox();
+            tbPass = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -135,6 +137,7 @@
             btnLogin.SizeMode = PictureBoxSizeMode.AutoSize;
             btnLogin.TabIndex = 7;
             btnLogin.TabStop = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // pictureBox8
             // 
@@ -156,6 +159,25 @@
             btnLoginPetani.SizeMode = PictureBoxSizeMode.Zoom;
             btnLoginPetani.TabIndex = 9;
             btnLoginPetani.TabStop = false;
+            btnLoginPetani.Click += btnLoginPetani_Click;
+            // 
+            // tbUser
+            // 
+            tbUser.BackColor = SystemColors.HighlightText;
+            tbUser.BorderStyle = BorderStyle.None;
+            tbUser.ForeColor = SystemColors.Desktop;
+            tbUser.Location = new Point(1015, 487);
+            tbUser.Name = "tbUser";
+            tbUser.Size = new Size(401, 20);
+            tbUser.TabIndex = 10;
+            // 
+            // tbPass
+            // 
+            tbPass.BorderStyle = BorderStyle.None;
+            tbPass.Location = new Point(1015, 683);
+            tbPass.Name = "tbPass";
+            tbPass.Size = new Size(365, 20);
+            tbPass.TabIndex = 11;
             // 
             // LoginAdmin
             // 
@@ -163,6 +185,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(tbPass);
+            Controls.Add(tbUser);
             Controls.Add(btnLoginPetani);
             Controls.Add(pictureBox8);
             Controls.Add(btnLogin);
@@ -201,5 +225,7 @@
         private PictureBox btnLogin;
         private PictureBox pictureBox8;
         private PictureBox btnLoginPetani;
+        private TextBox tbUser;
+        private TextBox tbPass;
     }
 }

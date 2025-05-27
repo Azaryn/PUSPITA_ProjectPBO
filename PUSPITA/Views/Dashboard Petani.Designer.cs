@@ -78,49 +78,53 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox4
+            // btnLogout
             // 
             btnLogout.BackgroundImage = Properties.Resources.Background;
             btnLogout.Image = Properties.Resources.Button_Log_out;
             btnLogout.Location = new Point(1457, 943);
-            btnLogout.Name = "pictureBox4";
+            btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(310, 87);
             btnLogout.SizeMode = PictureBoxSizeMode.StretchImage;
             btnLogout.TabIndex = 4;
             btnLogout.TabStop = false;
+            btnLogout.Click += btnLogout_Click;
             // 
-            // PictureBox5
+            // btnPuspitaShop
             // 
             btnPuspitaShop.BackgroundImage = Properties.Resources.Background;
             btnPuspitaShop.Image = Properties.Resources.Button_Puspita_Shop__2_;
             btnPuspitaShop.Location = new Point(923, 328);
-            btnPuspitaShop.Name = "PictureBox5";
+            btnPuspitaShop.Name = "btnPuspitaShop";
             btnPuspitaShop.Size = new Size(640, 153);
             btnPuspitaShop.SizeMode = PictureBoxSizeMode.StretchImage;
             btnPuspitaShop.TabIndex = 5;
             btnPuspitaShop.TabStop = false;
+            btnPuspitaShop.Click += btnPuspitaShop_Click;
             // 
-            // pictureBox6
+            // btnRekomendasi
             // 
             btnRekomendasi.BackgroundImage = Properties.Resources.Background;
             btnRekomendasi.Image = Properties.Resources.Button_Rekomendasi_;
             btnRekomendasi.Location = new Point(923, 477);
-            btnRekomendasi.Name = "pictureBox6";
+            btnRekomendasi.Name = "btnRekomendasi";
             btnRekomendasi.Size = new Size(640, 153);
             btnRekomendasi.SizeMode = PictureBoxSizeMode.StretchImage;
             btnRekomendasi.TabIndex = 6;
             btnRekomendasi.TabStop = false;
+            btnRekomendasi.Click += btnRekomendasi_Click;
             // 
-            // pictureBox7
+            // btnHistoryTransaski
             // 
             btnHistoryTransaski.BackgroundImage = Properties.Resources.Background;
             btnHistoryTransaski.Image = Properties.Resources.History_Transaksi_;
             btnHistoryTransaski.Location = new Point(923, 626);
-            btnHistoryTransaski.Name = "pictureBox7";
+            btnHistoryTransaski.Name = "btnHistoryTransaski";
             btnHistoryTransaski.Size = new Size(640, 148);
             btnHistoryTransaski.SizeMode = PictureBoxSizeMode.StretchImage;
             btnHistoryTransaski.TabIndex = 7;
             btnHistoryTransaski.TabStop = false;
+            btnHistoryTransaski.Click += btnHistoryTransaski_Click;
             // 
             // pictureBox8
             // 
