@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using PUSPITA.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace PUSPITA.Model
         public bool Validate(string username, string password, out int petaniId)
         {
             petaniId = 0;
-            string query = "SELECT ID_Petani, Username FROM petani WHERE Username = @username AND Password_petani = @password";
+            string query = "SELECT id_petani, Username FROM petani WHERE username = @username AND password_petani = @password";
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
                 Kon.Open();

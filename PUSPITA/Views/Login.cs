@@ -2,38 +2,49 @@ using PUSPITA.Model;
 using PUSPITA.Views;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace PUSPITA
 {
     public partial class FormLogin : Form
     {
+        users user = new users();
         UserContext userContext = new UserContext();
         public FormLogin()
         {
             InitializeComponent();
             InputPassword.UseSystemPasswordChar = true;
-            //DatabaseGeneratedAttribute = new DatabaseLogin();
-
         }
-
         private void Lgn_Button(object sender, EventArgs e)
         {
             string username = InputUsername.Text;
             string password = InputPassword.Text;
-            bool Valid = userContext.Validate(username, password, out int userId);
-            //try
-            //{
-            if (Valid)
-            {
-                //Dashboard_Admin Dadmin = new Dashboard_Admin();
-                Dashboard_Petani Dpetani = new Dashboard_Petani();
-                this.Hide();
-                Dpetani.Show();
-            }
-            //}
-            //catch (np)
-            //{ 
 
-            //}
+            try
+            {
+                UserContext userContext = new UserContext();
+                bool Valid = userContext.Validate(username, password, out int petaniId);
+
+                if (Valid)
+                {
+                    this.Hide();
+                    Dashboard_Petani dashboard = new Dashboard_Petani(); 
+                    dashboard.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Username atau password salah.", "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan saat login:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginAdmin loginAdmin = new LoginAdmin();
+            loginAdmin.Show();
         }
 
         private void RegisterP_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -43,11 +54,10 @@ namespace PUSPITA
             register.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginAdmin loginAdmin = new LoginAdmin();
-            loginAdmin.Show();
+            Console.WriteLine("Form LoginPetani berhasil dimuat");
+            MessageBox.Show("Form LoginPetani berhasil dibuka");
         }
     }
 }

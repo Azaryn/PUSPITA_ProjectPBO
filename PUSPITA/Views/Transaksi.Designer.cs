@@ -35,17 +35,18 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
             pictureBox14 = new PictureBox();
             pictureBox15 = new PictureBox();
             pictureBox16 = new PictureBox();
             pictureBox17 = new PictureBox();
-            pictureBox18 = new PictureBox();
+            btnBayar = new PictureBox();
+            rdE_Bank = new RadioButton();
+            rdPuspiPay = new RadioButton();
+            rdJNE = new RadioButton();
+            radioButton1 = new RadioButton();
+            rdFASPITA = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -53,17 +54,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnBayar).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -142,50 +139,6 @@
             pictureBox7.TabIndex = 6;
             pictureBox7.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox8.Image = Properties.Resources.Ikon_check_bundar;
-            pictureBox8.Location = new Point(149, 427);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(52, 52);
-            pictureBox8.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox8.TabIndex = 7;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox9.Image = Properties.Resources.Ikon_check_bundar;
-            pictureBox9.Location = new Point(149, 518);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(52, 52);
-            pictureBox9.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox9.TabIndex = 8;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox10.Image = Properties.Resources.Ikon_check_bundar;
-            pictureBox10.Location = new Point(1323, 427);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(52, 52);
-            pictureBox10.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox10.TabIndex = 9;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox11.Image = Properties.Resources.Ikon_check_bundar;
-            pictureBox11.Location = new Point(1323, 518);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(52, 52);
-            pictureBox11.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox11.TabIndex = 10;
-            pictureBox11.TabStop = false;
-            // 
             // pictureBox12
             // 
             pictureBox12.Image = Properties.Resources.garis_hitam;
@@ -251,16 +204,81 @@
             pictureBox17.TabIndex = 16;
             pictureBox17.TabStop = false;
             // 
-            // pictureBox18
+            // btnBayar
             // 
-            pictureBox18.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox18.Image = Properties.Resources.Button_Bayar;
-            pictureBox18.Location = new Point(757, 935);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(356, 108);
-            pictureBox18.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox18.TabIndex = 17;
-            pictureBox18.TabStop = false;
+            btnBayar.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            btnBayar.Image = Properties.Resources.Button_Bayar;
+            btnBayar.Location = new Point(757, 935);
+            btnBayar.Name = "btnBayar";
+            btnBayar.Size = new Size(356, 108);
+            btnBayar.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnBayar.TabIndex = 17;
+            btnBayar.TabStop = false;
+            // 
+            // rdE_Bank
+            // 
+            rdE_Bank.AutoSize = true;
+            rdE_Bank.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            rdE_Bank.Font = new Font("Segoe UI", 20F);
+            rdE_Bank.Location = new Point(149, 405);
+            rdE_Bank.Name = "rdE_Bank";
+            rdE_Bank.Size = new Size(139, 50);
+            rdE_Bank.TabIndex = 18;
+            rdE_Bank.TabStop = true;
+            rdE_Bank.Text = "E Bank";
+            rdE_Bank.UseVisualStyleBackColor = true;
+            // 
+            // rdPuspiPay
+            // 
+            rdPuspiPay.AutoSize = true;
+            rdPuspiPay.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            rdPuspiPay.Font = new Font("Segoe UI", 20F);
+            rdPuspiPay.Location = new Point(148, 509);
+            rdPuspiPay.Name = "rdPuspiPay";
+            rdPuspiPay.Size = new Size(172, 50);
+            rdPuspiPay.TabIndex = 19;
+            rdPuspiPay.TabStop = true;
+            rdPuspiPay.Text = "PuspiPay";
+            rdPuspiPay.UseVisualStyleBackColor = true;
+            // 
+            // rdJNE
+            // 
+            rdJNE.AutoSize = true;
+            rdJNE.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            rdJNE.Font = new Font("Segoe UI", 20F);
+            rdJNE.Location = new Point(1323, 405);
+            rdJNE.Name = "rdJNE";
+            rdJNE.Size = new Size(95, 50);
+            rdJNE.TabIndex = 20;
+            rdJNE.TabStop = true;
+            rdJNE.Text = "JNE";
+            rdJNE.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            radioButton1.Font = new Font("Segoe UI", 20F);
+            radioButton1.Location = new Point(858, 502);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(95, 50);
+            radioButton1.TabIndex = 21;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "JNE";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // rdFASPITA
+            // 
+            rdFASPITA.AutoSize = true;
+            rdFASPITA.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            rdFASPITA.Font = new Font("Segoe UI", 20F);
+            rdFASPITA.Location = new Point(1323, 486);
+            rdFASPITA.Name = "rdFASPITA";
+            rdFASPITA.Size = new Size(162, 50);
+            rdFASPITA.TabIndex = 22;
+            rdFASPITA.TabStop = true;
+            rdFASPITA.Text = "FASPITA";
+            rdFASPITA.UseVisualStyleBackColor = true;
             // 
             // Transaksi
             // 
@@ -268,17 +286,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
-            Controls.Add(pictureBox18);
+            Controls.Add(rdFASPITA);
+            Controls.Add(radioButton1);
+            Controls.Add(rdJNE);
+            Controls.Add(rdPuspiPay);
+            Controls.Add(rdE_Bank);
+            Controls.Add(btnBayar);
             Controls.Add(pictureBox17);
             Controls.Add(pictureBox16);
             Controls.Add(pictureBox15);
             Controls.Add(pictureBox14);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
-            Controls.Add(pictureBox11);
-            Controls.Add(pictureBox10);
-            Controls.Add(pictureBox9);
-            Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
@@ -295,17 +314,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnBayar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -319,16 +334,17 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox11;
         private PictureBox pictureBox12;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
         private PictureBox pictureBox15;
         private PictureBox pictureBox16;
         private PictureBox pictureBox17;
-        private PictureBox pictureBox18;
+        private PictureBox btnBayar;
+        private RadioButton rdE_Bank;
+        private RadioButton rdPuspiPay;
+        private RadioButton rdJNE;
+        private RadioButton radioButton1;
+        private RadioButton rdFASPITA;
     }
 }
