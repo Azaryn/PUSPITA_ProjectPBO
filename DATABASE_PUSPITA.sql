@@ -30,7 +30,7 @@ create table Pupuk(
 	ID_Pupuk serial primary key,
 	Nama_pupuk varchar(50) NOT NULL,
 	ID_JenisPupuk int NOT NULL,
-	Stock int NOT NULL,
+	Dosis int NOT NULL,
 	Harga Decimal(10,2) NOT NULL,
 	foreign key (ID_JenisPupuk) references jenis_pupuk(ID_JenisPupuk)
 );
@@ -44,7 +44,7 @@ create table pestisida(
 	ID_pestisida serial primary key,
 	Nama_Pestisida varchar(50) NOT NULL,
 	ID_JenisPestisida int NOT NULL,
-	Stock int NOT NULL,
+	Dosis int NOT NULL,
 	Harga Decimal(10,2) NOT NULL,
 	foreign key (ID_JenisPestisida) references jenis_Pestisida(ID_JenisPestisida)
 );
@@ -54,6 +54,7 @@ create table transaksi(
 	Tanggal_transaksi Date NOT NULL,
 	ID_petani int NOT NULL,
 	ID_Admin int NOT NULL,
+	MetodePembayaran varchar(50) NOT NULL,
 	foreign key (ID_Petani) references petani (ID_Petani),
 	foreign key (ID_admin) references admins (ID_Admin)
 );
@@ -81,3 +82,16 @@ values
 ('rafi',123),
 ('rafa',123),
 ('habib',123);
+
+insert into Jenis
+
+insert into pupuk(Nama_pupuk, dosis, Harga, ID_JenisPupuk)
+values
+('Urea', 10, 10000),
+('Kompos', 5, 15000);
+
+insert into peptisida (Nama_peptisida, dosis, harga)
+values
+(),
+(),
+();

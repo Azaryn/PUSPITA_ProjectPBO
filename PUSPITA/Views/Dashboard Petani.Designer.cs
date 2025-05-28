@@ -50,7 +50,8 @@
             // 
             PictPetani.BackgroundImage = Properties.Resources.Background;
             PictPetani.Image = Properties.Resources.Image_petani;
-            PictPetani.Location = new Point(2, 364);
+            PictPetani.Location = new Point(2, 273);
+            PictPetani.Margin = new Padding(3, 2, 3, 2);
             PictPetani.Name = "PictPetani";
             PictPetani.Size = new Size(808, 708);
             PictPetani.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -60,9 +61,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox3.Location = new Point(-6, -91);
+            pictureBox3.Location = new Point(-5, -68);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1865, 241);
+            pictureBox3.Size = new Size(1632, 181);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -71,9 +73,10 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox2.Image = Properties.Resources.DASHBOARD_Petani;
-            pictureBox2.Location = new Point(625, 12);
+            pictureBox2.Location = new Point(547, 9);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(720, 130);
+            pictureBox2.Size = new Size(630, 98);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -82,9 +85,10 @@
             // 
             btnLogout.BackgroundImage = Properties.Resources.Background;
             btnLogout.Image = Properties.Resources.Button_Log_out;
-            btnLogout.Location = new Point(1457, 943);
+            btnLogout.Location = new Point(1275, 707);
+            btnLogout.Margin = new Padding(3, 2, 3, 2);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(310, 87);
+            btnLogout.Size = new Size(271, 65);
             btnLogout.SizeMode = PictureBoxSizeMode.StretchImage;
             btnLogout.TabIndex = 4;
             btnLogout.TabStop = false;
@@ -94,9 +98,10 @@
             // 
             btnPuspitaShop.BackgroundImage = Properties.Resources.Background;
             btnPuspitaShop.Image = Properties.Resources.Button_Puspita_Shop__2_;
-            btnPuspitaShop.Location = new Point(923, 328);
+            btnPuspitaShop.Location = new Point(911, 213);
+            btnPuspitaShop.Margin = new Padding(3, 2, 3, 2);
             btnPuspitaShop.Name = "btnPuspitaShop";
-            btnPuspitaShop.Size = new Size(640, 153);
+            btnPuspitaShop.Size = new Size(560, 115);
             btnPuspitaShop.SizeMode = PictureBoxSizeMode.StretchImage;
             btnPuspitaShop.TabIndex = 5;
             btnPuspitaShop.TabStop = false;
@@ -106,9 +111,10 @@
             // 
             btnRekomendasi.BackgroundImage = Properties.Resources.Background;
             btnRekomendasi.Image = Properties.Resources.Button_Rekomendasi_;
-            btnRekomendasi.Location = new Point(923, 477);
+            btnRekomendasi.Location = new Point(911, 351);
+            btnRekomendasi.Margin = new Padding(3, 2, 3, 2);
             btnRekomendasi.Name = "btnRekomendasi";
-            btnRekomendasi.Size = new Size(640, 153);
+            btnRekomendasi.Size = new Size(560, 115);
             btnRekomendasi.SizeMode = PictureBoxSizeMode.StretchImage;
             btnRekomendasi.TabIndex = 6;
             btnRekomendasi.TabStop = false;
@@ -118,9 +124,10 @@
             // 
             btnHistoryTransaski.BackgroundImage = Properties.Resources.Background;
             btnHistoryTransaski.Image = Properties.Resources.History_Transaksi_;
-            btnHistoryTransaski.Location = new Point(923, 626);
+            btnHistoryTransaski.Location = new Point(911, 489);
+            btnHistoryTransaski.Margin = new Padding(3, 2, 3, 2);
             btnHistoryTransaski.Name = "btnHistoryTransaski";
-            btnHistoryTransaski.Size = new Size(640, 148);
+            btnHistoryTransaski.Size = new Size(560, 111);
             btnHistoryTransaski.SizeMode = PictureBoxSizeMode.StretchImage;
             btnHistoryTransaski.TabIndex = 7;
             btnHistoryTransaski.TabStop = false;
@@ -130,19 +137,20 @@
             // 
             pictureBox8.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox8.Image = Properties.Resources.Logo_Puspita;
-            pictureBox8.Location = new Point(2, 3);
+            pictureBox8.Location = new Point(2, 2);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(194, 147);
+            pictureBox8.Size = new Size(170, 110);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 8;
             pictureBox8.TabStop = false;
             // 
             // Dashboard_Petani
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1810, 1055);
+            ClientSize = new Size(1584, 791);
             Controls.Add(pictureBox8);
             Controls.Add(btnHistoryTransaski);
             Controls.Add(btnRekomendasi);
@@ -151,6 +159,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(PictPetani);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Dashboard_Petani";
             Text = "Dashboard_Petani";
             ((System.ComponentModel.ISupportInitialize)PictPetani).EndInit();

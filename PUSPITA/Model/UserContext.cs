@@ -1,10 +1,4 @@
 ﻿using Npgsql;
-using PUSPITA.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PUSPITA.Model
 {
@@ -15,7 +9,7 @@ namespace PUSPITA.Model
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
-        public bool Validate(string username, string password, out int petaniId)
+        public bool Validasi(string username, string password, out int petaniId)
         {
             petaniId = 0;
             string query = "SELECT id_petani, Username FROM petani WHERE username = @username AND password_petani = @password";

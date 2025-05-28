@@ -23,5 +23,12 @@ namespace PUSPITA.Views
             Kelola_Produksi kelolaProduk = new Kelola_Produksi();
             kelolaProduk.Show();
         }
+
+        private void btnLogoutDashboard_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginAdmin Ladmin = new LoginAdmin();
+            Ladmin.Show();
+        }
     }
 }

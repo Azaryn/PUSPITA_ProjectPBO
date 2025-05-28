@@ -19,43 +19,61 @@ namespace PUSPITA.Model
                 KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
             }
 
-            public bool Validate(string username, string password, out int petaniId)
+            public bool Register(string username, string password,string alamat)
             {
-                petaniId = 0;
-                string query = "SELECT ID_Petani, Username FROM petani WHERE Username = @username AND Password_petani = @password";
+                string query = "SELECT * FROM petani WHERE Username = @username";
                 using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
                 {
                     Kon.Open();
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, Kon))
                     {
                         cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@password", password);
-                        using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                        object result = cmd.ExecuteScalar()!;
+                        int count = (result != null) ? Convert.ToInt32(result) : 0;
+                        if (count > 0)
                         {
-                            if (reader.Read())
-                            {
-                                petaniId = reader.GetInt32(0);
-                                return true;
-                            }
+                            return false;
                         }
                     }
                 }
-                return false;
-            }
-        
-        public bool IsUsernameExists(string username)
-        {
-            using (var connection = new NpgsqlConnection(KoneksiString))
-            {
-                connection.Open();
-                string query = "SELECT COUNT(*) FROM petani WHERE Username = @username";
-                using (var cmd = new NpgsqlCommand(query, connection))
+                string queryInsert = "INSERT INTO petani (username, password_petani, alamat) VALUES (@username, @password, @alamat) ";
+                using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
                 {
-                    cmd.Parameters.AddWithValue("@username", username);
-                    int count = Convert.ToInt32(cmd.ExecuteScalar());
-                    return count > 0;
+                    Kon.Open();
+
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(queryInsert, Kon))
+                    {
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@password", password);
+                        cmd.Parameters.AddWithValue("@alamat", alamat);
+
+                        try
+                        {
+                            cmd.ExecuteNonQuery();
+                            return true;
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                            return false;
+                        }
+                    }
                 }
             }
-        }
+
+        //public bool IsUsernameExists(string username)
+        //{
+        //    using (var connection = new NpgsqlConnection(KoneksiString))
+        //    {
+        //        connection.Open();
+        //        string query = "SELECT COUNT(*) FROM petani WHERE Username = @username";
+        //        using (var cmd = new NpgsqlCommand(query, connection))
+        //        {
+        //            cmd.Parameters.AddWithValue("@username", username);
+        //            int count = Convert.ToInt32(cmd.ExecuteScalar());
+        //            return count > 0;
+        //        }
+        //    }
+        //}
     }
 }

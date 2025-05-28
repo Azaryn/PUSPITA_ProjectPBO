@@ -2,12 +2,11 @@ using PUSPITA.Model;
 using PUSPITA.Views;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace PUSPITA
 {
     public partial class FormLogin : Form
     {
-        users user = new users();
+        users Petani = new users();
         UserContext userContext = new UserContext();
         public FormLogin()
         {
@@ -21,9 +20,7 @@ namespace PUSPITA
 
             try
             {
-                UserContext userContext = new UserContext();
-                bool Valid = userContext.Validate(username, password, out int petaniId);
-
+                bool Valid = userContext.Validasi(username, password, out int petaniId);
                 if (Valid)
                 {
                     this.Hide();
