@@ -31,8 +31,8 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            btnPupuk = new PictureBox();
+            btnPestisida = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
@@ -40,11 +40,18 @@
             pictureBox10 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
+            dtvShopPestisida = new DataGridView();
+            NamaPestisida = new DataGridViewTextBoxColumn();
+            JenisPestisida = new DataGridViewTextBoxColumn();
+            Stock = new DataGridViewTextBoxColumn();
+            Harga = new DataGridViewTextBoxColumn();
+            btnKembali = new PictureBox();
+            btnKeranjang = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnPupuk).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnPestisida).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -52,6 +59,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtvShopPestisida).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnKeranjang).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -86,27 +96,27 @@
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             // 
-            // pictureBox4
+            // btnPupuk
             // 
-            pictureBox4.BackgroundImage = Properties.Resources.Background;
-            pictureBox4.Image = Properties.Resources.button_pupuk;
-            pictureBox4.Location = new Point(730, 240);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(198, 72);
-            pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            btnPupuk.BackgroundImage = Properties.Resources.Background;
+            btnPupuk.Image = Properties.Resources.button_pupuk;
+            btnPupuk.Location = new Point(730, 240);
+            btnPupuk.Name = "btnPupuk";
+            btnPupuk.Size = new Size(198, 72);
+            btnPupuk.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnPupuk.TabIndex = 3;
+            btnPupuk.TabStop = false;
             // 
-            // pictureBox5
+            // btnPestisida
             // 
-            pictureBox5.BackgroundImage = Properties.Resources.Background;
-            pictureBox5.Image = Properties.Resources.button_pestisida__2_;
-            pictureBox5.Location = new Point(976, 240);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(198, 72);
-            pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox5.TabIndex = 4;
-            pictureBox5.TabStop = false;
+            btnPestisida.BackgroundImage = Properties.Resources.Background;
+            btnPestisida.Image = Properties.Resources.button_pestisida__2_;
+            btnPestisida.Location = new Point(976, 240);
+            btnPestisida.Name = "btnPestisida";
+            btnPestisida.Size = new Size(198, 72);
+            btnPestisida.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnPestisida.TabIndex = 4;
+            btnPestisida.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -179,12 +189,75 @@
             pictureBox12.TabIndex = 11;
             pictureBox12.TabStop = false;
             // 
+            // dtvShopPestisida
+            // 
+            dtvShopPestisida.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtvShopPestisida.Columns.AddRange(new DataGridViewColumn[] { NamaPestisida, JenisPestisida, Stock, Harga });
+            dtvShopPestisida.Location = new Point(129, 554);
+            dtvShopPestisida.Name = "dtvShopPestisida";
+            dtvShopPestisida.RowHeadersWidth = 51;
+            dtvShopPestisida.Size = new Size(1166, 188);
+            dtvShopPestisida.TabIndex = 12;
+            // 
+            // NamaPestisida
+            // 
+            NamaPestisida.HeaderText = "Nama Pestisida ";
+            NamaPestisida.MinimumWidth = 6;
+            NamaPestisida.Name = "NamaPestisida";
+            NamaPestisida.Width = 125;
+            // 
+            // JenisPestisida
+            // 
+            JenisPestisida.HeaderText = "Jenis Pestisida ";
+            JenisPestisida.MinimumWidth = 6;
+            JenisPestisida.Name = "JenisPestisida";
+            JenisPestisida.Width = 125;
+            // 
+            // Stock
+            // 
+            Stock.HeaderText = "Stock";
+            Stock.MinimumWidth = 6;
+            Stock.Name = "Stock";
+            Stock.Width = 125;
+            // 
+            // Harga
+            // 
+            Harga.HeaderText = "Harga";
+            Harga.MinimumWidth = 6;
+            Harga.Name = "Harga";
+            Harga.Width = 125;
+            // 
+            // btnKembali
+            // 
+            btnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            btnKembali.Image = Properties.Resources.Button_Kembali;
+            btnKembali.Location = new Point(36, 37);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(237, 87);
+            btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnKembali.TabIndex = 13;
+            btnKembali.TabStop = false;
+            // 
+            // btnKeranjang
+            // 
+            btnKeranjang.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            btnKeranjang.Image = Properties.Resources.Button_Keranjang__2_;
+            btnKeranjang.Location = new Point(1505, 37);
+            btnKeranjang.Name = "btnKeranjang";
+            btnKeranjang.Size = new Size(249, 81);
+            btnKeranjang.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnKeranjang.TabIndex = 14;
+            btnKeranjang.TabStop = false;
+            // 
             // Shop_Pestisida
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(btnKeranjang);
+            Controls.Add(btnKembali);
+            Controls.Add(dtvShopPestisida);
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
@@ -192,8 +265,8 @@
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
+            Controls.Add(btnPestisida);
+            Controls.Add(btnPupuk);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -202,8 +275,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnPupuk).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnPestisida).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -211,6 +284,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtvShopPestisida).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnKeranjang).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -220,8 +296,8 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
+        private PictureBox btnPupuk;
+        private PictureBox btnPestisida;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
@@ -229,5 +305,12 @@
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
         private PictureBox pictureBox12;
+        private DataGridView dtvShopPestisida;
+        private DataGridViewTextBoxColumn NamaPestisida;
+        private DataGridViewTextBoxColumn JenisPestisida;
+        private DataGridViewTextBoxColumn Stock;
+        private DataGridViewTextBoxColumn Harga;
+        private PictureBox btnKembali;
+        private PictureBox btnKeranjang;
     }
 }

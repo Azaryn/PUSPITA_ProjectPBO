@@ -9,7 +9,7 @@ namespace PUSPITA.Model
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
-        public bool Validate(string username, string password, out int adminId)
+        public bool Validasi(string username, string password, out int adminId)
         {
             adminId = 0;
             string query = "SELECT ID_admin, Username FROM admins WHERE Username = @username AND Password_admin = @password";

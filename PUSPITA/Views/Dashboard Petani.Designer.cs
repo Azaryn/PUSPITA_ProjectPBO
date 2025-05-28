@@ -28,41 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            PictPetani = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
+            btnLogout = new PictureBox();
+            btnPuspitaShop = new PictureBox();
+            btnRekomendasi = new PictureBox();
+            btnHistoryTransaski = new PictureBox();
             pictureBox8 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PictPetani).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnLogout).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnPuspitaShop).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnRekomendasi).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnHistoryTransaski).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // PictPetani
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.Background;
-            pictureBox1.Image = Properties.Resources.Image_petani;
-            pictureBox1.Location = new Point(2, 364);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(808, 708);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            PictPetani.BackgroundImage = Properties.Resources.Background;
+            PictPetani.Image = Properties.Resources.Image_petani;
+            PictPetani.Location = new Point(2, 273);
+            PictPetani.Margin = new Padding(3, 2, 3, 2);
+            PictPetani.Name = "PictPetani";
+            PictPetani.Size = new Size(808, 708);
+            PictPetani.SizeMode = PictureBoxSizeMode.AutoSize;
+            PictPetani.TabIndex = 0;
+            PictPetani.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox3.Location = new Point(-6, -91);
+            pictureBox3.Location = new Point(-5, -68);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1865, 241);
+            pictureBox3.Size = new Size(1632, 181);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -71,91 +73,102 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox2.Image = Properties.Resources.DASHBOARD_Petani;
-            pictureBox2.Location = new Point(625, 12);
+            pictureBox2.Location = new Point(547, 9);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(720, 130);
+            pictureBox2.Size = new Size(630, 98);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox4
+            // btnLogout
             // 
-            pictureBox4.BackgroundImage = Properties.Resources.Background;
-            pictureBox4.Image = Properties.Resources.Button_Log_out;
-            pictureBox4.Location = new Point(1457, 943);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(310, 87);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 4;
-            pictureBox4.TabStop = false;
+            btnLogout.BackgroundImage = Properties.Resources.Background;
+            btnLogout.Image = Properties.Resources.Button_Log_out;
+            btnLogout.Location = new Point(1275, 707);
+            btnLogout.Margin = new Padding(3, 2, 3, 2);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(271, 65);
+            btnLogout.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnLogout.TabIndex = 4;
+            btnLogout.TabStop = false;
+            btnLogout.Click += btnLogout_Click;
             // 
-            // pictureBox5
+            // btnPuspitaShop
             // 
-            pictureBox5.BackgroundImage = Properties.Resources.Background;
-            pictureBox5.Image = Properties.Resources.Button_Puspita_Shop__2_;
-            pictureBox5.Location = new Point(923, 328);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(640, 153);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 5;
-            pictureBox5.TabStop = false;
+            btnPuspitaShop.BackgroundImage = Properties.Resources.Background;
+            btnPuspitaShop.Image = Properties.Resources.Button_Puspita_Shop__2_;
+            btnPuspitaShop.Location = new Point(911, 213);
+            btnPuspitaShop.Margin = new Padding(3, 2, 3, 2);
+            btnPuspitaShop.Name = "btnPuspitaShop";
+            btnPuspitaShop.Size = new Size(560, 115);
+            btnPuspitaShop.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnPuspitaShop.TabIndex = 5;
+            btnPuspitaShop.TabStop = false;
+            btnPuspitaShop.Click += btnPuspitaShop_Click;
             // 
-            // pictureBox6
+            // btnRekomendasi
             // 
-            pictureBox6.BackgroundImage = Properties.Resources.Background;
-            pictureBox6.Image = Properties.Resources.Button_Rekomendasi_;
-            pictureBox6.Location = new Point(923, 477);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(640, 153);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 6;
-            pictureBox6.TabStop = false;
+            btnRekomendasi.BackgroundImage = Properties.Resources.Background;
+            btnRekomendasi.Image = Properties.Resources.Button_Rekomendasi_;
+            btnRekomendasi.Location = new Point(911, 351);
+            btnRekomendasi.Margin = new Padding(3, 2, 3, 2);
+            btnRekomendasi.Name = "btnRekomendasi";
+            btnRekomendasi.Size = new Size(560, 115);
+            btnRekomendasi.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnRekomendasi.TabIndex = 6;
+            btnRekomendasi.TabStop = false;
+            btnRekomendasi.Click += btnRekomendasi_Click;
             // 
-            // pictureBox7
+            // btnHistoryTransaski
             // 
-            pictureBox7.BackgroundImage = Properties.Resources.Background;
-            pictureBox7.Image = Properties.Resources.History_Transaksi_;
-            pictureBox7.Location = new Point(923, 626);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(640, 148);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
+            btnHistoryTransaski.BackgroundImage = Properties.Resources.Background;
+            btnHistoryTransaski.Image = Properties.Resources.History_Transaksi_;
+            btnHistoryTransaski.Location = new Point(911, 489);
+            btnHistoryTransaski.Margin = new Padding(3, 2, 3, 2);
+            btnHistoryTransaski.Name = "btnHistoryTransaski";
+            btnHistoryTransaski.Size = new Size(560, 111);
+            btnHistoryTransaski.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnHistoryTransaski.TabIndex = 7;
+            btnHistoryTransaski.TabStop = false;
+            btnHistoryTransaski.Click += btnHistoryTransaski_Click;
             // 
             // pictureBox8
             // 
             pictureBox8.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox8.Image = Properties.Resources.Logo_Puspita;
-            pictureBox8.Location = new Point(2, 3);
+            pictureBox8.Location = new Point(2, 2);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(194, 147);
+            pictureBox8.Size = new Size(170, 110);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 8;
             pictureBox8.TabStop = false;
             // 
             // Dashboard_Petani
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1810, 1055);
+            ClientSize = new Size(1584, 791);
             Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
+            Controls.Add(btnHistoryTransaski);
+            Controls.Add(btnRekomendasi);
+            Controls.Add(btnPuspitaShop);
+            Controls.Add(btnLogout);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
-            Controls.Add(pictureBox1);
+            Controls.Add(PictPetani);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Dashboard_Petani";
             Text = "Dashboard_Petani";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PictPetani).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnLogout).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnPuspitaShop).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnRekomendasi).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnHistoryTransaski).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -163,13 +176,13 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox PictPetani;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
+        private PictureBox btnLogout;
+        private PictureBox btnPuspitaShop;
+        private PictureBox btnRekomendasi;
+        private PictureBox btnHistoryTransaski;
         private PictureBox pictureBox8;
     }
 }

@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace PUSPITA.Views
 {
-    public partial class Dashboard_Admin: Form
+    public partial class Dashboard_Admin : Form
     {
         public Dashboard_Admin()
         {
             InitializeComponent();
+        }
+
+        private void btnKelolaProduk_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Kelola_Produksi kelolaProduk = new Kelola_Produksi();
+            kelolaProduk.Show();
+        }
+
+        private void btnLogoutDashboard_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginAdmin Ladmin = new LoginAdmin();
+            Ladmin.Show();
         }
     }
 }
