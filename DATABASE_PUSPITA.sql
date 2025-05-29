@@ -77,21 +77,32 @@ create table Detail_TransaksiPestisida(
 	foreign key (ID_Pestisida) references pestisida(ID_Pestisida)
 );
 
-insert into  admins(username,Password_admin)
+insert into admins(username,Password_admin)
 values
 ('rafi',123),
 ('rafa',123),
 ('habib',123);
-
-insert into Jenis
-
-insert into pupuk(Nama_pupuk, dosis, Harga, ID_JenisPupuk)
+delete from jenis_pupuk
+select * from jenis_pupuk
+insert into Jenis_pupuk (jenis_pupuk)
 values
-('Urea', 10, 10000),
-('Kompos', 5, 15000);
+('Organik'),
+('Anorganik');
 
-insert into peptisida (Nama_peptisida, dosis, harga)
+insert into jenis_pestisida
 values
-(),
-(),
-();
+('Insektisida'),
+('Herbisida'),
+('Fungisida');
+
+insert into pupuk(Nama_pupuk, id_jenispupuk,dosis, Harga, ID_JenisPupuk)
+values
+('Urea', ,10, 10000),
+('Kompos', , 5, 15000);
+
+
+insert into pestisida (nama_pestisida, id_jenispestisida, dosis, harga)
+values
+('Glifosat', 2, 2000, 15000),
+('Profenofos',1,300,30000),
+('Mancozeb',3,800,18000);
