@@ -73,6 +73,26 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background_Header_ {
+            get {
+                object obj = ResourceManager.GetObject("Background Header.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_hijua_muda {
+            get {
+                object obj = ResourceManager.GetObject("Background hijua muda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_Transaksi__2_ {
             get {
                 object obj = ResourceManager.GetObject("background Transaksi (2)", resourceCulture);
@@ -116,6 +136,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap Button_Checkout_ {
             get {
                 object obj = ResourceManager.GetObject("Button Checkout ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_Hapus_ {
+            get {
+                object obj = ResourceManager.GetObject("Button Hapus.", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +283,16 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_tambah___2_ {
+            get {
+                object obj = ResourceManager.GetObject("button tambah. (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Tambah_Produk {
             get {
                 object obj = ResourceManager.GetObject("Button Tambah Produk", resourceCulture);
@@ -293,9 +333,109 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grup_Input_nama_harga_produk {
+            get {
+                object obj = ResourceManager.GetObject("Grup Input nama,harga produk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Header {
             get {
                 object obj = ResourceManager.GetObject("Header", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap header___Pupuk_PUSPITA {
+            get {
+                object obj = ResourceManager.GetObject("header ,.Pupuk PUSPITA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap header__Hapus_Pestisida {
+            get {
+                object obj = ResourceManager.GetObject("header .Hapus Pestisida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header__History_Transaksi__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Header .History Transaksi (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header__Pestisida_PUSPITA__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Header, Pestisida PUSPITA (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header__Tambah_Pestisida {
+            get {
+                object obj = ResourceManager.GetObject("Header ,Tambah Pestisida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header__tambah_pupuk_ {
+            get {
+                object obj = ResourceManager.GetObject("Header ,tambah pupuk.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header__Tambah_Pupuk__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Header _Tambah Pupuk (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header__Update_Pupuk__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Header .Update Pupuk (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header_Hapus_Pupuk_ {
+            get {
+                object obj = ResourceManager.GetObject("Header Hapus Pupuk.", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,6 +503,26 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Header_Update_Pestisida {
+            get {
+                object obj = ResourceManager.GetObject("Header Update Pestisida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Header_Update_Pestisida__ {
+            get {
+                object obj = ResourceManager.GetObject("Header Update Pestisida,.", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap History_Transaksi_ {
             get {
                 object obj = ResourceManager.GetObject("History Transaksi ", resourceCulture);
@@ -416,6 +576,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap Inputan {
             get {
                 object obj = ResourceManager.GetObject("Inputan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jenis_Pupuk_ {
+            get {
+                object obj = ResourceManager.GetObject("Jenis Pupuk.", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +676,26 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap Logo_PUSPITA_HD {
             get {
                 object obj = ResourceManager.GetObject("Logo PUSPITA HD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Masukkan_ID_Peptisida_ {
+            get {
+                object obj = ResourceManager.GetObject("Masukkan ID Peptisida_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Masukkan_ID_Pupuk___1_ {
+            get {
+                object obj = ResourceManager.GetObject("Masukkan ID Pupuk_ (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

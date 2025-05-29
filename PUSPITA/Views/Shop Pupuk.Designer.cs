@@ -35,15 +35,10 @@
             pictureBox5 = new PictureBox();
             btnPestisida = new PictureBox();
             pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox16 = new PictureBox();
             pictureBox9 = new PictureBox();
             btnKembali = new PictureBox();
             btnKeranjang = new PictureBox();
-            dataGridView1 = new DataGridView();
+            dgvShopPupuk = new DataGridView();
             NamaPupuk = new DataGridViewTextBoxColumn();
             JenisPupuk = new DataGridViewTextBoxColumn();
             Stock = new DataGridViewTextBoxColumn();
@@ -55,15 +50,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPestisida).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKeranjang).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvShopPupuk).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -96,6 +86,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // btnPupuk
             // 
@@ -141,61 +132,6 @@
             pictureBox7.TabIndex = 6;
             pictureBox7.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox8.Image = Properties.Resources.kotak_chcekbox;
-            pictureBox8.Location = new Point(1328, 548);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(22, 22);
-            pictureBox8.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox8.TabIndex = 7;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox10.Image = Properties.Resources.kotak_chcekbox;
-            pictureBox10.Location = new Point(1328, 604);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(22, 22);
-            pictureBox10.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox10.TabIndex = 9;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox12.Image = Properties.Resources.kotak_chcekbox;
-            pictureBox12.Location = new Point(1328, 660);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(22, 22);
-            pictureBox12.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox12.TabIndex = 11;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox14.Image = Properties.Resources.kotak_chcekbox;
-            pictureBox14.Location = new Point(1328, 716);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(22, 22);
-            pictureBox14.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox14.TabIndex = 13;
-            pictureBox14.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            pictureBox16.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox16.Image = Properties.Resources.kotak_chcekbox;
-            pictureBox16.Location = new Point(1328, 772);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(22, 22);
-            pictureBox16.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox16.TabIndex = 15;
-            pictureBox16.TabStop = false;
-            // 
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.garis_hitam;
@@ -228,15 +164,16 @@
             btnKeranjang.TabIndex = 18;
             btnKeranjang.TabStop = false;
             // 
-            // dataGridView1
+            // dgvShopPupuk
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NamaPupuk, JenisPupuk, Stock, Harga });
-            dataGridView1.Location = new Point(107, 418);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1030, 188);
-            dataGridView1.TabIndex = 19;
+            dgvShopPupuk.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvShopPupuk.Columns.AddRange(new DataGridViewColumn[] { NamaPupuk, JenisPupuk, Stock, Harga });
+            dgvShopPupuk.Location = new Point(107, 418);
+            dgvShopPupuk.Name = "dgvShopPupuk";
+            dgvShopPupuk.RowHeadersWidth = 51;
+            dgvShopPupuk.Size = new Size(1030, 188);
+            dgvShopPupuk.TabIndex = 19;
+            dgvShopPupuk.CellContentClick += dgvShopPupuk_CellContentClick;
             // 
             // NamaPupuk
             // 
@@ -272,15 +209,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvShopPupuk);
             Controls.Add(btnKeranjang);
             Controls.Add(btnKembali);
             Controls.Add(pictureBox9);
-            Controls.Add(pictureBox16);
-            Controls.Add(pictureBox14);
-            Controls.Add(pictureBox12);
-            Controls.Add(pictureBox10);
-            Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(btnPestisida);
             Controls.Add(pictureBox5);
@@ -297,15 +229,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnPestisida).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKeranjang).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvShopPupuk).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -319,15 +246,10 @@
         private PictureBox pictureBox5;
         private PictureBox btnPestisida;
         private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox16;
         private PictureBox pictureBox9;
         private PictureBox btnKembali;
         private PictureBox btnKeranjang;
-        private DataGridView dataGridView1;
+        private DataGridView dgvShopPupuk;
         private DataGridViewTextBoxColumn NamaPupuk;
         private DataGridViewTextBoxColumn JenisPupuk;
         private DataGridViewTextBoxColumn Stock;
