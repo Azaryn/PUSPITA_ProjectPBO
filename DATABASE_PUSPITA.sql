@@ -82,27 +82,32 @@ values
 ('rafi',123),
 ('rafa',123),
 ('habib',123);
-delete from jenis_pupuk
-select * from jenis_pupuk
+
 insert into Jenis_pupuk (jenis_pupuk)
 values
 ('Organik'),
 ('Anorganik');
 
-insert into jenis_pestisida
+insert into jenis_pestisida (jenis_pestisida)
 values
 ('Insektisida'),
 ('Herbisida'),
 ('Fungisida');
 
-insert into pupuk(Nama_pupuk, id_jenispupuk,dosis, Harga, ID_JenisPupuk)
+insert into pupuk(Nama_pupuk, id_jenispupuk,dosis, Harga)
 values
-('Urea', ,10, 10000),
-('Kompos', , 5, 15000);
-
+('Urea', 2,10, 10000),
+('Kompos', 1, 5, 15000);
 
 insert into pestisida (nama_pestisida, id_jenispestisida, dosis, harga)
 values
 ('Glifosat', 2, 2000, 15000),
 ('Profenofos',1,300,30000),
 ('Mancozeb',3,800,18000);
+
+-- select * from admins
+-- select * from petani
+-- select * from pupuk
+-- select * from pestisida
+-- select * from jenis_pupuk
+-- select * from jenis_pestisida
