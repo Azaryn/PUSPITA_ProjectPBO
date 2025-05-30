@@ -12,8 +12,6 @@ namespace PUSPITA.Model
         class RegisterContext
         {
             private readonly string KoneksiString;
-
-
             public RegisterContext()
             {
                 KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
@@ -28,9 +26,9 @@ namespace PUSPITA.Model
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, Kon))
                     {
                         cmd.Parameters.AddWithValue("@username", username);
-                        object result = cmd.ExecuteScalar()!;
-                        int count = (result != null) ? Convert.ToInt32(result) : 0;
-                        if (count > 0)
+                        object hasil = cmd.ExecuteScalar()!;
+                        int hitung = (hasil != null) ? Convert.ToInt32(hasil) : 0;
+                        if (hitung > 0)
                         {
                             return false;
                         }

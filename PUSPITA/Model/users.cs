@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PUSPITA.Model
 {
-    class users
+    class Users
     {
         public int id_petani { get; set; }
         public string username { get; set; }

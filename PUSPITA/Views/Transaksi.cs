@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace PUSPITA.Views
 {
-    public partial class Transaksi: Form
+    public partial class Transaksi : Form
     {
         public Transaksi()
         {
             InitializeComponent();
+        }
+
+        private void BtnKembali_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Keranjang keranjang = new Keranjang();
+            keranjang.Show();  
         }
     }
 }

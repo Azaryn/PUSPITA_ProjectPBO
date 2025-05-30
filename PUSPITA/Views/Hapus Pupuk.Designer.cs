@@ -38,12 +38,12 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             dataGridView1 = new DataGridView();
-            tbIDPupuk = new TextBox();
             Idpupuk = new DataGridViewTextBoxColumn();
             NamaPupuk = new DataGridViewTextBoxColumn();
             JenisPupuk = new DataGridViewTextBoxColumn();
             Stock = new DataGridViewTextBoxColumn();
             Harga = new DataGridViewTextBoxColumn();
+            tbIDPupuk = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
@@ -87,6 +87,7 @@
             btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
             btnKembali.TabIndex = 2;
             btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // btnHapus
             // 
@@ -98,6 +99,7 @@
             btnHapus.SizeMode = PictureBoxSizeMode.Zoom;
             btnHapus.TabIndex = 3;
             btnHapus.TabStop = false;
+            btnHapus.Click += btnHapus_Click;
             // 
             // pictureBox3
             // 
@@ -164,14 +166,6 @@
             dataGridView1.Size = new Size(1427, 336);
             dataGridView1.TabIndex = 9;
             // 
-            // tbIDPupuk
-            // 
-            tbIDPupuk.Font = new Font("Segoe UI", 20F);
-            tbIDPupuk.Location = new Point(243, 673);
-            tbIDPupuk.Name = "tbIDPupuk";
-            tbIDPupuk.Size = new Size(650, 52);
-            tbIDPupuk.TabIndex = 10;
-            // 
             // Idpupuk
             // 
             Idpupuk.HeaderText = "ID Pupuk";
@@ -206,6 +200,14 @@
             Harga.MinimumWidth = 6;
             Harga.Name = "Harga";
             Harga.Width = 125;
+            // 
+            // tbIDPupuk
+            // 
+            tbIDPupuk.Font = new Font("Segoe UI", 20F);
+            tbIDPupuk.Location = new Point(243, 673);
+            tbIDPupuk.Name = "tbIDPupuk";
+            tbIDPupuk.Size = new Size(650, 52);
+            tbIDPupuk.TabIndex = 10;
             // 
             // Hapus_Pupuk
             // 

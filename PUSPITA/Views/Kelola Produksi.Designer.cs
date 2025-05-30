@@ -71,19 +71,20 @@
             btnHapusProduk.Image = Properties.Resources.Button_Hapus_Produk;
             btnHapusProduk.Location = new Point(1030, 295);
             btnHapusProduk.Name = "btnHapusProduk";
-            btnHapusProduk.Size = new Size(768, 180);
-            btnHapusProduk.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnHapusProduk.Size = new Size(610, 145);
+            btnHapusProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnHapusProduk.TabIndex = 2;
             btnHapusProduk.TabStop = false;
+            btnHapusProduk.Click += btnHapusProduk_Click;
             // 
             // btnUpdateProduk
             // 
             btnUpdateProduk.BackgroundImage = Properties.Resources.Background;
             btnUpdateProduk.Image = Properties.Resources.Button_Update_Produk;
-            btnUpdateProduk.Location = new Point(1030, 552);
+            btnUpdateProduk.Location = new Point(90, 521);
             btnUpdateProduk.Name = "btnUpdateProduk";
-            btnUpdateProduk.Size = new Size(768, 180);
-            btnUpdateProduk.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnUpdateProduk.Size = new Size(610, 143);
+            btnUpdateProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnUpdateProduk.TabIndex = 3;
             btnUpdateProduk.TabStop = false;
             // 
@@ -91,21 +92,22 @@
             // 
             btnTambahProduk.BackgroundImage = Properties.Resources.Background;
             btnTambahProduk.Image = Properties.Resources.Button_Tambah_Produk;
-            btnTambahProduk.Location = new Point(-68, 295);
+            btnTambahProduk.Location = new Point(90, 295);
             btnTambahProduk.Name = "btnTambahProduk";
-            btnTambahProduk.Size = new Size(768, 180);
-            btnTambahProduk.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnTambahProduk.Size = new Size(610, 145);
+            btnTambahProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnTambahProduk.TabIndex = 4;
             btnTambahProduk.TabStop = false;
+            btnTambahProduk.Click += btnTambahProduk_Click;
             // 
             // btnLihatProduk
             // 
             btnLihatProduk.BackgroundImage = Properties.Resources.Background;
             btnLihatProduk.Image = Properties.Resources.Button_Lihat_Produk;
-            btnLihatProduk.Location = new Point(-68, 552);
+            btnLihatProduk.Location = new Point(1030, 521);
             btnLihatProduk.Name = "btnLihatProduk";
-            btnLihatProduk.Size = new Size(768, 180);
-            btnLihatProduk.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnLihatProduk.Size = new Size(610, 143);
+            btnLihatProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnLihatProduk.TabIndex = 5;
             btnLihatProduk.TabStop = false;
             // 

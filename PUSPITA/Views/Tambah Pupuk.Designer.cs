@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tambah_Pupuk));
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             btnPestisida = new PictureBox();
-            pictureBox5 = new PictureBox();
+            BtnKembali = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             rbOrganik = new RadioButton();
             rbAnorganik = new RadioButton();
             btnTambah = new PictureBox();
-            tbNamaProduk = new TextBox();
-            tbStockProduk = new TextBox();
-            tbHargaProduk = new TextBox();
+            tbNamaPupuk = new TextBox();
+            tbDosisPupuk = new TextBox();
+            tbHargaPupuk = new TextBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnPestisida).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnTambah).BeginInit();
@@ -96,21 +97,22 @@
             btnPestisida.TabIndex = 4;
             btnPestisida.TabStop = false;
             // 
-            // pictureBox5
+            // BtnKembali
             // 
-            pictureBox5.BackgroundImage = Properties.Resources.Background_Header_;
-            pictureBox5.Image = Properties.Resources.Button_Kembali;
-            pictureBox5.Location = new Point(1517, 62);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(237, 87);
-            pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox5.TabIndex = 5;
-            pictureBox5.TabStop = false;
+            BtnKembali.BackgroundImage = Properties.Resources.Background_Header_;
+            BtnKembali.Image = Properties.Resources.Button_Kembali;
+            BtnKembali.Location = new Point(1517, 62);
+            BtnKembali.Name = "BtnKembali";
+            BtnKembali.Size = new Size(237, 87);
+            BtnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
+            BtnKembali.TabIndex = 5;
+            BtnKembali.TabStop = false;
+            BtnKembali.Click += BtnKembali_Click;
             // 
             // pictureBox6
             // 
             pictureBox6.BackgroundImage = Properties.Resources.Background_hijua_muda;
-            pictureBox6.Image = Properties.Resources.Grup_Input_nama_harga_produk;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(208, 257);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(624, 416);
@@ -121,11 +123,11 @@
             // pictureBox7
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Background_hijua_muda;
-            pictureBox7.Image = Properties.Resources.Jenis_Pupuk_;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(208, 713);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(255, 44);
-            pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 7;
             pictureBox7.TabStop = false;
             // 
@@ -165,30 +167,32 @@
             btnTambah.SizeMode = PictureBoxSizeMode.AutoSize;
             btnTambah.TabIndex = 10;
             btnTambah.TabStop = false;
+            btnTambah.Click += btnTambah_Click;
             // 
-            // tbNamaProduk
+            // tbNamaPupuk
             // 
-            tbNamaProduk.Font = new Font("Segoe UI", 20F);
-            tbNamaProduk.Location = new Point(227, 329);
-            tbNamaProduk.Name = "tbNamaProduk";
-            tbNamaProduk.Size = new Size(575, 52);
-            tbNamaProduk.TabIndex = 11;
+            tbNamaPupuk.BorderStyle = BorderStyle.None;
+            tbNamaPupuk.Font = new Font("Segoe UI", 20F);
+            tbNamaPupuk.Location = new Point(227, 329);
+            tbNamaPupuk.Name = "tbNamaPupuk";
+            tbNamaPupuk.Size = new Size(575, 45);
+            tbNamaPupuk.TabIndex = 11;
             // 
-            // tbStockProduk
+            // tbDosisPupuk
             // 
-            tbStockProduk.Font = new Font("Segoe UI", 20F);
-            tbStockProduk.Location = new Point(227, 467);
-            tbStockProduk.Name = "tbStockProduk";
-            tbStockProduk.Size = new Size(575, 52);
-            tbStockProduk.TabIndex = 12;
+            tbDosisPupuk.Font = new Font("Segoe UI", 20F);
+            tbDosisPupuk.Location = new Point(227, 467);
+            tbDosisPupuk.Name = "tbDosisPupuk";
+            tbDosisPupuk.Size = new Size(575, 52);
+            tbDosisPupuk.TabIndex = 12;
             // 
-            // tbHargaProduk
+            // tbHargaPupuk
             // 
-            tbHargaProduk.Font = new Font("Segoe UI", 20F);
-            tbHargaProduk.Location = new Point(227, 609);
-            tbHargaProduk.Name = "tbHargaProduk";
-            tbHargaProduk.Size = new Size(575, 52);
-            tbHargaProduk.TabIndex = 13;
+            tbHargaPupuk.Font = new Font("Segoe UI", 20F);
+            tbHargaPupuk.Location = new Point(227, 609);
+            tbHargaPupuk.Name = "tbHargaPupuk";
+            tbHargaPupuk.Size = new Size(575, 52);
+            tbHargaPupuk.TabIndex = 13;
             // 
             // pictureBox1
             // 
@@ -206,15 +210,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
-            Controls.Add(tbHargaProduk);
-            Controls.Add(tbStockProduk);
-            Controls.Add(tbNamaProduk);
+            Controls.Add(tbHargaPupuk);
+            Controls.Add(tbDosisPupuk);
+            Controls.Add(tbNamaPupuk);
             Controls.Add(btnTambah);
             Controls.Add(rbAnorganik);
             Controls.Add(rbOrganik);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
+            Controls.Add(BtnKembali);
             Controls.Add(btnPestisida);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
@@ -226,7 +230,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnPestisida).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnTambah).EndInit();
@@ -240,15 +244,15 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox btnPestisida;
-        private PictureBox pictureBox5;
+        private PictureBox BtnKembali;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private RadioButton rbOrganik;
         private RadioButton rbAnorganik;
         private PictureBox btnTambah;
-        private TextBox tbNamaProduk;
-        private TextBox tbStockProduk;
-        private TextBox tbHargaProduk;
+        private TextBox tbNamaPupuk;
+        private TextBox tbDosisPupuk;
+        private TextBox tbHargaPupuk;
         private PictureBox pictureBox1;
     }
 }

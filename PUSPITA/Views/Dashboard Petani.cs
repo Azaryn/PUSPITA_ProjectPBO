@@ -34,7 +34,7 @@ namespace PUSPITA.Views
         private void btnHistoryTransaski_Click(object sender, EventArgs e)
         {
             this.Hide();
-            History_Transaksi_cs historyTransaksi = new History_Transaksi_cs();
+            History_Transaksi historyTransaksi = new History_Transaksi();
             historyTransaksi.Show();
         }
 

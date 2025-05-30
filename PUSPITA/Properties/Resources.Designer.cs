@@ -103,6 +103,16 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Box_Hasil {
+            get {
+                object obj = ResourceManager.GetObject("Box Hasil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap But_Register {
             get {
                 object obj = ResourceManager.GetObject("But Register", resourceCulture);
@@ -716,6 +726,36 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap persegi_panjang_hijau {
             get {
                 object obj = ResourceManager.GetObject("persegi panjang hijau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RPestisida {
+            get {
+                object obj = ResourceManager.GetObject("RPestisida", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RPupuk {
+            get {
+                object obj = ResourceManager.GetObject("RPupuk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rtakaran {
+            get {
+                object obj = ResourceManager.GetObject("Rtakaran", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

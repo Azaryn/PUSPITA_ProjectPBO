@@ -6,7 +6,7 @@ namespace PUSPITA
 {
     public partial class FormLogin : Form
     {
-        users Petani = new users();
+        Users Petani = new Users();
         UserContext userContext = new UserContext();
         public FormLogin()
         {

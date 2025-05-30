@@ -72,5 +72,18 @@ namespace PUSPITA.Views
             // Kosong dulu, nanti bisa diisi logika checkbox
         }
 
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Dashboard_Petani Dpetani = new Dashboard_Petani();
+            Dpetani.Show();
+        }
+
+        private void btnKeranjang_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Keranjang keranjang = new Keranjang();
+            keranjang.Show();
+        }
     }
 }

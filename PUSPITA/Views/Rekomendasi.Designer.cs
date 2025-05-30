@@ -33,7 +33,7 @@
             pictureBox2 = new PictureBox();
             txtInputanLuasLahan = new PictureBox();
             txtMasukkanBulan = new PictureBox();
-            pictureBox9 = new PictureBox();
+            BtnKembali = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
@@ -47,7 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtInputanLuasLahan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtMasukkanBulan).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
@@ -112,17 +112,18 @@
             txtMasukkanBulan.TabIndex = 5;
             txtMasukkanBulan.TabStop = false;
             // 
-            // pictureBox9
+            // BtnKembali
             // 
-            pictureBox9.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
-            pictureBox9.Image = Properties.Resources.Button_Kembali;
-            pictureBox9.Location = new Point(1297, 38);
-            pictureBox9.Margin = new Padding(3, 2, 3, 2);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(237, 87);
-            pictureBox9.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox9.TabIndex = 9;
-            pictureBox9.TabStop = false;
+            BtnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            BtnKembali.Image = Properties.Resources.Button_Kembali;
+            BtnKembali.Location = new Point(1297, 38);
+            BtnKembali.Margin = new Padding(3, 2, 3, 2);
+            BtnKembali.Name = "BtnKembali";
+            BtnKembali.Size = new Size(237, 87);
+            BtnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
+            BtnKembali.TabIndex = 9;
+            BtnKembali.TabStop = false;
+            BtnKembali.Click += BtnKembali_Click;
             // 
             // pictureBox10
             // 
@@ -226,6 +227,7 @@
             btnCheck.SizeMode = PictureBoxSizeMode.AutoSize;
             btnCheck.TabIndex = 17;
             btnCheck.TabStop = false;
+            btnCheck.Click += btnCheck_Click;
             // 
             // Rekomendasi
             // 
@@ -241,7 +243,7 @@
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
-            Controls.Add(pictureBox9);
+            Controls.Add(BtnKembali);
             Controls.Add(txtMasukkanBulan);
             Controls.Add(txtInputanLuasLahan);
             Controls.Add(pictureBox2);
@@ -255,7 +257,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtInputanLuasLahan).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtMasukkanBulan).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
@@ -272,7 +274,7 @@
         private PictureBox pictureBox2;
         private PictureBox txtInputanLuasLahan;
         private PictureBox txtMasukkanBulan;
-        private PictureBox pictureBox9;
+        private PictureBox BtnKembali;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
         private PictureBox pictureBox12;

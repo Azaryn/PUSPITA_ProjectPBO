@@ -55,9 +55,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox1.Location = new Point(-8, -4);
+            pictureBox1.Location = new Point(-7, -3);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1828, 208);
+            pictureBox1.Size = new Size(1600, 156);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -66,9 +67,10 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox2.Image = Properties.Resources.Header_Keranjang;
-            pictureBox2.Location = new Point(635, 12);
+            pictureBox2.Location = new Point(556, 9);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(550, 170);
+            pictureBox2.Size = new Size(481, 128);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -77,30 +79,35 @@
             // 
             btnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             btnKembali.Image = Properties.Resources.Button_Kembali;
-            btnKembali.Location = new Point(40, 49);
+            btnKembali.Location = new Point(35, 37);
+            btnKembali.Margin = new Padding(3, 2, 3, 2);
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(237, 87);
             btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
             btnKembali.TabIndex = 2;
             btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // btnCheckout
             // 
             btnCheckout.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             btnCheckout.Image = Properties.Resources.Button_Checkout_;
-            btnCheckout.Location = new Point(1502, 49);
+            btnCheckout.Location = new Point(1314, 37);
+            btnCheckout.Margin = new Padding(3, 2, 3, 2);
             btnCheckout.Name = "btnCheckout";
             btnCheckout.Size = new Size(267, 81);
             btnCheckout.SizeMode = PictureBoxSizeMode.AutoSize;
             btnCheckout.TabIndex = 3;
             btnCheckout.TabStop = false;
+            btnCheckout.Click += btnCheckout_Click;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox5.Location = new Point(40, 311);
+            pictureBox5.Location = new Point(35, 233);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(1729, 772);
+            pictureBox5.Size = new Size(1513, 579);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
@@ -108,9 +115,10 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox6.Location = new Point(40, 256);
+            pictureBox6.Location = new Point(35, 192);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(1729, 70);
+            pictureBox6.Size = new Size(1513, 52);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
@@ -119,7 +127,8 @@
             // 
             pictureBox7.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox7.Image = Properties.Resources.Text_Nama_Product__2_;
-            pictureBox7.Location = new Point(187, 277);
+            pictureBox7.Location = new Point(164, 208);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(248, 28);
             pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -130,7 +139,8 @@
             // 
             pictureBox8.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox8.Image = Properties.Resources.Text_Harga__2_;
-            pictureBox8.Location = new Point(691, 270);
+            pictureBox8.Location = new Point(605, 202);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(102, 35);
             pictureBox8.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -141,7 +151,8 @@
             // 
             pictureBox9.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox9.Image = Properties.Resources.Text_Quantity__2_;
-            pictureBox9.Location = new Point(1063, 269);
+            pictureBox9.Location = new Point(930, 202);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(157, 36);
             pictureBox9.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -152,7 +163,8 @@
             // 
             pictureBox10.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox10.Image = Properties.Resources.Text_Total__2_;
-            pictureBox10.Location = new Point(1545, 277);
+            pictureBox10.Location = new Point(1352, 208);
+            pictureBox10.Margin = new Padding(3, 2, 3, 2);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(89, 28);
             pictureBox10.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -162,7 +174,8 @@
             // pictureBox11
             // 
             pictureBox11.Image = Properties.Resources.Button_Quantity_;
-            pictureBox11.Location = new Point(995, 409);
+            pictureBox11.Location = new Point(871, 307);
+            pictureBox11.Margin = new Padding(3, 2, 3, 2);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(284, 60);
             pictureBox11.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -171,10 +184,10 @@
             // 
             // Keranjang
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1810, 1055);
+            ClientSize = new Size(1584, 791);
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
             Controls.Add(pictureBox9);
@@ -186,6 +199,7 @@
             Controls.Add(btnKembali);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Keranjang";
             Text = "Keranjang";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -59,9 +59,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox1.Location = new Point(-15, -13);
+            pictureBox1.Location = new Point(-13, -10);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1856, 168);
+            pictureBox1.Size = new Size(1624, 126);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -70,7 +71,8 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox2.Image = Properties.Resources.Header_PUSPITA_SHOP;
-            pictureBox2.Location = new Point(459, 12);
+            pictureBox2.Location = new Point(402, 9);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(831, 119);
             pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -80,19 +82,20 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox3.Location = new Point(29, 349);
+            pictureBox3.Location = new Point(25, 262);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1744, 787);
+            pictureBox3.Size = new Size(1526, 590);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // btnPupuk
             // 
             btnPupuk.BackgroundImage = Properties.Resources.Background;
             btnPupuk.Image = Properties.Resources.button_pupuk;
-            btnPupuk.Location = new Point(636, 233);
+            btnPupuk.Location = new Point(556, 175);
+            btnPupuk.Margin = new Padding(3, 2, 3, 2);
             btnPupuk.Name = "btnPupuk";
             btnPupuk.Size = new Size(198, 72);
             btnPupuk.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -103,7 +106,8 @@
             // 
             pictureBox5.BackgroundImage = Properties.Resources.Background;
             pictureBox5.Image = Properties.Resources.text_OUR_PRODUCT__2_;
-            pictureBox5.Location = new Point(779, 180);
+            pictureBox5.Location = new Point(682, 135);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(246, 25);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -114,7 +118,8 @@
             // 
             btnPestisida.BackgroundImage = Properties.Resources.Background;
             btnPestisida.Image = Properties.Resources.button_pestisida__2_;
-            btnPestisida.Location = new Point(998, 233);
+            btnPestisida.Location = new Point(873, 175);
+            btnPestisida.Margin = new Padding(3, 2, 3, 2);
             btnPestisida.Name = "btnPestisida";
             btnPestisida.Size = new Size(198, 72);
             btnPestisida.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -125,7 +130,8 @@
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox7.Image = Properties.Resources.Text_Pilih_Product;
-            pictureBox7.Location = new Point(1465, 418);
+            pictureBox7.Location = new Point(1282, 314);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(218, 29);
             pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -135,9 +141,10 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.garis_hitam;
-            pictureBox9.Location = new Point(29, 349);
+            pictureBox9.Location = new Point(25, 262);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(1744, 5);
+            pictureBox9.Size = new Size(1526, 4);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 16;
             pictureBox9.TabStop = false;
@@ -146,32 +153,37 @@
             // 
             btnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             btnKembali.Image = Properties.Resources.Button_Kembali;
-            btnKembali.Location = new Point(48, 31);
+            btnKembali.Location = new Point(42, 23);
+            btnKembali.Margin = new Padding(3, 2, 3, 2);
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(237, 87);
             btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
             btnKembali.TabIndex = 17;
             btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // btnKeranjang
             // 
             btnKeranjang.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             btnKeranjang.Image = Properties.Resources.Button_Keranjang__2_;
-            btnKeranjang.Location = new Point(1524, 31);
+            btnKeranjang.Location = new Point(1334, 23);
+            btnKeranjang.Margin = new Padding(3, 2, 3, 2);
             btnKeranjang.Name = "btnKeranjang";
             btnKeranjang.Size = new Size(249, 81);
             btnKeranjang.SizeMode = PictureBoxSizeMode.AutoSize;
             btnKeranjang.TabIndex = 18;
             btnKeranjang.TabStop = false;
+            btnKeranjang.Click += btnKeranjang_Click;
             // 
             // dgvShopPupuk
             // 
             dgvShopPupuk.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvShopPupuk.Columns.AddRange(new DataGridViewColumn[] { NamaPupuk, JenisPupuk, Stock, Harga });
-            dgvShopPupuk.Location = new Point(107, 418);
+            dgvShopPupuk.Location = new Point(94, 314);
+            dgvShopPupuk.Margin = new Padding(3, 2, 3, 2);
             dgvShopPupuk.Name = "dgvShopPupuk";
             dgvShopPupuk.RowHeadersWidth = 51;
-            dgvShopPupuk.Size = new Size(1030, 188);
+            dgvShopPupuk.Size = new Size(901, 141);
             dgvShopPupuk.TabIndex = 19;
             dgvShopPupuk.CellContentClick += dgvShopPupuk_CellContentClick;
             // 
@@ -205,10 +217,10 @@
             // 
             // Shop_Pupuk
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1810, 1055);
+            ClientSize = new Size(1584, 791);
             Controls.Add(dgvShopPupuk);
             Controls.Add(btnKeranjang);
             Controls.Add(btnKembali);
@@ -220,6 +232,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Shop_Pupuk";
             Text = "Shop_Pupuk";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
