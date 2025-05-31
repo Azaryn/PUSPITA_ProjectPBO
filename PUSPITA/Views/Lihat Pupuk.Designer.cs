@@ -165,6 +165,7 @@
             Controls.Add(pictureBox1);
             Name = "Lihat_Pupuk";
             Text = "Lihat_Pupuk";
+            Load += Lihat_Pupuk_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnPestisida).EndInit();

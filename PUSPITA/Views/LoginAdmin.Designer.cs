@@ -199,6 +199,7 @@
             Controls.Add(pictureBox1);
             Name = "LoginAdmin";
             Text = "LoginAdmin";
+            Load += LoginAdmin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

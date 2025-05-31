@@ -35,10 +35,6 @@
             btnPupuk = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            NamaPestisida = new DataGridViewTextBoxColumn();
-            JenisPestisda = new DataGridViewTextBoxColumn();
-            Stock = new DataGridViewTextBoxColumn();
-            Harga = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
@@ -51,12 +47,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NamaPestisida, JenisPestisda, Stock, Harga });
             dataGridView1.Location = new Point(185, 218);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1427, 506);
             dataGridView1.TabIndex = 17;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // pictureBox4
             // 
@@ -79,6 +75,7 @@
             btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
             btnKembali.TabIndex = 15;
             btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // pictureBox3
             // 
@@ -101,6 +98,7 @@
             btnPupuk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnPupuk.TabIndex = 13;
             btnPupuk.TabStop = false;
+            btnPupuk.Click += btnPupuk_Click;
             // 
             // pictureBox2
             // 
@@ -122,34 +120,6 @@
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
-            // NamaPestisida
-            // 
-            NamaPestisida.HeaderText = "Nama Pestisida";
-            NamaPestisida.MinimumWidth = 6;
-            NamaPestisida.Name = "NamaPestisida";
-            NamaPestisida.Width = 125;
-            // 
-            // JenisPestisda
-            // 
-            JenisPestisda.HeaderText = "Jenis Pestisida";
-            JenisPestisda.MinimumWidth = 6;
-            JenisPestisda.Name = "JenisPestisda";
-            JenisPestisda.Width = 125;
-            // 
-            // Stock
-            // 
-            Stock.HeaderText = "Stock";
-            Stock.MinimumWidth = 6;
-            Stock.Name = "Stock";
-            Stock.Width = 125;
-            // 
-            // Harga
-            // 
-            Harga.HeaderText = "Harga";
-            Harga.MinimumWidth = 6;
-            Harga.Name = "Harga";
-            Harga.Width = 125;
-            // 
             // Lihat_Pestisida
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -165,6 +135,7 @@
             Controls.Add(pictureBox1);
             Name = "Lihat_Pestisida";
             Text = "Lihat_Pestisida";
+            Load += Lihat_Pestisida_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
@@ -187,9 +158,5 @@
         private PictureBox btnPupuk;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn NamaPestisida;
-        private DataGridViewTextBoxColumn JenisPestisda;
-        private DataGridViewTextBoxColumn Stock;
-        private DataGridViewTextBoxColumn Harga;
     }
 }

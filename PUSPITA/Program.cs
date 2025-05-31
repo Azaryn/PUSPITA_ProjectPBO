@@ -20,7 +20,7 @@ namespace PUSPITA
             //Application.Run(new Hapus_Pestisida());
             //Application.Run(new Update_Pestisida_ID());
             //Application.Run(new Update_Pestisida_Input());
-            //Application.Run(new Lihat_Pestisida());
+            Application.Run(new Lihat_Pestisida());
             //Application.Run(new Register());
             //Application.Run(new Dashboard_Admin());
             //Application.Run(new Dashboard_Petani());
