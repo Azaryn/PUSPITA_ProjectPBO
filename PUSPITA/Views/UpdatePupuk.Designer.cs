@@ -70,21 +70,19 @@
             // 
             tbIDPupuk.BorderStyle = BorderStyle.None;
             tbIDPupuk.Font = new Font("Segoe UI", 20F);
-            tbIDPupuk.Location = new Point(885, 516);
-            tbIDPupuk.Margin = new Padding(3, 2, 3, 2);
+            tbIDPupuk.Location = new Point(1011, 688);
             tbIDPupuk.Name = "tbIDPupuk";
-            tbIDPupuk.Size = new Size(503, 36);
+            tbIDPupuk.Size = new Size(575, 45);
             tbIDPupuk.TabIndex = 21;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Idpupuk, NamaPupuk, JenisPupuk, Stock, Harga });
-            dataGridView1.Location = new Point(179, 145);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Location = new Point(205, 193);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1249, 172);
+            dataGridView1.Size = new Size(1427, 229);
             dataGridView1.TabIndex = 20;
             // 
             // Idpupuk
@@ -126,10 +124,9 @@
             // 
             pictureBox6.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pictureBox6.Image = Properties.Resources.Inputan;
-            pictureBox6.Location = new Point(876, 508);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Location = new Point(1001, 677);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(521, 52);
+            pictureBox6.Size = new Size(595, 69);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 19;
             pictureBox6.TabStop = false;
@@ -138,8 +135,7 @@
             // 
             pictureBox5.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pictureBox5.Image = Properties.Resources.Masukkan_ID_Pupuk___1_;
-            pictureBox5.Location = new Point(876, 451);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Location = new Point(1001, 601);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(438, 44);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -150,10 +146,9 @@
             // 
             btnPestisida.BackgroundImage = Properties.Resources.Background;
             btnPestisida.Image = Properties.Resources.button_pestisida__2_;
-            btnPestisida.Location = new Point(-4, 222);
-            btnPestisida.Margin = new Padding(3, 2, 3, 2);
+            btnPestisida.Location = new Point(-5, 296);
             btnPestisida.Name = "btnPestisida";
-            btnPestisida.Size = new Size(138, 47);
+            btnPestisida.Size = new Size(158, 63);
             btnPestisida.SizeMode = PictureBoxSizeMode.StretchImage;
             btnPestisida.TabIndex = 17;
             btnPestisida.TabStop = false;
@@ -162,10 +157,9 @@
             // 
             pictureBox4.BackgroundImage = Properties.Resources.Background_Header_;
             pictureBox4.Image = Properties.Resources.Logo_PUSPITA_HD;
-            pictureBox4.Location = new Point(-7, -3);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(-8, -4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(181, 135);
+            pictureBox4.Size = new Size(207, 180);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 16;
             pictureBox4.TabStop = false;
@@ -174,8 +168,7 @@
             // 
             pictureBox3.BackgroundImage = Properties.Resources.Background_Header_;
             pictureBox3.Image = Properties.Resources.Header__Update_Pupuk__1_;
-            pictureBox3.Location = new Point(564, 24);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(645, 32);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(524, 89);
             pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -186,10 +179,9 @@
             // 
             btnUpdate.BackgroundImage = Properties.Resources.Background_hijua_muda;
             btnUpdate.Image = (Image)resources.GetObject("btnUpdate.Image");
-            btnUpdate.Location = new Point(1181, 656);
-            btnUpdate.Margin = new Padding(3, 2, 3, 2);
+            btnUpdate.Location = new Point(1350, 875);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(247, 127);
+            btnUpdate.Size = new Size(282, 169);
             btnUpdate.SizeMode = PictureBoxSizeMode.Zoom;
             btnUpdate.TabIndex = 14;
             btnUpdate.TabStop = false;
@@ -199,21 +191,20 @@
             // 
             btnKembali.BackgroundImage = Properties.Resources.Background_Header_;
             btnKembali.Image = Properties.Resources.Button_Kembali;
-            btnKembali.Location = new Point(1335, 36);
-            btnKembali.Margin = new Padding(3, 2, 3, 2);
+            btnKembali.Location = new Point(1526, 48);
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(237, 87);
             btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
             btnKembali.TabIndex = 13;
             btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Background_Header_;
-            pictureBox2.Location = new Point(-7, -3);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(-8, -4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1603, 143);
+            pictureBox2.Size = new Size(1832, 191);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
@@ -222,10 +213,9 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pictureBox1.Image = Properties.Resources.Background_hijua_muda;
-            pictureBox1.Location = new Point(136, 64);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(155, -4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1348, 767);
+            pictureBox1.Size = new Size(1541, 1112);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
@@ -234,38 +224,34 @@
             // 
             tbHargaProduk.BorderStyle = BorderStyle.None;
             tbHargaProduk.Font = new Font("Segoe UI", 20F);
-            tbHargaProduk.Location = new Point(192, 690);
-            tbHargaProduk.Margin = new Padding(3, 2, 3, 2);
+            tbHargaProduk.Location = new Point(219, 784);
             tbHargaProduk.Name = "tbHargaProduk";
-            tbHargaProduk.Size = new Size(503, 36);
+            tbHargaProduk.Size = new Size(575, 45);
             tbHargaProduk.TabIndex = 31;
             // 
             // tbDosisProduk
             // 
             tbDosisProduk.BorderStyle = BorderStyle.None;
             tbDosisProduk.Font = new Font("Segoe UI", 20F);
-            tbDosisProduk.Location = new Point(192, 539);
-            tbDosisProduk.Margin = new Padding(3, 2, 3, 2);
+            tbDosisProduk.Location = new Point(219, 640);
             tbDosisProduk.Name = "tbDosisProduk";
-            tbDosisProduk.Size = new Size(503, 36);
+            tbDosisProduk.Size = new Size(575, 45);
             tbDosisProduk.TabIndex = 30;
             // 
             // tbNamaProduk
             // 
             tbNamaProduk.BorderStyle = BorderStyle.None;
             tbNamaProduk.Font = new Font("Segoe UI", 20F);
-            tbNamaProduk.Location = new Point(192, 399);
-            tbNamaProduk.Margin = new Padding(3, 2, 3, 2);
+            tbNamaProduk.Location = new Point(219, 500);
             tbNamaProduk.Name = "tbNamaProduk";
-            tbNamaProduk.Size = new Size(503, 36);
+            tbNamaProduk.Size = new Size(575, 45);
             tbNamaProduk.TabIndex = 29;
             // 
             // pictureBox7
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(179, 321);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Location = new Point(205, 428);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(624, 416);
             pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -277,10 +263,9 @@
             rbAnorganik.AutoSize = true;
             rbAnorganik.BackgroundImage = Properties.Resources.Background_hijua_muda;
             rbAnorganik.Font = new Font("Segoe UI", 20F);
-            rbAnorganik.Location = new Point(1023, 391);
-            rbAnorganik.Margin = new Padding(3, 2, 3, 2);
+            rbAnorganik.Location = new Point(1169, 521);
             rbAnorganik.Name = "rbAnorganik";
-            rbAnorganik.Size = new Size(157, 41);
+            rbAnorganik.Size = new Size(195, 50);
             rbAnorganik.TabIndex = 34;
             rbAnorganik.TabStop = true;
             rbAnorganik.Text = "Anorganik";
@@ -291,10 +276,9 @@
             rbOrganik.AutoSize = true;
             rbOrganik.BackgroundImage = Properties.Resources.Background_hijua_muda;
             rbOrganik.Font = new Font("Segoe UI", 20F);
-            rbOrganik.Location = new Point(876, 391);
-            rbOrganik.Margin = new Padding(3, 2, 3, 2);
+            rbOrganik.Location = new Point(1001, 521);
             rbOrganik.Name = "rbOrganik";
-            rbOrganik.Size = new Size(129, 41);
+            rbOrganik.Size = new Size(160, 50);
             rbOrganik.TabIndex = 33;
             rbOrganik.TabStop = true;
             rbOrganik.Text = "Organik";
@@ -304,8 +288,7 @@
             // 
             pictureBox8.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pictureBox8.Image = Properties.Resources.Jenis_Pupuk_;
-            pictureBox8.Location = new Point(876, 337);
-            pictureBox8.Margin = new Padding(3, 2, 3, 2);
+            pictureBox8.Location = new Point(1001, 449);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(255, 44);
             pictureBox8.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -314,10 +297,10 @@
             // 
             // UpdatePupuk
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1584, 791);
+            ClientSize = new Size(1810, 1055);
             Controls.Add(rbAnorganik);
             Controls.Add(rbOrganik);
             Controls.Add(pictureBox8);
@@ -336,7 +319,6 @@
             Controls.Add(btnKembali);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "UpdatePupuk";
             Text = "Update_Pupuk_ID";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

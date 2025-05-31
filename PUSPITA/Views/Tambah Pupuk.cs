@@ -40,7 +40,7 @@ namespace PUSPITA.Views
                     }
                     int dosis = Convert.ToInt32(tbDosisPupuk.Text);
                     int harga = Convert.ToInt32(tbHargaPupuk.Text);
-
+                     
                     PupukContext pupukContext = new PupukContext();
                     bool Benar = pupukContext.TambahPupuk(namaPupuk, jenisPupuk, dosis, harga);
                     if (Benar)
@@ -58,7 +58,7 @@ namespace PUSPITA.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error","Gagal",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Error", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -67,6 +67,13 @@ namespace PUSPITA.Views
             this.Hide();
             Kelola_Produksi KProduk = new Kelola_Produksi();
             KProduk.Show();
+        }
+
+        private void btnPestisida_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tambah_Pestisida TPestisida = new Tambah_Pestisida();
+            TPestisida.Show();
         }
     }
 }

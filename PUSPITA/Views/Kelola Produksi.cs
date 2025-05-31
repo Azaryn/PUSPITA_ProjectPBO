@@ -19,7 +19,7 @@ namespace PUSPITA.Views
 
         private void btnTambahProduk_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             Tambah_Pupuk Tpupuk = new Tambah_Pupuk();
             Tpupuk.Show();
         }

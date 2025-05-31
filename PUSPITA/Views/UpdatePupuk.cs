@@ -65,5 +65,12 @@ namespace PUSPITA.Views
                 MessageBox.Show($"ID Tidak ada, Jumlah Produk ada {Cek}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Kelola_Produksi Kproduksi = new Kelola_Produksi();
+            Kproduksi.Show();
+        }
     }
 }

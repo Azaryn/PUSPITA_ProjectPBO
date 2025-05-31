@@ -93,13 +93,14 @@
             // 
             btnPestisida.BackgroundImage = Properties.Resources.Background;
             btnPestisida.Image = Properties.Resources.button_pestisida__2_;
-            btnPestisida.Location = new Point(0, 268);
+            btnPestisida.Location = new Point(0, 193);
             btnPestisida.Margin = new Padding(3, 2, 3, 2);
             btnPestisida.Name = "btnPestisida";
             btnPestisida.Size = new Size(131, 50);
             btnPestisida.SizeMode = PictureBoxSizeMode.StretchImage;
             btnPestisida.TabIndex = 4;
             btnPestisida.TabStop = false;
+            btnPestisida.Click += btnPestisida_Click;
             // 
             // BtnKembali
             // 
@@ -130,7 +131,7 @@
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(182, 631);
+            pictureBox7.Location = new Point(182, 641);
             pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(223, 33);
@@ -143,7 +144,7 @@
             rbOrganik.AutoSize = true;
             rbOrganik.BackgroundImage = Properties.Resources.Background_hijua_muda;
             rbOrganik.Font = new Font("Segoe UI", 20F);
-            rbOrganik.Location = new Point(182, 687);
+            rbOrganik.Location = new Point(182, 673);
             rbOrganik.Margin = new Padding(3, 2, 3, 2);
             rbOrganik.Name = "rbOrganik";
             rbOrganik.Size = new Size(129, 41);
@@ -157,7 +158,7 @@
             rbAnorganik.AutoSize = true;
             rbAnorganik.BackgroundImage = Properties.Resources.Background_hijua_muda;
             rbAnorganik.Font = new Font("Segoe UI", 20F);
-            rbAnorganik.Location = new Point(182, 729);
+            rbAnorganik.Location = new Point(182, 715);
             rbAnorganik.Margin = new Padding(3, 2, 3, 2);
             rbAnorganik.Name = "rbAnorganik";
             rbAnorganik.Size = new Size(157, 41);
@@ -183,7 +184,7 @@
             // 
             tbNamaPupuk.BorderStyle = BorderStyle.None;
             tbNamaPupuk.Font = new Font("Segoe UI", 20F);
-            tbNamaPupuk.Location = new Point(200, 269);
+            tbNamaPupuk.Location = new Point(198, 283);
             tbNamaPupuk.Margin = new Padding(3, 2, 3, 2);
             tbNamaPupuk.Name = "tbNamaPupuk";
             tbNamaPupuk.Size = new Size(503, 36);
@@ -192,7 +193,7 @@
             // tbDosisPupuk
             // 
             tbDosisPupuk.Font = new Font("Segoe UI", 20F);
-            tbDosisPupuk.Location = new Point(201, 411);
+            tbDosisPupuk.Location = new Point(198, 408);
             tbDosisPupuk.Margin = new Padding(3, 2, 3, 2);
             tbDosisPupuk.Name = "tbDosisPupuk";
             tbDosisPupuk.Size = new Size(504, 43);
@@ -201,7 +202,7 @@
             // tbHargaPupuk
             // 
             tbHargaPupuk.Font = new Font("Segoe UI", 20F);
-            tbHargaPupuk.Location = new Point(199, 545);
+            tbHargaPupuk.Location = new Point(198, 550);
             tbHargaPupuk.Margin = new Padding(3, 2, 3, 2);
             tbHargaPupuk.Name = "tbHargaPupuk";
             tbHargaPupuk.Size = new Size(504, 43);
