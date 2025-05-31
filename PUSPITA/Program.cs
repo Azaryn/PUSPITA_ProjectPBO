@@ -10,7 +10,7 @@ namespace PUSPITA
             ApplicationConfiguration.Initialize();
             //Application.Run(new FormLogin());
             //Application.Run(new Shop_Pupuk());
-            Application.Run(new Kelola_Produksi());
+            //Application.Run(new Kelola_Produksi());
             //Application.Run(new Tambah_Pupuk());
             //Application.Run(new Hapus_Pupuk());
             //Application.Run(new Update_Pupuk_ID());

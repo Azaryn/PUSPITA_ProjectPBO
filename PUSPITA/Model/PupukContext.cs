@@ -78,5 +78,51 @@ namespace PUSPITA.Model
                     return true;
             }
         }
+        public bool UpdatePupuk(string namaPupuk,int IDjenisPupuk,int dosis,int harga,int IDpupuk)
+        {
+            string queryUpdate = "Update pupuk set nama_pupuk = @namapupuk, id_jenispupuk = @idjenispupuk, dosis = @dosis, harga = @harga where id_pupuk = @idpupuk";
+            using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
+            {
+                Kon.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(queryUpdate, Kon))
+                {
+                    try
+                    {
+                        cmd.Parameters.AddWithValue("@namapupuk", namaPupuk);
+                        cmd.Parameters.AddWithValue("@idjenispupuk", IDjenisPupuk);
+                        cmd.Parameters.AddWithValue("@dosis", dosis);
+                        cmd.Parameters.AddWithValue("@harga", harga);
+                        cmd.Parameters.AddWithValue("@idpupuk", IDpupuk);
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+        public int ValidasiData()
+        {
+            string queryValidasi = "Select Count(*) from pupuk";
+            using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
+            {
+                Kon.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(queryValidasi, Kon))
+                {
+                    try
+                    {
+                        return Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return 0;
+                    }
+                }
+            }
+        }
     }
 }

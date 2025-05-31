@@ -30,5 +30,12 @@ namespace PUSPITA.Views
             Hapus_Pupuk Hpupuk = new Hapus_Pupuk();
             Hpupuk.Show();
         }
+
+        private void btnUpdateProduk_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UpdatePupuk Upupuk = new UpdatePupuk();
+            Upupuk.Show();
+        }
     }
 }

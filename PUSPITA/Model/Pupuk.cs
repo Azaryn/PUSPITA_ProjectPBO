@@ -11,7 +11,7 @@ namespace PUSPITA.Model
         public int ID_Pupuk { get; set; }
         public string Nama_Pupuk { get; set; }
         public int ID_JenisPupuk { get; set; }
-        public int stock { get; set; }
+        public int Dosis { get; set; }
         public float Harga { get; set; }
 
     }
