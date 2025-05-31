@@ -9,11 +9,11 @@ namespace PUSPITA.Views
         Admins admin = new Admins();
         AdminContext adminContext = new AdminContext();
         public LoginAdmin()
-        {   
+        {
             InitializeComponent();
             tbPass.UseSystemPasswordChar = true;
         }
-        
+
         private void btnLoginPetani_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,6 +44,11 @@ namespace PUSPITA.Views
             {
                 MessageBox.Show("Terjadi kesalahan saat login:\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void LoginAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

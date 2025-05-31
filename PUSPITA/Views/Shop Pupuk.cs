@@ -85,5 +85,10 @@ namespace PUSPITA.Views
             Keranjang keranjang = new Keranjang();
             keranjang.Show();
         }
+
+        private void Shop_Pupuk_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
