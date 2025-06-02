@@ -6,7 +6,6 @@ namespace PUSPITA
 {
     public partial class FormLogin : Form
     {
-        Users Petani = new Users();
         UserContext userContext = new UserContext();
         public FormLogin()
         {
@@ -23,6 +22,7 @@ namespace PUSPITA
                 bool Valid = userContext.Validasi(username, password, out int petaniId);
                 if (Valid)
                 {
+                    Users.id_petani = petaniId;
                     this.Hide();
                     Dashboard_Petani dashboard = new Dashboard_Petani(); 
                     dashboard.Show();

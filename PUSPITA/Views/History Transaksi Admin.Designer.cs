@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvHasilRekomendasi = new DataGridView();
+            DGVHistory = new DataGridView();
+            NamaPembeli = new DataGridViewTextBoxColumn();
+            Pembelian = new DataGridViewTextBoxColumn();
+            Jumlah = new DataGridViewTextBoxColumn();
+            Total = new DataGridViewTextBoxColumn();
             pictureBox5 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            BtnKembali = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
-            NamaPembeli = new DataGridViewTextBoxColumn();
-            Pembelian = new DataGridViewTextBoxColumn();
-            Jumlah = new DataGridViewTextBoxColumn();
-            Total = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dgvHasilRekomendasi).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVHistory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -50,17 +50,44 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
-            // dgvHasilRekomendasi
+            // DGVHistory
             // 
-            dgvHasilRekomendasi.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            dgvHasilRekomendasi.BackgroundColor = Color.White;
-            dgvHasilRekomendasi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvHasilRekomendasi.Columns.AddRange(new DataGridViewColumn[] { NamaPembeli, Pembelian, Jumlah, Total });
-            dgvHasilRekomendasi.Location = new Point(325, 242);
-            dgvHasilRekomendasi.Name = "dgvHasilRekomendasi";
-            dgvHasilRekomendasi.RowHeadersWidth = 51;
-            dgvHasilRekomendasi.Size = new Size(1222, 240);
-            dgvHasilRekomendasi.TabIndex = 14;
+            DGVHistory.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            DGVHistory.BackgroundColor = Color.White;
+            DGVHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVHistory.Location = new Point(325, 242);
+            DGVHistory.Name = "DGVHistory";
+            DGVHistory.RowHeadersWidth = 51;
+            DGVHistory.Size = new Size(1222, 240);
+            DGVHistory.TabIndex = 14;
+            // 
+            // NamaPembeli
+            // 
+            NamaPembeli.HeaderText = "Nama Pembeli";
+            NamaPembeli.MinimumWidth = 10;
+            NamaPembeli.Name = "NamaPembeli";
+            NamaPembeli.Width = 300;
+            // 
+            // Pembelian
+            // 
+            Pembelian.HeaderText = "Pembelian";
+            Pembelian.MinimumWidth = 10;
+            Pembelian.Name = "Pembelian";
+            Pembelian.Width = 300;
+            // 
+            // Jumlah
+            // 
+            Jumlah.HeaderText = "Jumlah";
+            Jumlah.MinimumWidth = 10;
+            Jumlah.Name = "Jumlah";
+            Jumlah.Width = 300;
+            // 
+            // Total
+            // 
+            Total.HeaderText = "Total";
+            Total.MinimumWidth = 10;
+            Total.Name = "Total";
+            Total.Width = 300;
             // 
             // pictureBox5
             // 
@@ -73,16 +100,17 @@
             pictureBox5.TabIndex = 13;
             pictureBox5.TabStop = false;
             // 
-            // pictureBox4
+            // BtnKembali
             // 
-            pictureBox4.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
-            pictureBox4.Image = Properties.Resources.Button_Kembali;
-            pictureBox4.Location = new Point(1540, 55);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(237, 87);
-            pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox4.TabIndex = 12;
-            pictureBox4.TabStop = false;
+            BtnKembali.BackgroundImage = Properties.Resources.Background_hijua_muda;
+            BtnKembali.Image = Properties.Resources.Kembali1;
+            BtnKembali.Location = new Point(828, 625);
+            BtnKembali.Name = "BtnKembali";
+            BtnKembali.Size = new Size(237, 87);
+            BtnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
+            BtnKembali.TabIndex = 12;
+            BtnKembali.TabStop = false;
+            BtnKembali.Click += BtnKembali_Click;
             // 
             // pictureBox3
             // 
@@ -136,43 +164,15 @@
             pictureBox6.TabIndex = 15;
             pictureBox6.TabStop = false;
             // 
-            // NamaPembeli
-            // 
-            NamaPembeli.HeaderText = "Nama Pembeli";
-            NamaPembeli.MinimumWidth = 10;
-            NamaPembeli.Name = "NamaPembeli";
-            NamaPembeli.Width = 300;
-            // 
-            // Pembelian
-            // 
-            Pembelian.HeaderText = "Pembelian";
-            Pembelian.MinimumWidth = 10;
-            Pembelian.Name = "Pembelian";
-            Pembelian.Width = 300;
-            // 
-            // Jumlah
-            // 
-            Jumlah.HeaderText = "Jumlah";
-            Jumlah.MinimumWidth = 10;
-            Jumlah.Name = "Jumlah";
-            Jumlah.Width = 300;
-            // 
-            // Total
-            // 
-            Total.HeaderText = "Total";
-            Total.MinimumWidth = 10;
-            Total.Name = "Total";
-            Total.Width = 300;
-            // 
             // History_Transaksi_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
-            Controls.Add(dgvHasilRekomendasi);
+            Controls.Add(DGVHistory);
             Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
+            Controls.Add(BtnKembali);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
@@ -180,9 +180,10 @@
             Controls.Add(pictureBox6);
             Name = "History_Transaksi_Admin";
             Text = "History_Transaksi_Admin";
-            ((System.ComponentModel.ISupportInitialize)dgvHasilRekomendasi).EndInit();
+            Load += History_Transaksi_Admin_Load;
+            ((System.ComponentModel.ISupportInitialize)DGVHistory).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -194,13 +195,13 @@
 
         #endregion
 
-        private DataGridView dgvHasilRekomendasi;
+        private DataGridView DGVHistory;
         private DataGridViewTextBoxColumn NamaPembeli;
         private DataGridViewTextBoxColumn Pembelian;
         private DataGridViewTextBoxColumn Jumlah;
         private DataGridViewTextBoxColumn Total;
         private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
+        private PictureBox BtnKembali;
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;

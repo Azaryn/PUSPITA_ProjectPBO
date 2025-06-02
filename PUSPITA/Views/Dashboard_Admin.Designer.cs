@@ -102,6 +102,7 @@
             btnHistoryTransaksi.SizeMode = PictureBoxSizeMode.StretchImage;
             btnHistoryTransaksi.TabIndex = 4;
             btnHistoryTransaksi.TabStop = false;
+            btnHistoryTransaksi.Click += btnHistoryTransaksi_Click;
             // 
             // btnLogoutDashboard
             // 

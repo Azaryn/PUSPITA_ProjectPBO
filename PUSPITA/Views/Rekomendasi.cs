@@ -12,6 +12,8 @@ namespace PUSPITA.Views
 {
     public partial class Rekomendasi : Form
     {
+        private int dosisPupuk = 250;
+        private decimal dosisPestisida = 1.5M;
         public Rekomendasi()
         {
             InitializeComponent();
@@ -26,7 +28,28 @@ namespace PUSPITA.Views
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-
+            if (TbLuas != null && BulanPicker != null && rbBawang != null && rbCabai != null && rbPadi != null)
+            {
+                //int bulan = BulanPicker.Value.Month;
+                //decimal luas = Convert.ToDecimal(TbLuas.Text);
+                //int jenis = 0;
+                //if (rbPadi.Checked)
+                //{
+                //    jenis = 1;
+                //}
+                //else if (rbCabai.Checked)
+                //{
+                //    jenis = 2;
+                //}
+                //else if (rbBawang.Checked)
+                //{
+                //    jenis = 3;
+                //}
+                //decimal TakaranPupuk = dosisPupuk * luas;
+                //decimal TakaranPestisida = dosisPestisida * luas;
+                HasilRekom hasilRekom = new HasilRekom();
+                hasilRekom.ShowDialog();
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PUSPITA.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace PUSPITA.Views
 {
     public partial class Dashboard_Petani : Form
     {
+        private int _idPetani;
         public Dashboard_Petani()
         {
             InitializeComponent();
+            Users.id_petani = _idPetani;
         }
 
         private void btnPuspitaShop_Click(object sender, EventArgs e)
@@ -34,7 +37,7 @@ namespace PUSPITA.Views
         private void btnHistoryTransaski_Click(object sender, EventArgs e)
         {
             this.Hide();
-            History_Transaksi historyTransaksi = new History_Transaksi();
+            History_Transaksi historyTransaksi = new History_Transaksi(_idPetani);
             historyTransaksi.Show();
         }
 

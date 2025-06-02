@@ -333,6 +333,16 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FertilizerHand {
+            get {
+                object obj = ResourceManager.GetObject("FertilizerHand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap garis_hitam {
             get {
                 object obj = ResourceManager.GetObject("garis hitam", resourceCulture);
@@ -346,6 +356,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap Grup_Input_nama_harga_produk {
             get {
                 object obj = ResourceManager.GetObject("Grup Input nama,harga produk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hasil {
+            get {
+                object obj = ResourceManager.GetObject("Hasil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -713,6 +733,16 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NewBtnHapus {
+            get {
+                object obj = ResourceManager.GetObject("NewBtnHapus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Persegi_panjang__Hijau_muda {
             get {
                 object obj = ResourceManager.GetObject("Persegi panjang  Hijau muda", resourceCulture);
@@ -726,6 +756,26 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap persegi_panjang_hijau {
             get {
                 object obj = ResourceManager.GetObject("persegi panjang hijau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PesticideHand {
+            get {
+                object obj = ResourceManager.GetObject("PesticideHand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PupukBtn {
+            get {
+                object obj = ResourceManager.GetObject("PupukBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

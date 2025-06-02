@@ -19,23 +19,33 @@ namespace PUSPITA.Views
 
         private void btnTambahProduk_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            Tambah_Pupuk Tpupuk = new Tambah_Pupuk();
-            Tpupuk.Show();
+            TambahProduk Tproduk = new TambahProduk();
+            Tproduk.ShowDialog();
         }
 
         private void btnHapusProduk_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Hapus_Pupuk Hpupuk = new Hapus_Pupuk();
-            Hpupuk.Show();
+            HapusProduk Hproduk = new HapusProduk();
+            Hproduk.ShowDialog();
         }
 
         private void btnUpdateProduk_Click(object sender, EventArgs e)
         {
+            UpdateProduk Uproduk = new UpdateProduk();
+            Uproduk.ShowDialog();
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
             this.Hide();
-            UpdatePupuk Upupuk = new UpdatePupuk();
-            Upupuk.Show();
+            Dashboard_Admin DAdmin = new Dashboard_Admin();
+            DAdmin.Show();
+        }
+
+        private void btnLihatProduk_Click(object sender, EventArgs e)
+        {
+            LihatProduk LProduk = new LihatProduk();
+            LProduk.ShowDialog();
         }
     }
 }

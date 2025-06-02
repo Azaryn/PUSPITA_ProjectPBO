@@ -47,10 +47,9 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-20, -4);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(-23, -5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1621, 183);
+            pictureBox1.Size = new Size(1853, 244);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -59,10 +58,9 @@
             // 
             btnHapusProduk.BackgroundImage = Properties.Resources.Background;
             btnHapusProduk.Image = (Image)resources.GetObject("btnHapusProduk.Image");
-            btnHapusProduk.Location = new Point(846, 223);
-            btnHapusProduk.Margin = new Padding(3, 2, 3, 2);
+            btnHapusProduk.Location = new Point(967, 297);
             btnHapusProduk.Name = "btnHapusProduk";
-            btnHapusProduk.Size = new Size(645, 136);
+            btnHapusProduk.Size = new Size(737, 181);
             btnHapusProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnHapusProduk.TabIndex = 2;
             btnHapusProduk.TabStop = false;
@@ -72,10 +70,9 @@
             // 
             btnUpdateProduk.BackgroundImage = Properties.Resources.Background;
             btnUpdateProduk.Image = (Image)resources.GetObject("btnUpdateProduk.Image");
-            btnUpdateProduk.Location = new Point(79, 426);
-            btnUpdateProduk.Margin = new Padding(3, 2, 3, 2);
+            btnUpdateProduk.Location = new Point(90, 568);
             btnUpdateProduk.Name = "btnUpdateProduk";
-            btnUpdateProduk.Size = new Size(645, 136);
+            btnUpdateProduk.Size = new Size(737, 181);
             btnUpdateProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnUpdateProduk.TabIndex = 3;
             btnUpdateProduk.TabStop = false;
@@ -85,11 +82,10 @@
             // 
             btnTambahProduk.BackgroundImage = Properties.Resources.Background;
             btnTambahProduk.Image = (Image)resources.GetObject("btnTambahProduk.Image");
-            btnTambahProduk.Location = new Point(79, 223);
-            btnTambahProduk.Margin = new Padding(3, 2, 3, 2);
+            btnTambahProduk.Location = new Point(90, 297);
             btnTambahProduk.Name = "btnTambahProduk";
-            btnTambahProduk.Size = new Size(645, 136);
-            btnTambahProduk.SizeMode = PictureBoxSizeMode.AutoSize;
+            btnTambahProduk.Size = new Size(737, 181);
+            btnTambahProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnTambahProduk.TabIndex = 4;
             btnTambahProduk.TabStop = false;
             btnTambahProduk.Click += btnTambahProduk_Click;
@@ -98,39 +94,38 @@
             // 
             btnLihatProduk.BackgroundImage = Properties.Resources.Background;
             btnLihatProduk.Image = (Image)resources.GetObject("btnLihatProduk.Image");
-            btnLihatProduk.Location = new Point(846, 426);
-            btnLihatProduk.Margin = new Padding(3, 2, 3, 2);
+            btnLihatProduk.Location = new Point(967, 568);
             btnLihatProduk.Name = "btnLihatProduk";
-            btnLihatProduk.Size = new Size(645, 136);
+            btnLihatProduk.Size = new Size(737, 181);
             btnLihatProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             btnLihatProduk.TabIndex = 5;
             btnLihatProduk.TabStop = false;
+            btnLihatProduk.Click += btnLihatProduk_Click;
             // 
             // btnKembali
             // 
             btnKembali.BackColor = Color.Transparent;
             btnKembali.Image = (Image)resources.GetObject("btnKembali.Image");
-            btnKembali.Location = new Point(644, 669);
-            btnKembali.Margin = new Padding(3, 2, 3, 2);
+            btnKembali.Location = new Point(736, 892);
             btnKembali.Name = "btnKembali";
-            btnKembali.Size = new Size(237, 62);
+            btnKembali.Size = new Size(271, 83);
             btnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
             btnKembali.TabIndex = 6;
             btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // Kelola_Produksi
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1584, 791);
+            ClientSize = new Size(1810, 1055);
             Controls.Add(btnKembali);
             Controls.Add(btnLihatProduk);
             Controls.Add(btnTambahProduk);
             Controls.Add(btnUpdateProduk);
             Controls.Add(btnHapusProduk);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Kelola_Produksi";
             Text = "Kelola_Produksi";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -140,7 +135,6 @@
             ((System.ComponentModel.ISupportInitialize)btnLihatProduk).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

@@ -77,12 +77,6 @@ create table Detail_TransaksiPestisida(
 	foreign key (ID_Pestisida) references pestisida(ID_Pestisida)
 );
 
-create table Rekomendasi (
-	ID_Rekomendasi serial primary key not null,
-	ID_admin int not null,
-	
-)
-
 insert into admins(username,Password_admin)
 values
 ('rafi',123),
@@ -112,8 +106,9 @@ values
 ('Mancozeb',3,800,18000);
 
 -- select * from admins
+-- select * from transaksi
 -- select * from petani
-select * from pupuk
+-- select * from pupuk
 -- select * from pestisida
 -- select * from jenis_pupuk
 -- select * from jenis_pestisida

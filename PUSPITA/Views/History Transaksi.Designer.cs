@@ -32,7 +32,7 @@
             pictureBox2 = new PictureBox();
             pictureBox4 = new PictureBox();
             btnKembali = new PictureBox();
-            dataGridView1 = new DataGridView();
+            DGVHistory = new DataGridView();
             NamaPembeli = new DataGridViewTextBoxColumn();
             Pembeli = new DataGridViewTextBoxColumn();
             Jumlah = new DataGridViewTextBoxColumn();
@@ -41,17 +41,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVHistory).BeginInit();
             SuspendLayout();
             // 
             // pictureBox3
             // 
             pictureBox3.BackgroundImage = Properties.Resources.Background;
             pictureBox3.Image = Properties.Resources.background_Transaksi__2_;
-            pictureBox3.Location = new Point(172, 179);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(197, 239);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1244, 637);
+            pictureBox3.Size = new Size(1422, 849);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -59,10 +58,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.LOGO_PUSPITA_BG_Kuning;
-            pictureBox2.Location = new Point(10, 9);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(11, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(178, 150);
+            pictureBox2.Size = new Size(203, 200);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
@@ -71,8 +69,7 @@
             // 
             pictureBox4.BackgroundImage = Properties.Resources.Background;
             pictureBox4.Image = Properties.Resources.Header_History_Transaksi___1_;
-            pictureBox4.Location = new Point(438, 26);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(501, 35);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(730, 90);
             pictureBox4.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -83,8 +80,7 @@
             // 
             btnKembali.BackgroundImage = Properties.Resources.Background;
             btnKembali.Image = Properties.Resources.Button_Kembali;
-            btnKembali.Location = new Point(1328, 26);
-            btnKembali.Margin = new Padding(3, 2, 3, 2);
+            btnKembali.Location = new Point(1518, 35);
             btnKembali.Name = "btnKembali";
             btnKembali.Size = new Size(237, 87);
             btnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -92,16 +88,14 @@
             btnKembali.TabStop = false;
             btnKembali.Click += btnKembali_Click;
             // 
-            // dataGridView1
+            // DGVHistory
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NamaPembeli, Pembeli, Jumlah, Total });
-            dataGridView1.Location = new Point(242, 214);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1093, 141);
-            dataGridView1.TabIndex = 8;
+            DGVHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVHistory.Location = new Point(277, 285);
+            DGVHistory.Name = "DGVHistory";
+            DGVHistory.RowHeadersWidth = 51;
+            DGVHistory.Size = new Size(1249, 188);
+            DGVHistory.TabIndex = 8;
             // 
             // NamaPembeli
             // 
@@ -133,23 +127,23 @@
             // 
             // History_Transaksi
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1584, 791);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(1810, 1055);
+            Controls.Add(DGVHistory);
             Controls.Add(btnKembali);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "History_Transaksi";
             Text = "History_Transaksi_cs";
+            Load += History_Transaksi_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVHistory).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -159,7 +153,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
         private PictureBox btnKembali;
-        private DataGridView dataGridView1;
+        private DataGridView DGVHistory;
         private DataGridViewTextBoxColumn NamaPembeli;
         private DataGridViewTextBoxColumn Pembeli;
         private DataGridViewTextBoxColumn Jumlah;

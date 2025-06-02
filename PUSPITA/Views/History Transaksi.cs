@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PUSPITA.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace PUSPITA.Views
 {
     public partial class History_Transaksi : Form
     {
-        public History_Transaksi()
+        private int _idPetani;
+        private HistoryContext HContext;
+
+
+        public History_Transaksi(int IDPetani)
         {
+            _idPetani = IDPetani;
             InitializeComponent();
+            HContext = new HistoryContext(_idPetani);
+            History_Transaksi_Load(this, EventArgs.Empty);
         }
 
         private void btnKembali_Click(object sender, EventArgs e)
@@ -22,6 +30,19 @@ namespace PUSPITA.Views
             this.Hide();
             Dashboard_Petani Dpetani = new Dashboard_Petani();
             Dpetani.Show();
+        }
+
+        private void History_Transaksi_Load(object sender, EventArgs e)
+        {
+            DataTable dt = HContext.AmbilHistory();
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                DGVHistory.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Tidak Ada History Transaksi", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

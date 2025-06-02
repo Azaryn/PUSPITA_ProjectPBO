@@ -28,40 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rekomendasi));
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             txtInputanLuasLahan = new PictureBox();
-            txtMasukkanBulan = new PictureBox();
             BtnKembali = new PictureBox();
             pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
             rbPadi = new RadioButton();
             rbCabai = new RadioButton();
             rbBawang = new RadioButton();
             btnCheck = new PictureBox();
+            BulanPicker = new DateTimePicker();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            TbLuas = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtInputanLuasLahan).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtMasukkanBulan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCheck).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox1.Location = new Point(-9, -2);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(-10, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1601, 140);
+            pictureBox1.Size = new Size(1830, 187);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -70,10 +67,9 @@
             // 
             pictureBox3.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox3.Image = Properties.Resources.Logo_Puspita;
-            pictureBox3.Location = new Point(10, 5);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(11, 7);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(165, 122);
+            pictureBox3.Size = new Size(189, 163);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -81,10 +77,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox2.Location = new Point(170, 136);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(194, -20);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1232, 682);
+            pictureBox2.Size = new Size(1408, 1111);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -93,34 +88,21 @@
             // 
             txtInputanLuasLahan.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             txtInputanLuasLahan.Image = Properties.Resources.Inputan;
-            txtInputanLuasLahan.Location = new Point(270, 226);
-            txtInputanLuasLahan.Margin = new Padding(3, 2, 3, 2);
+            txtInputanLuasLahan.Location = new Point(309, 301);
             txtInputanLuasLahan.Name = "txtInputanLuasLahan";
             txtInputanLuasLahan.Size = new Size(681, 71);
             txtInputanLuasLahan.SizeMode = PictureBoxSizeMode.AutoSize;
             txtInputanLuasLahan.TabIndex = 4;
             txtInputanLuasLahan.TabStop = false;
             // 
-            // txtMasukkanBulan
-            // 
-            txtMasukkanBulan.Image = Properties.Resources.Inputan;
-            txtMasukkanBulan.Location = new Point(266, 368);
-            txtMasukkanBulan.Margin = new Padding(3, 2, 3, 2);
-            txtMasukkanBulan.Name = "txtMasukkanBulan";
-            txtMasukkanBulan.Size = new Size(681, 71);
-            txtMasukkanBulan.SizeMode = PictureBoxSizeMode.AutoSize;
-            txtMasukkanBulan.TabIndex = 5;
-            txtMasukkanBulan.TabStop = false;
-            // 
             // BtnKembali
             // 
             BtnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
-            BtnKembali.Image = Properties.Resources.Button_Kembali;
-            BtnKembali.Location = new Point(1297, 38);
-            BtnKembali.Margin = new Padding(3, 2, 3, 2);
+            BtnKembali.Image = (Image)resources.GetObject("BtnKembali.Image");
+            BtnKembali.Location = new Point(1493, 31);
             BtnKembali.Name = "BtnKembali";
-            BtnKembali.Size = new Size(237, 87);
-            BtnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
+            BtnKembali.Size = new Size(271, 116);
+            BtnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
             BtnKembali.TabIndex = 9;
             BtnKembali.TabStop = false;
             BtnKembali.Click += BtnKembali_Click;
@@ -129,49 +111,12 @@
             // 
             pictureBox10.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox10.Image = Properties.Resources.Text_Rekomendasi;
-            pictureBox10.Location = new Point(525, 11);
-            pictureBox10.Margin = new Padding(3, 2, 3, 2);
+            pictureBox10.Location = new Point(600, 15);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(583, 106);
+            pictureBox10.Size = new Size(666, 141);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 10;
             pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox11.Image = Properties.Resources.text_Masukkan_Luas_Lahan_Anda___;
-            pictureBox11.Location = new Point(270, 184);
-            pictureBox11.Margin = new Padding(3, 2, 3, 2);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(459, 38);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 11;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox12.Image = Properties.Resources.text_Masukkan_Bulan_Sekarang_____2_;
-            pictureBox12.Location = new Point(266, 339);
-            pictureBox12.Margin = new Padding(3, 2, 3, 2);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(464, 25);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 12;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox13.Image = Properties.Resources.text_Tanaman_yang_anda_tanam_____2_;
-            pictureBox13.Location = new Point(266, 472);
-            pictureBox13.Margin = new Padding(3, 2, 3, 2);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(464, 26);
-            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 13;
-            pictureBox13.TabStop = false;
             // 
             // rbPadi
             // 
@@ -179,10 +124,9 @@
             rbPadi.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rbPadi.FlatStyle = FlatStyle.Popup;
             rbPadi.Font = new Font("Segoe UI", 22F);
-            rbPadi.Location = new Point(255, 524);
-            rbPadi.Margin = new Padding(3, 2, 3, 2);
+            rbPadi.Location = new Point(309, 589);
             rbPadi.Name = "rbPadi";
-            rbPadi.Size = new Size(91, 45);
+            rbPadi.Size = new Size(112, 54);
             rbPadi.TabIndex = 14;
             rbPadi.TabStop = true;
             rbPadi.Text = "Padi";
@@ -193,10 +137,9 @@
             rbCabai.AutoSize = true;
             rbCabai.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rbCabai.Font = new Font("Segoe UI", 20F);
-            rbCabai.Location = new Point(255, 580);
-            rbCabai.Margin = new Padding(3, 2, 3, 2);
+            rbCabai.Location = new Point(309, 640);
             rbCabai.Name = "rbCabai";
-            rbCabai.Size = new Size(103, 41);
+            rbCabai.Size = new Size(124, 50);
             rbCabai.TabIndex = 15;
             rbCabai.TabStop = true;
             rbCabai.Text = "Cabai";
@@ -207,10 +150,9 @@
             rbBawang.AutoSize = true;
             rbBawang.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rbBawang.Font = new Font("Segoe UI", 20F);
-            rbBawang.Location = new Point(255, 638);
-            rbBawang.Margin = new Padding(3, 2, 3, 2);
+            rbBawang.Location = new Point(309, 696);
             rbBawang.Name = "rbBawang";
-            rbBawang.Size = new Size(129, 41);
+            rbBawang.Size = new Size(158, 50);
             rbBawang.TabIndex = 16;
             rbBawang.TabStop = true;
             rbBawang.Text = "Bawang";
@@ -220,8 +162,7 @@
             // 
             btnCheck.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             btnCheck.Image = Properties.Resources.Button_Check;
-            btnCheck.Location = new Point(1054, 707);
-            btnCheck.Margin = new Padding(3, 2, 3, 2);
+            btnCheck.Location = new Point(1186, 885);
             btnCheck.Name = "btnCheck";
             btnCheck.Size = new Size(316, 116);
             btnCheck.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -229,39 +170,90 @@
             btnCheck.TabStop = false;
             btnCheck.Click += btnCheck_Click;
             // 
+            // BulanPicker
+            // 
+            BulanPicker.CalendarFont = new Font("Times New Roman", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BulanPicker.CustomFormat = "MMMM";
+            BulanPicker.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BulanPicker.Format = DateTimePickerFormat.Custom;
+            BulanPicker.Location = new Point(309, 448);
+            BulanPicker.Name = "BulanPicker";
+            BulanPicker.ShowUpDown = true;
+            BulanPicker.Size = new Size(300, 45);
+            BulanPicker.TabIndex = 18;
+            BulanPicker.Value = new DateTime(2025, 6, 1, 21, 52, 53, 0);
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 25.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Image = Properties.Resources.Background_hijua_muda;
+            label1.Location = new Point(309, 245);
+            label1.Name = "label1";
+            label1.Size = new Size(793, 48);
+            label1.TabIndex = 19;
+            label1.Text = "Masukkan Luas Lahan Anda (0,1ha - 3ha):";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 25.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Image = Properties.Resources.Background_hijua_muda;
+            label2.Location = new Point(309, 397);
+            label2.Name = "label2";
+            label2.Size = new Size(823, 48);
+            label2.TabIndex = 20;
+            label2.Text = "Masukkan Bulan Sekarang Anda Menanam:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 25.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Image = Properties.Resources.Background_hijua_muda;
+            label3.Location = new Point(309, 527);
+            label3.Name = "label3";
+            label3.Size = new Size(623, 48);
+            label3.TabIndex = 21;
+            label3.Text = "Tanaman Apa Yang Anda Tanam:";
+            // 
+            // TbLuas
+            // 
+            TbLuas.BorderStyle = BorderStyle.None;
+            TbLuas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TbLuas.Location = new Point(323, 325);
+            TbLuas.Name = "TbLuas";
+            TbLuas.Size = new Size(641, 27);
+            TbLuas.TabIndex = 22;
+            // 
             // Rekomendasi
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1584, 791);
+            ClientSize = new Size(1810, 1055);
+            Controls.Add(TbLuas);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(BulanPicker);
             Controls.Add(btnCheck);
             Controls.Add(rbBawang);
             Controls.Add(rbCabai);
             Controls.Add(rbPadi);
-            Controls.Add(pictureBox13);
-            Controls.Add(pictureBox12);
-            Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
             Controls.Add(BtnKembali);
-            Controls.Add(txtMasukkanBulan);
             Controls.Add(txtInputanLuasLahan);
-            Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
+            Controls.Add(pictureBox2);
             Name = "Rekomendasi";
             Text = "Rekomendasi";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtInputanLuasLahan).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtMasukkanBulan).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCheck).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -273,15 +265,16 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox txtInputanLuasLahan;
-        private PictureBox txtMasukkanBulan;
         private PictureBox BtnKembali;
         private PictureBox pictureBox10;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
         private RadioButton rbPadi;
         private RadioButton rbCabai;
         private RadioButton rbBawang;
         private PictureBox btnCheck;
+        private DateTimePicker BulanPicker;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private TextBox TbLuas;
     }
 }

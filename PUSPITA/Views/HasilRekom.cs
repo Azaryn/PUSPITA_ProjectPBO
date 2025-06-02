@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace PUSPITA.Views
 {
-    public partial class Lihat_Pupuk : Form
+    public partial class HasilRekom : Form
     {
-        public Lihat_Pupuk()
+        public HasilRekom()
         {
             InitializeComponent();
         }
-
-        private void Lihat_Pupuk_Load(object sender, EventArgs e)
+        public void AmbilData()
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

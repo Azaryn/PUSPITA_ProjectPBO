@@ -30,5 +30,12 @@ namespace PUSPITA.Views
             LoginAdmin Ladmin = new LoginAdmin();
             Ladmin.Show();
         }
+
+        private void btnHistoryTransaksi_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            History_Transaksi_Admin History = new History_Transaksi_Admin();
+            History.Show();
+        }
     }
 }

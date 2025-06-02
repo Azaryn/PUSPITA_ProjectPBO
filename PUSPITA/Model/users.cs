@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace PUSPITA.Model
 {
-    class Users
+    public static class Users
     {
-        public int id_petani { get; set; }
-        public string username { get; set; }
-        public string password_petani { get; set; }
-        public string alamat { get; set; }
+        public static int id_petani { get; set; }
+        public static string username { get; set; }
+        public static string alamat { get; set; }
     }
 }
