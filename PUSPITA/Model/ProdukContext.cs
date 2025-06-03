@@ -17,12 +17,12 @@ namespace PUSPITA.Model
         }
         public bool TambahPupuk(string namaPupuk, int jenis, int dosis, int harga)
         {
-            string InsertQuery = "Insert into pupuk (nama_pupuk, id_jenispupuk,dosis,harga) values (@nama, @jenis, @dosis, @harga)";
+            string InsertQuery = "Insert into pupuk (nama_pupuk, id_jenispupuk,dosis,harga,Discontinued) values (@nama, @jenis, @dosis, @harga,1)";
             return JalankanQueryTambah(InsertQuery, namaPupuk, jenis, dosis, harga);
         } 
         public bool TambahPestisida(string namaPestisida, int jenis, int dosis, int harga)
         {
-            string InsertQuery = "Insert into pestisida (nama_pestisida, id_jenispestisida,dosis,harga) values (@nama, @jenis, @dosis, @harga)";
+            string InsertQuery = "Insert into pestisida (nama_pestisida, id_jenispestisida,dosis,harga, Discontinued) values (@nama, @jenis, @dosis, @harga,1)";
             return JalankanQueryTambah(InsertQuery, namaPestisida, jenis, dosis, harga);
         }
         private bool JalankanQueryTambah(string query, string nama, int jenis, int dosis, int harga)
@@ -52,12 +52,12 @@ namespace PUSPITA.Model
         }
         public bool HapusPupuk(int IDProduk)
         {
-            string queryDelete = "Delete from pupuk where id_pupuk = @IDProduk";
+            string queryDelete = "Update pupuk set Discontinued = 0 where id_pupuk = @IDProduk";
             return JalankanQueryHapus(queryDelete, IDProduk);
         }
         public bool HapusPestisida(int IDProduk)
         {
-            string queryDelete = "Delete from pestisida where id_pestisida = @IDProduk";
+            string queryDelete = "Update pestisida set Discontinued = 0 where id_pestisida = @IDProduk";
             return JalankanQueryHapus(queryDelete, IDProduk);
         }
         public bool JalankanQueryHapus(string query, int IDProduk)

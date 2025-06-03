@@ -142,5 +142,10 @@ namespace PUSPITA.Views
         {
             this.DialogResult = DialogResult.OK;
         }
+
+        private void BtnKembali_Click_1(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

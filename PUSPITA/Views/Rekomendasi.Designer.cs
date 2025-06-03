@@ -32,7 +32,6 @@
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            txtInputanLuasLahan = new PictureBox();
             BtnKembali = new PictureBox();
             pictureBox10 = new PictureBox();
             rbPadi = new RadioButton();
@@ -43,14 +42,14 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            TbLuas = new TextBox();
+            TbLuas = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtInputanLuasLahan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCheck).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TbLuas).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -83,17 +82,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
-            // 
-            // txtInputanLuasLahan
-            // 
-            txtInputanLuasLahan.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            txtInputanLuasLahan.Image = Properties.Resources.Inputan;
-            txtInputanLuasLahan.Location = new Point(309, 301);
-            txtInputanLuasLahan.Name = "txtInputanLuasLahan";
-            txtInputanLuasLahan.Size = new Size(681, 71);
-            txtInputanLuasLahan.SizeMode = PictureBoxSizeMode.AutoSize;
-            txtInputanLuasLahan.TabIndex = 4;
-            txtInputanLuasLahan.TabStop = false;
             // 
             // BtnKembali
             // 
@@ -192,7 +180,7 @@
             label1.Name = "label1";
             label1.Size = new Size(793, 48);
             label1.TabIndex = 19;
-            label1.Text = "Masukkan Luas Lahan Anda (0,1ha - 3ha):";
+            label1.Text = "Masukkan Luas Lahan Anda (0,1ha - 5ha):";
             // 
             // label2
             // 
@@ -218,12 +206,14 @@
             // 
             // TbLuas
             // 
-            TbLuas.BorderStyle = BorderStyle.None;
-            TbLuas.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TbLuas.Location = new Point(323, 325);
+            TbLuas.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TbLuas.Location = new Point(317, 321);
+            TbLuas.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
+            TbLuas.Minimum = new decimal(new int[] { 1, 0, 0, 65536 });
             TbLuas.Name = "TbLuas";
-            TbLuas.Size = new Size(641, 27);
-            TbLuas.TabIndex = 22;
+            TbLuas.Size = new Size(150, 45);
+            TbLuas.TabIndex = 23;
+            TbLuas.Value = new decimal(new int[] { 1, 0, 0, 65536 });
             // 
             // Rekomendasi
             // 
@@ -242,7 +232,6 @@
             Controls.Add(rbPadi);
             Controls.Add(pictureBox10);
             Controls.Add(BtnKembali);
-            Controls.Add(txtInputanLuasLahan);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
@@ -251,10 +240,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtInputanLuasLahan).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCheck).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TbLuas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -264,7 +253,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private PictureBox txtInputanLuasLahan;
         private PictureBox BtnKembali;
         private PictureBox pictureBox10;
         private RadioButton rbPadi;
@@ -275,6 +263,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox TbLuas;
+        private NumericUpDown TbLuas;
     }
 }

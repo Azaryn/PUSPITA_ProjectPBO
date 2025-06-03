@@ -6,7 +6,6 @@ namespace PUSPITA.Views
 {
     public partial class LoginAdmin : Form
     {
-        Admins admin = new Admins();
         AdminContext adminContext = new AdminContext();
         public LoginAdmin()
         {

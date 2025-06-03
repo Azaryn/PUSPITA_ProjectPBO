@@ -66,10 +66,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.persegi_panjang_hijau;
-            pictureBox1.Location = new Point(-7, -3);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(-8, -4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1597, 130);
+            pictureBox1.Size = new Size(1825, 173);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -78,8 +77,7 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             pictureBox2.Image = Properties.Resources.Header_Transaksi;
-            pictureBox2.Location = new Point(563, 9);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(643, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(523, 118);
             pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -90,8 +88,7 @@
             // 
             BtnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
             BtnKembali.Image = Properties.Resources.Button_Kembali;
-            BtnKembali.Location = new Point(44, 32);
-            BtnKembali.Margin = new Padding(3, 2, 3, 2);
+            BtnKembali.Location = new Point(50, 43);
             BtnKembali.Name = "BtnKembali";
             BtnKembali.Size = new Size(237, 87);
             BtnKembali.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -103,10 +100,9 @@
             // 
             pictureBox4.BackgroundImage = Properties.Resources.Background;
             pictureBox4.Image = Properties.Resources.background_Transaksi__2_;
-            pictureBox4.Location = new Point(44, 184);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(50, 229);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1494, 614);
+            pictureBox4.Size = new Size(1707, 835);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
@@ -115,8 +111,7 @@
             // 
             pictureBox5.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox5.Image = Properties.Resources.Text_Jenis_Pembayaran__2_;
-            pictureBox5.Location = new Point(130, 212);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Location = new Point(149, 283);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(370, 43);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -127,8 +122,7 @@
             // 
             pictureBox6.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox6.Image = Properties.Resources.Text_Tanggal_Pemesanan__2_;
-            pictureBox6.Location = new Point(634, 213);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Location = new Point(725, 284);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(408, 42);
             pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -139,8 +133,7 @@
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox7.Image = Properties.Resources.Text_Jenis_Pengiriman__2_;
-            pictureBox7.Location = new Point(1158, 213);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Location = new Point(1323, 284);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(352, 42);
             pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -150,10 +143,9 @@
             // pictureBox12
             // 
             pictureBox12.Image = Properties.Resources.garis_hitam;
-            pictureBox12.Location = new Point(44, 495);
-            pictureBox12.Margin = new Padding(3, 2, 3, 2);
+            pictureBox12.Location = new Point(50, 660);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(1494, 2);
+            pictureBox12.Size = new Size(1707, 3);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 11;
             pictureBox12.TabStop = false;
@@ -162,8 +154,7 @@
             // 
             pictureBox13.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox13.Image = Properties.Resources.Text_Alamat_Pemesanan;
-            pictureBox13.Location = new Point(384, 528);
-            pictureBox13.Margin = new Padding(3, 2, 3, 2);
+            pictureBox13.Location = new Point(439, 704);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(450, 35);
             pictureBox13.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -174,8 +165,7 @@
             // 
             pictureBox14.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox14.Image = Properties.Resources.Text_Total_Items__1_;
-            pictureBox14.Location = new Point(384, 572);
-            pictureBox14.Margin = new Padding(3, 2, 3, 2);
+            pictureBox14.Location = new Point(439, 763);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(228, 34);
             pictureBox14.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -186,8 +176,7 @@
             // 
             pictureBox15.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox15.Image = Properties.Resources.Text_Total_Pembayaran__1_;
-            pictureBox15.Location = new Point(384, 614);
-            pictureBox15.Margin = new Padding(3, 2, 3, 2);
+            pictureBox15.Location = new Point(439, 819);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(363, 43);
             pictureBox15.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -198,8 +187,7 @@
             // 
             pictureBox16.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox16.Image = Properties.Resources.Titik_dua;
-            pictureBox16.Location = new Point(770, 572);
-            pictureBox16.Margin = new Padding(3, 2, 3, 2);
+            pictureBox16.Location = new Point(880, 763);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(9, 27);
             pictureBox16.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -210,8 +198,7 @@
             // 
             pictureBox17.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox17.Image = Properties.Resources.Titik_dua;
-            pictureBox17.Location = new Point(770, 626);
-            pictureBox17.Margin = new Padding(3, 2, 3, 2);
+            pictureBox17.Location = new Point(880, 835);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(9, 27);
             pictureBox17.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -222,8 +209,7 @@
             // 
             btnBayar.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             btnBayar.Image = Properties.Resources.Button_Bayar;
-            btnBayar.Location = new Point(662, 701);
-            btnBayar.Margin = new Padding(3, 2, 3, 2);
+            btnBayar.Location = new Point(757, 935);
             btnBayar.Name = "btnBayar";
             btnBayar.Size = new Size(356, 108);
             btnBayar.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -235,10 +221,9 @@
             rdE_Bank.AutoSize = true;
             rdE_Bank.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdE_Bank.Font = new Font("Segoe UI", 20F);
-            rdE_Bank.Location = new Point(130, 304);
-            rdE_Bank.Margin = new Padding(3, 2, 3, 2);
+            rdE_Bank.Location = new Point(149, 405);
             rdE_Bank.Name = "rdE_Bank";
-            rdE_Bank.Size = new Size(113, 41);
+            rdE_Bank.Size = new Size(139, 50);
             rdE_Bank.TabIndex = 18;
             rdE_Bank.TabStop = true;
             rdE_Bank.Text = "E Bank";
@@ -249,10 +234,9 @@
             rdPuspiPay.AutoSize = true;
             rdPuspiPay.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdPuspiPay.Font = new Font("Segoe UI", 20F);
-            rdPuspiPay.Location = new Point(130, 382);
-            rdPuspiPay.Margin = new Padding(3, 2, 3, 2);
+            rdPuspiPay.Location = new Point(149, 509);
             rdPuspiPay.Name = "rdPuspiPay";
-            rdPuspiPay.Size = new Size(140, 41);
+            rdPuspiPay.Size = new Size(172, 50);
             rdPuspiPay.TabIndex = 19;
             rdPuspiPay.TabStop = true;
             rdPuspiPay.Text = "PuspiPay";
@@ -263,10 +247,9 @@
             rdJNE.AutoSize = true;
             rdJNE.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdJNE.Font = new Font("Segoe UI", 20F);
-            rdJNE.Location = new Point(1158, 304);
-            rdJNE.Margin = new Padding(3, 2, 3, 2);
+            rdJNE.Location = new Point(1323, 405);
             rdJNE.Name = "rdJNE";
-            rdJNE.Size = new Size(79, 41);
+            rdJNE.Size = new Size(95, 50);
             rdJNE.TabIndex = 20;
             rdJNE.TabStop = true;
             rdJNE.Text = "JNE";
@@ -277,10 +260,9 @@
             rdFASPITA.AutoSize = true;
             rdFASPITA.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdFASPITA.Font = new Font("Segoe UI", 20F);
-            rdFASPITA.Location = new Point(1158, 364);
-            rdFASPITA.Margin = new Padding(3, 2, 3, 2);
+            rdFASPITA.Location = new Point(1323, 485);
             rdFASPITA.Name = "rdFASPITA";
-            rdFASPITA.Size = new Size(128, 41);
+            rdFASPITA.Size = new Size(162, 50);
             rdFASPITA.TabIndex = 22;
             rdFASPITA.TabStop = true;
             rdFASPITA.Text = "FASPITA";
@@ -288,17 +270,18 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(725, 287);
+            dateTimePicker1.Location = new Point(829, 383);
+            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.Size = new Size(228, 27);
             dateTimePicker1.TabIndex = 23;
             // 
             // Transaksi
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
-            ClientSize = new Size(1584, 791);
+            ClientSize = new Size(1810, 1055);
             Controls.Add(dateTimePicker1);
             Controls.Add(rdFASPITA);
             Controls.Add(rdJNE);
@@ -318,7 +301,6 @@
             Controls.Add(BtnKembali);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Transaksi";
             Text = "Transaksi";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

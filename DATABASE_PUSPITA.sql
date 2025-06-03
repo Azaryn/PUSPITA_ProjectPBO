@@ -129,11 +129,4 @@ values
 (2,2,2),
 (2,1,1);
 
--- select * from admins
--- select * from transaksi
--- select * from detail_transaksipupuk
--- select * from petani
--- select * from pupuk
--- select * from pestisida
--- select * from jenis_pupuk
--- select * from jenis_pestisida
+-----------------------------------------------------------------------------------------------

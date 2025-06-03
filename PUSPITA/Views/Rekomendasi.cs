@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PUSPITA.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace PUSPITA.Views
     public partial class Rekomendasi : Form
     {
         private int dosisPupuk = 250;
-        private decimal dosisPestisida = 1.5M;
+        private int dosisPestisida = 250;
         public Rekomendasi()
         {
             InitializeComponent();
@@ -30,23 +31,34 @@ namespace PUSPITA.Views
         {
             if (TbLuas != null && BulanPicker != null && rbBawang != null && rbCabai != null && rbPadi != null)
             {
-                //int bulan = BulanPicker.Value.Month;
-                //decimal luas = Convert.ToDecimal(TbLuas.Text);
-                //int jenis = 0;
-                //if (rbPadi.Checked)
-                //{
-                //    jenis = 1;
-                //}
-                //else if (rbCabai.Checked)
-                //{
-                //    jenis = 2;
-                //}
-                //else if (rbBawang.Checked)
-                //{
-                //    jenis = 3;
-                //}
-                //decimal TakaranPupuk = dosisPupuk * luas;
-                //decimal TakaranPestisida = dosisPestisida * luas;
+                int bulan = BulanPicker.Value.Month;
+                if (bulan >=1 && bulan <= 6)
+                {
+                    PenampungHasilRekom.BulanMenanam = "Fungsida";
+                }
+                else if(bulan >= 7 && bulan <= 9)
+                {
+                    PenampungHasilRekom.BulanMenanam = "Herbisida";
+                }
+                else
+                {
+                    PenampungHasilRekom.BulanMenanam = "Insectisida";
+                }
+                PenampungHasilRekom.luas = Convert.ToDecimal(TbLuas.Text);
+                if (rbPadi.Checked)
+                {
+                    PenampungHasilRekom.JenisTanaman = "Padi";
+                }
+                else if (rbCabai.Checked)
+                {
+                    PenampungHasilRekom.JenisTanaman = "Cabai";
+                }
+                else if (rbBawang.Checked)
+                {
+                    PenampungHasilRekom.JenisTanaman = "Bawang";
+                }
+                PenampungHasilRekom.TakaranPupuk = dosisPupuk * PenampungHasilRekom.luas;
+                PenampungHasilRekom.TakaranPestisida = dosisPestisida * PenampungHasilRekom.luas;
                 HasilRekom hasilRekom = new HasilRekom();
                 hasilRekom.ShowDialog();
             }

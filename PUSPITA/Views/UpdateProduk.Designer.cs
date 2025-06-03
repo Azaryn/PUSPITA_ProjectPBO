@@ -94,13 +94,14 @@
             // 
             BtnKembali.BackgroundImage = Properties.Resources.Background_Header_;
             BtnKembali.Image = (Image)resources.GetObject("BtnKembali.Image");
-            BtnKembali.Location = new Point(26, 37);
+            BtnKembali.Location = new Point(38, 37);
             BtnKembali.Margin = new Padding(3, 4, 3, 4);
             BtnKembali.Name = "BtnKembali";
             BtnKembali.Size = new Size(207, 84);
             BtnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
             BtnKembali.TabIndex = 26;
             BtnKembali.TabStop = false;
+            BtnKembali.Click += BtnKembali_Click_1;
             // 
             // pictureBox1
             // 
