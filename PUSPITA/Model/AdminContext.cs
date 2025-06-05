@@ -7,7 +7,7 @@ namespace PUSPITA.Model
         private readonly string KoneksiString;
         public AdminContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
         }
         public bool Validasi(string username, string password, out int adminId)
         {
