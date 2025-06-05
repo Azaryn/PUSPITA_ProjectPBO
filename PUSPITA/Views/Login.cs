@@ -23,6 +23,7 @@ namespace PUSPITA
                 if (Valid)
                 {
                     Users.id_petani = petaniId;
+                    UserContext.IdPetani = petaniId;
                     this.Hide();
                     Dashboard_Petani dashboard = new Dashboard_Petani(); 
                     dashboard.Show();

@@ -13,23 +13,43 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public HistoryAdminContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
         }
         public DataTable AmbilHistory()
         {
             string queryAmbil = @"
-SELECT p.Nama_pupuk AS NamaProduk, p.Harga AS HargaSatuan, dp.Quantity AS Jumlah, (p.Harga * dp.Quantity) AS TotalHarga, t.tanggal_transaksi, t.metodepembayaran
-FROM detail_transaksipupuk dp
-JOIN pupuk p ON p.id_pupuk = dp.id_pupuk
-JOIN transaksi t ON t.id_transaksi = dp.id_transaksi
+SELECT 
+    pt.Username AS NamaPetani,
+    pt.Alamat AS AlamatPetani,
+    pb.Nama_pupuk AS NamaProduk,
+    jp.Jenis_Pupuk AS JenisProduk,
+    dtp.Quantity AS Jumlah,
+    (pb.Harga * dtp.Quantity) AS TotalHarga,
+    t.MetodePembayaran
+FROM detail_transaksipupuk dtp
+JOIN pupuk pb ON pb.ID_Pupuk = dtp.ID_Pupuk
+JOIN jenis_pupuk jp ON jp.ID_JenisPupuk = pb.ID_JenisPupuk
+JOIN transaksi t ON t.ID_Transaksi = dtp.ID_Transaksi
+JOIN petani pt ON pt.ID_Petani = t.ID_Petani
 
 UNION ALL
 
-SELECT ps.Nama_pestisida AS NamaProduk, ps.Harga AS HargaSatuan, dps.Quantity AS Jumlah, (ps.Harga * dps.Quantity) AS TotalHarga, t.tanggal_transaksi, t.metodepembayaran
-FROM detail_transaksipestisida dps
-JOIN pestisida ps ON ps.id_pestisida = dps.id_pestisida
-JOIN transaksi t ON t.id_transaksi = dps.id_transaksi;";
-            using (NpgsqlConnection Kon = new NpgsqlConnection())
+SELECT 
+    pt.Username AS NamaPetani,
+    pt.Alamat AS AlamatPetani,
+    ps.Nama_Pestisida AS NamaProduk,
+    jp.Jenis_Pestisida AS JenisProduk,
+    dtps.Quantity AS Jumlah,
+    (ps.Harga * dtps.Quantity) AS TotalHarga,
+    t.MetodePembayaran
+FROM detail_transaksipestisida dtps
+JOIN pestisida ps ON ps.ID_Pestisida = dtps.ID_Pestisida
+JOIN jenis_pestisida jp ON jp.ID_JenisPestisida = ps.ID_JenisPestisida
+JOIN transaksi t ON t.ID_Transaksi = dtps.ID_Transaksi
+JOIN petani pt ON pt.ID_Petani = t.ID_Petani;
+
+";
+            using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
                 using (NpgsqlCommand cmd = new NpgsqlCommand(queryAmbil,Kon))
                 {
