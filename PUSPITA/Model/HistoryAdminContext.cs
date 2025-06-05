@@ -20,10 +20,12 @@ namespace PUSPITA.Model
             string queryAmbil = @"
 SELECT 
     pt.Username AS NamaPetani,
+    pt.Alamat AS AlamatPetani,
     pb.Nama_pupuk AS NamaProduk,
     jp.Jenis_Pupuk AS JenisProduk,
     dtp.Quantity AS Jumlah,
-    (pb.Harga * dtp.Quantity) AS TotalHarga
+    (pb.Harga * dtp.Quantity) AS TotalHarga,
+    t.MetodePembayaran
 FROM detail_transaksipupuk dtp
 JOIN pupuk pb ON pb.ID_Pupuk = dtp.ID_Pupuk
 JOIN jenis_pupuk jp ON jp.ID_JenisPupuk = pb.ID_JenisPupuk
@@ -34,15 +36,18 @@ UNION ALL
 
 SELECT 
     pt.Username AS NamaPetani,
+    pt.Alamat AS AlamatPetani,
     ps.Nama_Pestisida AS NamaProduk,
     jp.Jenis_Pestisida AS JenisProduk,
     dtps.Quantity AS Jumlah,
-    (ps.Harga * dtps.Quantity) AS TotalHarga
+    (ps.Harga * dtps.Quantity) AS TotalHarga,
+    t.MetodePembayaran
 FROM detail_transaksipestisida dtps
 JOIN pestisida ps ON ps.ID_Pestisida = dtps.ID_Pestisida
 JOIN jenis_pestisida jp ON jp.ID_JenisPestisida = ps.ID_JenisPestisida
 JOIN transaksi t ON t.ID_Transaksi = dtps.ID_Transaksi
 JOIN petani pt ON pt.ID_Petani = t.ID_Petani;
+
 ";
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
