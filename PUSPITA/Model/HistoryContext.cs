@@ -15,7 +15,7 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public HistoryContext(int Idpetani)
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
             _idPetani = Idpetani;
         }
         public DataTable AmbilHistory()
@@ -32,10 +32,10 @@ UNION ALL
 SELECT ps.Nama_pestisida AS NamaProduk, ps.Harga AS HargaSatuan, dps.Quantity AS Jumlah, (ps.Harga * dps.Quantity) AS TotalHarga, t.tanggal_transaksi, t.metodepembayaran
 FROM detail_transaksipestisida dps
 JOIN pestisida ps ON ps.id_pestisida = dps.id_pestisida
-JOIN transaksi t ON t.id_transaksi = dps.id_transaksi;
-where t.id_petani = @id_petani
+JOIN transaksi t ON t.id_transaksi = dps.id_transaksi
+where t.id_petani = @id_petani;
 ";
-            using(NpgsqlConnection Kon = new NpgsqlConnection())
+            using(NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
                 using (NpgsqlCommand cmd = new NpgsqlCommand(queryAmbil,Kon))
                 {

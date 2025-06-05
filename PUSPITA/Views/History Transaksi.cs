@@ -13,15 +13,15 @@ namespace PUSPITA.Views
 {
     public partial class History_Transaksi : Form
     {
-        private int _idPetani;
+       
         private HistoryContext HContext;
 
 
-        public History_Transaksi(int IDPetani)
+        public History_Transaksi()
         {
-            _idPetani = IDPetani;
             InitializeComponent();
-            HContext = new HistoryContext(_idPetani);
+            int idPetani = UserContext.IdPetani; 
+            HContext = new HistoryContext(idPetani);
             History_Transaksi_Load(this, EventArgs.Empty);
         }
 
