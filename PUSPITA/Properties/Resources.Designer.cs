@@ -113,6 +113,26 @@ namespace PUSPITA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BtnCheckout {
+            get {
+                object obj = ResourceManager.GetObject("BtnCheckout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnKeranjang {
+            get {
+                object obj = ResourceManager.GetObject("BtnKeranjang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap But_Register {
             get {
                 object obj = ResourceManager.GetObject("But Register", resourceCulture);
@@ -346,6 +366,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap garis_hitam {
             get {
                 object obj = ResourceManager.GetObject("garis hitam", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_11 {
+            get {
+                object obj = ResourceManager.GetObject("Group 11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -766,6 +796,16 @@ namespace PUSPITA.Properties {
         internal static System.Drawing.Bitmap PesticideHand {
             get {
                 object obj = ResourceManager.GetObject("PesticideHand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PestisidaBtn {
+            get {
+                object obj = ResourceManager.GetObject("PestisidaBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

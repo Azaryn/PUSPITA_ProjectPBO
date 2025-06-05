@@ -8,11 +8,11 @@ namespace PUSPITA
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormLogin());
-            //Application.Run(new Shop_Pupuk());
+            //Application.Run(new FormLogin());
+            //Application.Run(new Shop());
             //Application.Run(new Kelola_Produksi());
             //Application.Run(new History_Transaksi_Admin());
-            //Application.Run(new Rekomendasi());
+            Application.Run(new Rekomendasi());
             //Application.Run(new Register());
             //Application.Run(new Dashboard_Admin());
             //Application.Run(new Dashboard_Petani());

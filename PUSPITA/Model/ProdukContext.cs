@@ -150,6 +150,33 @@ namespace PUSPITA.Model
                 }
             }
         }
+        //public class keranjang()
+        //{
+//        string query = @"
+//select * from pupuk where Discontinued = 1
+//UNION ALL
+//select * from pestisida where Discontinued = 1
+//";
+        //}
+        //public List<Produk> ProdukShop()
+        //{
+        //    List<Produk> produklist = new List<Produk>();
+            
+        //    using (NpgsqlConnection kon = new NpgsqlConnection(KoneksiString))
+        //    {
+        //        kon.Open();
+        //        using (NpgsqlCommand cmd = new NpgsqlCommand(query, kon))
+        //        {
+        //            using (NpgsqlDataReader reader = cmd.ExecuteReader())
+        //            {
+        //                while (reader.Read())
+        //                {
+
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
         //method baru
     }
     //class baru

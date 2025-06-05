@@ -45,7 +45,7 @@ JOIN transaksi t ON t.id_transaksi = dps.id_transaksi;";
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Gagal Mengambil Database", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null!;
                     }
                 }

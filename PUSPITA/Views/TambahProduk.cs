@@ -87,7 +87,7 @@ namespace PUSPITA.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{ex}", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
