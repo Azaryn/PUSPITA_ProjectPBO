@@ -20,8 +20,8 @@ namespace PUSPITA.Views
         private void btnKembali_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Shop_Pupuk Spupuk = new Shop_Pupuk();
-            Spupuk.Show();
+            Shop Shop = new Shop();
+            Shop.Show();
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)

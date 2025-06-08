@@ -13,7 +13,7 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public HistoryAdminContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
         public DataTable AmbilHistory()
         {
@@ -65,7 +65,7 @@ JOIN petani pt ON pt.ID_Petani = t.ID_Petani;
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Gagal Mengambil Database", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return null!;
                     }
                 }

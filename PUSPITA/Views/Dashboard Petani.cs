@@ -23,7 +23,7 @@ namespace PUSPITA.Views
         private void btnPuspitaShop_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Shop_Pupuk puspitaShop = new Shop_Pupuk();
+            Shop puspitaShop = new Shop();
             puspitaShop.Show();
         }
 
