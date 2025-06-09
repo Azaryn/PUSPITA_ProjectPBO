@@ -32,14 +32,14 @@
             label1 = new Label();
             btnKembali = new PictureBox();
             BtnKeranjang = new PictureBox();
+            BtnPupuk = new PictureBox();
             BtnPestisida = new PictureBox();
             FLPproduk = new FlowLayoutPanel();
-            BtnPupuk = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnKeranjang).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)BtnPestisida).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnPupuk).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnPestisida).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -74,7 +74,7 @@
             btnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
             btnKembali.TabIndex = 18;
             btnKembali.TabStop = false;
-            btnKembali.Click += btnKembali_Click;
+            //btnKembali.Click += btnKembali_Click;
             // 
             // BtnKeranjang
             // 
@@ -86,19 +86,32 @@
             BtnKeranjang.SizeMode = PictureBoxSizeMode.StretchImage;
             BtnKeranjang.TabIndex = 19;
             BtnKeranjang.TabStop = false;
-            BtnKeranjang.Click += BtnKeranjang_Click;
+            //BtnKeranjang.Click += BtnKeranjang_Click;
+            // 
+            // BtnPupuk
+            // 
+            BtnPupuk.BackColor = Color.Transparent;
+            BtnPupuk.Image = Properties.Resources.PupukBtn;
+            BtnPupuk.Location = new Point(822, 223);
+            BtnPupuk.Name = "BtnPupuk";
+            BtnPupuk.Size = new Size(175, 67);
+            BtnPupuk.SizeMode = PictureBoxSizeMode.StretchImage;
+            BtnPupuk.TabIndex = 22;
+            BtnPupuk.TabStop = false;
+            BtnPupuk.Visible = false;
+            BtnPupuk.Click += BtnPupuk_Click;
             // 
             // BtnPestisida
             // 
-            BtnPestisida.BackColor = Color.Transparent;
-            BtnPestisida.Image = Properties.Resources.PestisidaBtn;
-            BtnPestisida.Location = new Point(822, 222);
+            BtnPestisida.BackgroundImage = Properties.Resources.Background;
+            BtnPestisida.Image = Properties.Resources.btnPestisida_____;
+            BtnPestisida.Location = new Point(809, 197);
             BtnPestisida.Name = "BtnPestisida";
-            BtnPestisida.Size = new Size(175, 74);
-            BtnPestisida.SizeMode = PictureBoxSizeMode.StretchImage;
-            BtnPestisida.TabIndex = 20;
+            BtnPestisida.Size = new Size(225, 134);
+            BtnPestisida.SizeMode = PictureBoxSizeMode.Zoom;
+            BtnPestisida.TabIndex = 24;
             BtnPestisida.TabStop = false;
-            BtnPestisida.Click += BtnPestisida_Click;
+            BtnPestisida.Click += BtnPestisida_Click_1;
             // 
             // FLPproduk
             // 
@@ -108,40 +121,26 @@
             FLPproduk.Size = new Size(1758, 712);
             FLPproduk.TabIndex = 21;
             // 
-            // BtnPupuk
-            // 
-            BtnPupuk.BackColor = Color.Transparent;
-            BtnPupuk.Image = Properties.Resources.PupukBtn;
-            BtnPupuk.Location = new Point(822, 223);
-            BtnPupuk.Name = "BtnPupuk";
-            BtnPupuk.Size = new Size(175, 74);
-            BtnPupuk.SizeMode = PictureBoxSizeMode.StretchImage;
-            BtnPupuk.TabIndex = 22;
-            BtnPupuk.TabStop = false;
-            BtnPupuk.Visible = false;
-            BtnPupuk.Click += BtnPupuk_Click;
-            // 
             // Shop
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(BtnPestisida);
             Controls.Add(BtnPupuk);
             Controls.Add(FLPproduk);
-            Controls.Add(BtnPestisida);
             Controls.Add(BtnKeranjang);
             Controls.Add(btnKembali);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Shop";
             Text = "Shop";
-            Load += Shop_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnKeranjang).EndInit();
-            ((System.ComponentModel.ISupportInitialize)BtnPestisida).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnPupuk).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnPestisida).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -152,8 +151,8 @@
         private Label label1;
         private PictureBox btnKembali;
         private PictureBox BtnKeranjang;
+        private PictureBox BtnPupuk;
         private PictureBox BtnPestisida;
         private FlowLayoutPanel FLPproduk;
-        private PictureBox BtnPupuk;
     }
 }

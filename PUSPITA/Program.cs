@@ -14,8 +14,8 @@ namespace PUSPITA
             //Application.Run(new History_Transaksi_Admin());
             //Application.Run(new Rekomendasi());
             //Application.Run(new Register());
-            Application.Run(new Dashboard_Admin());
-            //Application.Run(new Dashboard_Petani());
+            //Application.Run(new Dashboard_Admin());
+            Application.Run(new Dashboard_Petani());
             //Application.Run(new Transaksi());
         }
     }

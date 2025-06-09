@@ -121,6 +121,9 @@
   <data name="Masukkan ID Peptisida_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Masukkan ID Peptisida_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Button Tambah Produk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Tambah Produk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,6 +229,9 @@
   <data name="garis hitam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garis hitam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="text Masukkan Luas Lahan Anda.._" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text Masukkan Luas Lahan Anda.._.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Text Harga Produk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Harga Produk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -243,6 +249,9 @@
   </data>
   <data name="Logo PUSPITA HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo PUSPITA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnTambah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnTambah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PupukBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PupukBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,8 +295,8 @@
   <data name="Button Keranjang (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Keranjang (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NewBtnHapus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NewBtnHapus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gmbrpestisida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gmbrpestisida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Header .History Transaksi (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Header .History Transaksi (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,8 +307,14 @@
   <data name="button pestisida (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button pestisida (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="background Transaksi (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background Transaksi (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Header .Update Pupuk (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Header .Update Pupuk (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="+" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Text Quantity (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Quantity (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -309,6 +324,9 @@
   </data>
   <data name="But Register" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\But Register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persegi orange1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persegi orange1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Text Rekomendasi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Rekomendasi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,8 +370,8 @@
   <data name="RPupuk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RPupuk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text Masukkan Luas Lahan Anda.._" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\text Masukkan Luas Lahan Anda.._.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NewBtnHapus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewBtnHapus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="History Transaksi Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\History Transaksi Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -378,6 +396,9 @@
   </data>
   <data name="History Transaksi " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\History Transaksi .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPestisida....." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPestisida......png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button pupuk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button pupuk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -409,8 +430,8 @@
   <data name="BtnCheckout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnCheckout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background Transaksi (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background Transaksi (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Text Jenis Pembayaran (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Jenis Pembayaran (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,10 +454,13 @@
   <data name="Button Checkout " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Checkout .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="persegi orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persegi orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Text Stock Produk (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Text Stock Produk (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnTambah" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnTambah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HeaderKeranjang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeaderKeranjang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -15,6 +15,44 @@ namespace PUSPITA.Model
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
         }
+
+        public List<Produk> GetAllProduk()
+        {
+            string query = @"
+        SELECT id_pupuk AS id, nama_pupuk AS nama, 
+               jp.jenis_pupuk AS jenis,
+               dosis, harga, discontinued
+          FROM pupuk p
+          JOIN jenis_pupuk jp ON jp.id_jenispupuk = p.id_jenispupuk
+         WHERE discontinued = 1
+        UNION ALL
+        SELECT id_pestisida AS id, nama_pestisida AS nama,
+               jps.jenis_pestisida AS jenis,
+               dosis, harga, discontinued
+          FROM pestisida ps
+          JOIN jenis_pestisida jps ON jps.id_jenispestisida = ps.id_jenispestisida
+         WHERE discontinued = 1;
+    ";
+
+            var list = new List<Produk>();
+            using var kon = new NpgsqlConnection(KoneksiString);
+            kon.Open();
+            using var cmd = new NpgsqlCommand(query, kon);
+            using var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(new Produk
+                {
+                    ID = reader.GetInt32(reader.GetOrdinal("id")),
+                    Nama = reader.GetString(reader.GetOrdinal("nama")),
+                    Jenis = reader.GetString(reader.GetOrdinal("jenis")),
+                    Dosis = reader.GetInt32(reader.GetOrdinal("dosis")),
+                    Harga = reader.GetDecimal(reader.GetOrdinal("harga")),
+                    Discontinued = reader.GetInt16(reader.GetOrdinal("discontinued")) == 1
+                });
+            }
+            return list;
+        }
         public bool TambahPupuk(string namaPupuk, int jenis, int dosis, int harga)
         {
             string InsertQuery = "Insert into pupuk (nama_pupuk, id_jenispupuk,dosis,harga,Discontinued) values (@nama, @jenis, @dosis, @harga,1)";

@@ -34,9 +34,13 @@
             tbQuantity = new TextBox();
             panel1 = new Panel();
             pbGambarProduk = new PictureBox();
+            btnKurang = new PictureBox();
+            btnTambah = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)bgCard).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbGambarProduk).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnKurang).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnTambah).BeginInit();
             SuspendLayout();
             // 
             // bgCard
@@ -44,7 +48,7 @@
             bgCard.Image = Properties.Resources.BG_cardproduk;
             bgCard.Location = new Point(0, 0);
             bgCard.Name = "bgCard";
-            bgCard.Size = new Size(277, 348);
+            bgCard.Size = new Size(277, 373);
             bgCard.SizeMode = PictureBoxSizeMode.StretchImage;
             bgCard.TabIndex = 1;
             bgCard.TabStop = false;
@@ -77,9 +81,10 @@
             // 
             // tbQuantity
             // 
-            tbQuantity.Location = new Point(72, 317);
+            tbQuantity.Font = new Font("Segoe UI", 13F);
+            tbQuantity.Location = new Point(72, 325);
             tbQuantity.Name = "tbQuantity";
-            tbQuantity.Size = new Size(127, 27);
+            tbQuantity.Size = new Size(127, 36);
             tbQuantity.TabIndex = 7;
             // 
             // panel1
@@ -99,11 +104,37 @@
             pbGambarProduk.TabIndex = 9;
             pbGambarProduk.TabStop = false;
             // 
+            // btnKurang
+            // 
+            btnKurang.BackColor = Color.FromArgb(240, 104, 56);
+            btnKurang.Image = Properties.Resources.Group_103;
+            btnKurang.Location = new Point(33, 325);
+            btnKurang.Name = "btnKurang";
+            btnKurang.Size = new Size(43, 36);
+            btnKurang.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnKurang.TabIndex = 10;
+            btnKurang.TabStop = false;
+            btnKurang.Click += btnKurang_Click;
+            // 
+            // btnTambah
+            // 
+            btnTambah.BackColor = Color.FromArgb(240, 104, 56);
+            btnTambah.Image = Properties.Resources._;
+            btnTambah.Location = new Point(193, 325);
+            btnTambah.Name = "btnTambah";
+            btnTambah.Size = new Size(43, 36);
+            btnTambah.SizeMode = PictureBoxSizeMode.Zoom;
+            btnTambah.TabIndex = 11;
+            btnTambah.TabStop = false;
+            btnTambah.Click += btnTambah_Click;
+            // 
             // cardKeranjang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(btnTambah);
+            Controls.Add(btnKurang);
             Controls.Add(panel1);
             Controls.Add(tbQuantity);
             Controls.Add(lblHarga);
@@ -114,6 +145,8 @@
             ((System.ComponentModel.ISupportInitialize)bgCard).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbGambarProduk).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnKurang).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnTambah).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -126,5 +159,7 @@
         private TextBox tbQuantity;
         private Panel panel1;
         private PictureBox pbGambarProduk;
+        private PictureBox btnKurang;
+        private PictureBox btnTambah;
     }
 }
