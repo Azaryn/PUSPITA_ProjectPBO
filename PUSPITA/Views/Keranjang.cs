@@ -55,5 +55,11 @@ namespace PUSPITA.Views
                 control.Dispose();
             }
         }
+
+        private void BtnCheckout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

@@ -19,19 +19,8 @@ namespace PUSPITA.Model
         public List<Produk> GetAllProduk()
         {
             string query = @"
-        SELECT id_pupuk AS id, nama_pupuk AS nama, 
-               jp.jenis_pupuk AS jenis,
-               dosis, harga, discontinued
-          FROM pupuk p
-          JOIN jenis_pupuk jp ON jp.id_jenispupuk = p.id_jenispupuk
-         WHERE discontinued = 1
-        UNION ALL
-        SELECT id_pestisida AS id, nama_pestisida AS nama,
-               jps.jenis_pestisida AS jenis,
-               dosis, harga, discontinued
-          FROM pestisida ps
-          JOIN jenis_pestisida jps ON jps.id_jenispestisida = ps.id_jenispestisida
-         WHERE discontinued = 1;
+        SELECT * FROM produk
+         WHERE discontinued = 1 AND id_jenis = 1;
     ";
 
             var list = new List<Produk>();
@@ -53,17 +42,17 @@ namespace PUSPITA.Model
             }
             return list;
         }
-        public bool TambahPupuk(string namaPupuk, int jenis, int dosis, int harga)
+        public bool TambahPupuk(string namaPupuk, string jenis, int dosis, int harga)
         {
-            string InsertQuery = "Insert into pupuk (nama_pupuk, id_jenispupuk,dosis,harga,Discontinued) values (@nama, @jenis, @dosis, @harga,1)";
+            string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga,Discontinued) values (@nama, 1, @dosis, @harga,1)";
             return JalankanQueryTambah(InsertQuery, namaPupuk, jenis, dosis, harga);
         } 
-        public bool TambahPestisida(string namaPestisida, int jenis, int dosis, int harga)
+        public bool TambahPestisida(string namaPestisida, string jenis, int dosis, int harga)
         {
-            string InsertQuery = "Insert into pestisida (nama_pestisida, id_jenispestisida,dosis,harga, Discontinued) values (@nama, @jenis, @dosis, @harga,1)";
+            string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga, Discontinued) values (@nama, 2, @dosis, @harga,1)";
             return JalankanQueryTambah(InsertQuery, namaPestisida, jenis, dosis, harga);
         }
-        private bool JalankanQueryTambah(string query, string nama, int jenis, int dosis, int harga)
+        private bool JalankanQueryTambah(string query, string nama, string jenis, int dosis, int harga)
         {
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
@@ -90,12 +79,12 @@ namespace PUSPITA.Model
         }
         public bool HapusPupuk(int IDProduk)
         {
-            string queryDelete = "Update pupuk set Discontinued = 0 where id_pupuk = @IDProduk";
+            string queryDelete = "Update produk set Discontinued = 0 where id_produk = @IDProduk";
             return JalankanQueryHapus(queryDelete, IDProduk);
         }
         public bool HapusPestisida(int IDProduk)
         {
-            string queryDelete = "Update pestisida set Discontinued = 0 where id_pestisida = @IDProduk";
+            string queryDelete = "Update produk set Discontinued = 0 where id_produk = @IDProduk";
             return JalankanQueryHapus(queryDelete, IDProduk);
         }
         public bool JalankanQueryHapus(string query, int IDProduk)
@@ -119,17 +108,17 @@ namespace PUSPITA.Model
                 }
             }
         }
-        public bool UpdatePupuk(string nama, int jenis, int dosis, int harga, int IDproduk)
+        public bool UpdatePupuk(string nama, string jenis, int dosis, int harga, int IDproduk)
         {
-            string queryUpdate = "Update pupuk set nama_pupuk = @nama, id_jenispupuk = @jenis, dosis = @dosis, harga = @harga where id_pupuk = @IDproduk";
+            string queryUpdate = "Update produk set nama_produk = @nama, dosis = @dosis, harga = @harga where id_produk = @IDproduk";
             return JalankanQueryUpdate(queryUpdate, nama, jenis, dosis, harga, IDproduk);
         }
-        public bool UpdatePestisida(string nama, int jenis, int dosis, int harga, int IDproduk)
+        public bool UpdatePestisida(string nama, string jenis, int dosis, int harga, int IDproduk)
         {
-            string queryUpdate = "Update pestisida set nama_pestisida = @nama, id_jenispestisida = @jenis, dosis = @dosis, harga = @harga where id_pestisida = @IDproduk";
+            string queryUpdate = "Update produk set nama_produk = @nama, dosis = @dosis, harga = @harga where id_produk = @IDproduk";
             return JalankanQueryUpdate(queryUpdate, nama, jenis, dosis, harga, IDproduk);
         }
-        public bool JalankanQueryUpdate(string query, string nama, int jenis, int dosis, int harga, int IDproduk)
+        public bool JalankanQueryUpdate(string query, string nama, string jenis, int dosis, int harga, int IDproduk)
         {
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
@@ -156,12 +145,12 @@ namespace PUSPITA.Model
         }
         public DataTable LihatPupuk()
         {
-            string queryLihat = "Select * from pupuk";
+            string queryLihat = "Select * from produk where id_jenis = 1 AND discontinued = 1";
             return JalankanQueryLihat(queryLihat);
         }
         public DataTable LihatPestisida()
         {
-            string queryLihat = "Select * from pestisida";
+            string queryLihat = "Select * from produk where id_jenis = 2  AND discontinued = 1";
             return JalankanQueryLihat(queryLihat);
         }
         public DataTable JalankanQueryLihat(string query)
@@ -188,35 +177,5 @@ namespace PUSPITA.Model
                 }
             }
         }
-        //public class keranjang()
-        //{
-//        string query = @"
-//select * from pupuk where Discontinued = 1
-//UNION ALL
-//select * from pestisida where Discontinued = 1
-//";
-        //}
-        //public List<Produk> ProdukShop()
-        //{
-        //    List<Produk> produklist = new List<Produk>();
-            
-        //    using (NpgsqlConnection kon = new NpgsqlConnection(KoneksiString))
-        //    {
-        //        kon.Open();
-        //        using (NpgsqlCommand cmd = new NpgsqlCommand(query, kon))
-        //        {
-        //            using (NpgsqlDataReader reader = cmd.ExecuteReader())
-        //            {
-        //                while (reader.Read())
-        //                {
-
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-        //method baru
     }
-    //class baru
-
 }

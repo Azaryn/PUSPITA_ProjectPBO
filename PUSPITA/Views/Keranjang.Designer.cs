@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Keranjang));
             pictureBox1 = new PictureBox();
             FLPproduk = new FlowLayoutPanel();
             btnKembali = new PictureBox();
+            BtnCheckout = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnCheckout).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -66,12 +69,25 @@
             btnKembali.TabStop = false;
             btnKembali.Click += btnKembali_Click;
             // 
+            // BtnCheckout
+            // 
+            BtnCheckout.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            BtnCheckout.Image = (Image)resources.GetObject("BtnCheckout.Image");
+            BtnCheckout.Location = new Point(1559, 48);
+            BtnCheckout.Name = "BtnCheckout";
+            BtnCheckout.Size = new Size(175, 74);
+            BtnCheckout.SizeMode = PictureBoxSizeMode.StretchImage;
+            BtnCheckout.TabIndex = 24;
+            BtnCheckout.TabStop = false;
+            BtnCheckout.Click += BtnCheckout_Click;
+            // 
             // Keranjang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(BtnCheckout);
             Controls.Add(btnKembali);
             Controls.Add(FLPproduk);
             Controls.Add(pictureBox1);
@@ -80,6 +96,7 @@
             Load += Keranjang_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnCheckout).EndInit();
             ResumeLayout(false);
         }
 
@@ -88,5 +105,6 @@
         private PictureBox pictureBox1;
         private FlowLayoutPanel FLPproduk;
         private PictureBox btnKembali;
+        private PictureBox BtnCheckout;
     }
 }

@@ -36,9 +36,6 @@
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox15 = new PictureBox();
             pictureBox16 = new PictureBox();
             pictureBox17 = new PictureBox();
             btnBayar = new PictureBox();
@@ -46,7 +43,15 @@
             rdPuspiPay = new RadioButton();
             rdJNE = new RadioButton();
             rdFASPITA = new RadioButton();
-            dateTimePicker1 = new DateTimePicker();
+            LblAlamat = new Label();
+            LblJumlah = new Label();
+            Rupiah = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            pictureBox3 = new PictureBox();
+            lblTotal = new Label();
+            TglPesan = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
@@ -55,12 +60,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnBayar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -150,44 +153,11 @@
             pictureBox12.TabIndex = 11;
             pictureBox12.TabStop = false;
             // 
-            // pictureBox13
-            // 
-            pictureBox13.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox13.Image = Properties.Resources.Text_Alamat_Pemesanan;
-            pictureBox13.Location = new Point(439, 704);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(450, 35);
-            pictureBox13.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox13.TabIndex = 12;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox14.Image = Properties.Resources.Text_Total_Items__1_;
-            pictureBox14.Location = new Point(439, 763);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(228, 34);
-            pictureBox14.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox14.TabIndex = 13;
-            pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
-            pictureBox15.Image = Properties.Resources.Text_Total_Pembayaran__1_;
-            pictureBox15.Location = new Point(439, 819);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(363, 43);
-            pictureBox15.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox15.TabIndex = 14;
-            pictureBox15.TabStop = false;
-            // 
             // pictureBox16
             // 
             pictureBox16.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox16.Image = Properties.Resources.Titik_dua;
-            pictureBox16.Location = new Point(880, 763);
+            pictureBox16.Location = new Point(880, 770);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(9, 27);
             pictureBox16.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -215,6 +185,7 @@
             btnBayar.SizeMode = PictureBoxSizeMode.AutoSize;
             btnBayar.TabIndex = 17;
             btnBayar.TabStop = false;
+            btnBayar.Click += btnBayar_Click;
             // 
             // rdE_Bank
             // 
@@ -268,13 +239,104 @@
             rdFASPITA.Text = "FASPITA";
             rdFASPITA.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // LblAlamat
             // 
-            dateTimePicker1.Location = new Point(829, 383);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(228, 27);
-            dateTimePicker1.TabIndex = 23;
+            LblAlamat.AutoSize = true;
+            LblAlamat.Font = new Font("Times New Roman", 18F);
+            LblAlamat.Image = Properties.Resources.Background_hijua_muda;
+            LblAlamat.Location = new Point(922, 712);
+            LblAlamat.Name = "LblAlamat";
+            LblAlamat.Size = new Size(100, 34);
+            LblAlamat.TabIndex = 24;
+            LblAlamat.Text = "Alamat";
+            // 
+            // LblJumlah
+            // 
+            LblJumlah.AutoSize = true;
+            LblJumlah.Font = new Font("Times New Roman", 18F);
+            LblJumlah.Image = Properties.Resources.Background_hijua_muda;
+            LblJumlah.Location = new Point(922, 772);
+            LblJumlah.Name = "LblJumlah";
+            LblJumlah.Size = new Size(100, 34);
+            LblJumlah.TabIndex = 25;
+            LblJumlah.Text = "Jumlah";
+            // 
+            // Rupiah
+            // 
+            Rupiah.AutoSize = true;
+            Rupiah.Font = new Font("Times New Roman", 18F);
+            Rupiah.Image = Properties.Resources.Background_hijua_muda;
+            Rupiah.Location = new Point(922, 828);
+            Rupiah.Name = "Rupiah";
+            Rupiah.Size = new Size(58, 34);
+            Rupiah.TabIndex = 26;
+            Rupiah.Text = "Rp.";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 18F);
+            label4.Image = Properties.Resources.Background_hijua_muda;
+            label4.Location = new Point(562, 828);
+            label4.Name = "label4";
+            label4.Size = new Size(229, 34);
+            label4.TabIndex = 29;
+            label4.Text = "Total Pembayaran";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Times New Roman", 18F);
+            label5.Image = Properties.Resources.Background_hijua_muda;
+            label5.Location = new Point(562, 772);
+            label5.Name = "label5";
+            label5.Size = new Size(169, 34);
+            label5.TabIndex = 28;
+            label5.Text = "Total Produk";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Times New Roman", 18F);
+            label6.Image = Properties.Resources.Background_hijua_muda;
+            label6.Location = new Point(562, 712);
+            label6.Name = "label6";
+            label6.Size = new Size(241, 34);
+            label6.TabIndex = 27;
+            label6.Text = "Alamat Pemesanan";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
+            pictureBox3.Image = Properties.Resources.Titik_dua;
+            pictureBox3.Location = new Point(880, 719);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(9, 27);
+            pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox3.TabIndex = 30;
+            pictureBox3.TabStop = false;
+            // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Times New Roman", 18F);
+            lblTotal.Image = Properties.Resources.Background_hijua_muda;
+            lblTotal.Location = new Point(986, 828);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(161, 34);
+            lblTotal.TabIndex = 31;
+            lblTotal.Text = "Pembayaran";
+            // 
+            // TglPesan
+            // 
+            TglPesan.AutoSize = true;
+            TglPesan.Font = new Font("Times New Roman", 18F);
+            TglPesan.Image = Properties.Resources.Background_hijua_muda;
+            TglPesan.Location = new Point(858, 421);
+            TglPesan.Name = "TglPesan";
+            TglPesan.Size = new Size(71, 34);
+            TglPesan.TabIndex = 32;
+            TglPesan.Text = "Date";
             // 
             // Transaksi
             // 
@@ -282,7 +344,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(TglPesan);
+            Controls.Add(lblTotal);
+            Controls.Add(pictureBox3);
+            Controls.Add(label4);
+            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(Rupiah);
+            Controls.Add(LblJumlah);
+            Controls.Add(LblAlamat);
             Controls.Add(rdFASPITA);
             Controls.Add(rdJNE);
             Controls.Add(rdPuspiPay);
@@ -290,9 +360,6 @@
             Controls.Add(btnBayar);
             Controls.Add(pictureBox17);
             Controls.Add(pictureBox16);
-            Controls.Add(pictureBox15);
-            Controls.Add(pictureBox14);
-            Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
@@ -303,6 +370,7 @@
             Controls.Add(pictureBox1);
             Name = "Transaksi";
             Text = "Transaksi";
+            Load += Transaksi_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).EndInit();
@@ -311,12 +379,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnBayar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -331,9 +397,6 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
         private PictureBox pictureBox16;
         private PictureBox pictureBox17;
         private PictureBox btnBayar;
@@ -341,6 +404,14 @@
         private RadioButton rdPuspiPay;
         private RadioButton rdJNE;
         private RadioButton rdFASPITA;
-        private DateTimePicker dateTimePicker1;
+        private Label LblAlamat;
+        private Label LblJumlah;
+        private Label Rupiah;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private PictureBox pictureBox3;
+        private Label lblTotal;
+        private Label TglPesan;
     }
 }

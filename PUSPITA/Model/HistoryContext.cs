@@ -21,19 +21,21 @@ namespace PUSPITA.Model
         public DataTable AmbilHistory()
         {
             string queryAmbil = @"
-SELECT p.Nama_pupuk AS NamaProduk, p.Harga AS HargaSatuan, dp.Quantity AS Jumlah, (p.Harga * dp.Quantity) AS TotalHarga, t.tanggal_transaksi, t.metodepembayaran
-FROM detail_transaksipupuk dp
-JOIN pupuk p ON p.id_pupuk = dp.id_pupuk
-JOIN transaksi t ON t.id_transaksi = dp.id_transaksi
-where t.id_petani = @id_petani
-
-UNION ALL
-
-SELECT ps.Nama_pestisida AS NamaProduk, ps.Harga AS HargaSatuan, dps.Quantity AS Jumlah, (ps.Harga * dps.Quantity) AS TotalHarga, t.tanggal_transaksi, t.metodepembayaran
-FROM detail_transaksipestisida dps
-JOIN pestisida ps ON ps.id_pestisida = dps.id_pestisida
-JOIN transaksi t ON t.id_transaksi = dps.id_transaksi
-where t.id_petani = @id_petani;
+SELECT 
+    pt.username AS NamaPetani,
+    pt.alamat AS AlamatPetani,
+    p.nama_produk AS NamaProduk,
+    j.jenis AS JenisProduk,
+    dt.jumlah,
+    (p.harga * dt.jumlah) AS total_harga,
+    t.metode_pembayaran
+FROM detail_transaksi dt
+JOIN produk p  ON p.id_produk = dt.id_produk
+JOIN jenis_produk j  ON j.id_jenis = p.id_jenis 
+JOIN transaksi t  ON t.id_transaksi = dt.id_transaksi
+JOIN petani pt ON pt.id_petani = t.id_petani
+WHERE t.id_petani = @id_petani
+ORDER BY t.id_transaksi;
 ";
             using(NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {

@@ -19,36 +19,16 @@ namespace PUSPITA.Model
         {
             string queryAmbil = @"
 SELECT 
-    pt.Username AS NamaPetani,
-    pt.Alamat AS AlamatPetani,
-    pb.Nama_pupuk AS NamaProduk,
-    jp.Jenis_Pupuk AS JenisProduk,
-    dtp.Quantity AS Jumlah,
-    (pb.Harga * dtp.Quantity) AS TotalHarga,
-    t.MetodePembayaran
-FROM detail_transaksipupuk dtp
-JOIN pupuk pb ON pb.ID_Pupuk = dtp.ID_Pupuk
-JOIN jenis_pupuk jp ON jp.ID_JenisPupuk = pb.ID_JenisPupuk
-JOIN transaksi t ON t.ID_Transaksi = dtp.ID_Transaksi
-JOIN petani pt ON pt.ID_Petani = t.ID_Petani
-
-UNION ALL
-
-SELECT 
-    pt.Username AS NamaPetani,
-    pt.Alamat AS AlamatPetani,
-    ps.Nama_Pestisida AS NamaProduk,
-    jp.Jenis_Pestisida AS JenisProduk,
-    dtps.Quantity AS Jumlah,
-    (ps.Harga * dtps.Quantity) AS TotalHarga,
-    t.MetodePembayaran
-FROM detail_transaksipestisida dtps
-JOIN pestisida ps ON ps.ID_Pestisida = dtps.ID_Pestisida
-JOIN jenis_pestisida jp ON jp.ID_JenisPestisida = ps.ID_JenisPestisida
-JOIN transaksi t ON t.ID_Transaksi = dtps.ID_Transaksi
-JOIN petani pt ON pt.ID_Petani = t.ID_Petani;
-
-";
+    pt.username AS NamaPetani,
+    pt.alamat AS AlamatPetani,
+    p.nama_produk AS NamaProduk,
+    dt.jumlah,
+    (p.harga * dt.jumlah) AS total_harga,
+    t.metode_pembayaran
+FROM detail_transaksi dt
+JOIN produk p  ON p.id_produk = dt.id_produk
+JOIN transaksi t  ON t.id_transaksi = dt.id_transaksi
+JOIN petani pt ON pt.id_petani = t.id_petani;";
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
                 using (NpgsqlCommand cmd = new NpgsqlCommand(queryAmbil,Kon))

@@ -60,32 +60,35 @@ namespace PUSPITA.Views
                     string nama = TBNama.Text;
                     int dosis = Convert.ToInt32(TBDosis.Text);
                     int harga = Convert.ToInt32(TBHarga.Text);
-                    int jenis = 0;
-                    if (RBPertama.Checked)
-                    {
-                        jenis = 1;
-                    }
-                    else if (RBKedua.Checked)
-                    {
-                        jenis = 2;
-                    }
-                    else if (RBKetiga.Checked && CheckProduk)
-                    {
-                        jenis = 3;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Jenis Produk Tidak Boleh Kosong ya Min", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+                    string jenis = "";
 
                     bool benar = false;
                     if (CheckProduk)
                     {
+                        if (RBPertama.Checked)
+                        {
+                            jenis = "Organik";
+                        }
+                        else if (RBKedua.Checked)
+                        {
+                            jenis = "Anorganik";
+                        }
                         benar = produkContext.UpdatePestisida(nama, jenis, dosis, harga, IDPupuk);
                     }
                     else
                     {
+                        if (RBPertama.Checked)
+                        {
+                            jenis = "Fungisida";
+                        }
+                        else if (RBKedua.Checked)
+                        {
+                            jenis = "Herbisida";
+                        }
+                        else if (RBKetiga.Checked && CheckProduk)
+                        {
+                            jenis = "Insektisida";
+                        }
                         benar = produkContext.UpdatePupuk(nama, jenis, dosis, harga, IDPupuk);
                     }
                     if (benar)
