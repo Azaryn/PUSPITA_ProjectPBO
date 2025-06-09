@@ -74,7 +74,7 @@
             btnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
             btnKembali.TabIndex = 18;
             btnKembali.TabStop = false;
-            //btnKembali.Click += btnKembali_Click;
+            btnKembali.Click += btnKembali_Click;
             // 
             // BtnKeranjang
             // 
@@ -86,7 +86,7 @@
             BtnKeranjang.SizeMode = PictureBoxSizeMode.StretchImage;
             BtnKeranjang.TabIndex = 19;
             BtnKeranjang.TabStop = false;
-            //BtnKeranjang.Click += BtnKeranjang_Click;
+            BtnKeranjang.Click += BtnKeranjang_Click;
             // 
             // BtnPupuk
             // 

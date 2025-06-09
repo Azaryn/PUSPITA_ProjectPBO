@@ -17,9 +17,6 @@ namespace PUSPITA.Views
     public partial class Shop : Form
     {
         private readonly ProdukContext produkContext = new ProdukContext();
-        private List<Produk> keranjang;
-        private const string PupukImagePath = @"C:\Users\HABIB\Downloads\pupuk.png";
-        private const string PestisidaImagePath = @"C:\Users\HABIB\Downloads\pestisida.png";
 
         public Shop()
         {
@@ -32,7 +29,6 @@ namespace PUSPITA.Views
             FLPproduk.Padding = new Padding(10);
             FLPproduk.Margin = new Padding(0);
 
-            keranjang = new List<Produk>();
             ShowProduk("pupuk");
 
             FLPproduk.BringToFront();
@@ -40,7 +36,16 @@ namespace PUSPITA.Views
 
         private void CardProduk_TambahClicked(object sender, Produk produk)
         {
-            keranjang.Add(produk);
+            //keranjang.Add(produk);
+            var Ada = PenampungKeranjang.Daftar.FirstOrDefault(p => p.produk.Nama == produk.Nama);
+            if (Ada != null)
+            {
+                Ada.Jumlah++;
+            }
+            else
+            {
+                PenampungKeranjang.Daftar.Add(new PenampungKeranjang{produk = produk, Jumlah = 1});
+            }
             MessageBox.Show($"{produk.Nama} berhasil ditambahkan ke keranjang!",
                 "Produk Ditambahkan", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -53,7 +58,6 @@ namespace PUSPITA.Views
                 ? produkContext.LihatPupuk()
                 : produkContext.LihatPestisida();
 
-            string imagePath = jenisProduk == "pupuk" ? PupukImagePath : PestisidaImagePath;
 
             List<Produk> produkList = new List<Produk>();
             foreach (DataRow row in dtProduk.Rows)
@@ -81,11 +85,9 @@ namespace PUSPITA.Views
                 var card = new cardproduk();
                 card.SetData(produk);
 
-                // Set image for the card's PictureBox
-                if (File.Exists(imagePath))
-                    card.SetImage(Image.FromFile(imagePath));
-                else
-                    card.SetImage(null); // Or set a default image
+                Image image = produk.Jenis == "pupuk" ? Properties.Resources.gmbrPupuk
+                    : Properties.Resources.gmbrpestisida;
+                card.SetImage(image);
 
                 card.TambahClicked += CardProduk_TambahClicked;
                 card.Margin = new Padding(10);
@@ -115,5 +117,21 @@ namespace PUSPITA.Views
             ShowProduk("pestisida");
             FLPproduk.BringToFront();
         }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            PenampungKeranjang.Daftar.Clear();
+            Dashboard_Petani Dpetani = new Dashboard_Petani();
+            Dpetani.Show();
+        }
+
+        private void BtnKeranjang_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Keranjang keranjangForm = new Keranjang();
+            keranjangForm.Show();
+        }
+
     }
 }

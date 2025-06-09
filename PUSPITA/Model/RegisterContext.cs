@@ -14,8 +14,8 @@ namespace PUSPITA.Model
             private readonly string KoneksiString;
             public RegisterContext()
             {
-                KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
-            }
+            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
+        }
 
             public bool Register(string username, string password,string alamat)
             {

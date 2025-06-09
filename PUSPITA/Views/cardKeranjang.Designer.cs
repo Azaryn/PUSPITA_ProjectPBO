@@ -36,11 +36,13 @@
             pbGambarProduk = new PictureBox();
             btnKurang = new PictureBox();
             btnTambah = new PictureBox();
+            BtnHapus = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)bgCard).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbGambarProduk).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnKurang).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnTambah).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnHapus).BeginInit();
             SuspendLayout();
             // 
             // bgCard
@@ -84,7 +86,7 @@
             tbQuantity.Font = new Font("Segoe UI", 13F);
             tbQuantity.Location = new Point(72, 325);
             tbQuantity.Name = "tbQuantity";
-            tbQuantity.Size = new Size(127, 36);
+            tbQuantity.Size = new Size(94, 36);
             tbQuantity.TabIndex = 7;
             // 
             // panel1
@@ -98,9 +100,10 @@
             // pbGambarProduk
             // 
             pbGambarProduk.BackgroundImage = Properties.Resources.Background_hijua_muda;
-            pbGambarProduk.Location = new Point(0, 0);
+            pbGambarProduk.Location = new Point(0, -5);
             pbGambarProduk.Name = "pbGambarProduk";
-            pbGambarProduk.Size = new Size(277, 206);
+            pbGambarProduk.Size = new Size(277, 211);
+            pbGambarProduk.SizeMode = PictureBoxSizeMode.Zoom;
             pbGambarProduk.TabIndex = 9;
             pbGambarProduk.TabStop = false;
             // 
@@ -108,7 +111,7 @@
             // 
             btnKurang.BackColor = Color.FromArgb(240, 104, 56);
             btnKurang.Image = Properties.Resources.Group_103;
-            btnKurang.Location = new Point(33, 325);
+            btnKurang.Location = new Point(30, 325);
             btnKurang.Name = "btnKurang";
             btnKurang.Size = new Size(43, 36);
             btnKurang.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -120,7 +123,7 @@
             // 
             btnTambah.BackColor = Color.FromArgb(240, 104, 56);
             btnTambah.Image = Properties.Resources._;
-            btnTambah.Location = new Point(193, 325);
+            btnTambah.Location = new Point(156, 325);
             btnTambah.Name = "btnTambah";
             btnTambah.Size = new Size(43, 36);
             btnTambah.SizeMode = PictureBoxSizeMode.Zoom;
@@ -128,11 +131,24 @@
             btnTambah.TabStop = false;
             btnTambah.Click += btnTambah_Click;
             // 
+            // BtnHapus
+            // 
+            BtnHapus.BackgroundImage = Properties.Resources.Background_hijua_muda;
+            BtnHapus.Image = Properties.Resources.Trash;
+            BtnHapus.Location = new Point(205, 321);
+            BtnHapus.Name = "BtnHapus";
+            BtnHapus.Size = new Size(55, 48);
+            BtnHapus.SizeMode = PictureBoxSizeMode.Zoom;
+            BtnHapus.TabIndex = 10;
+            BtnHapus.TabStop = false;
+            BtnHapus.Click += BtnHapus_Click;
+            // 
             // cardKeranjang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(BtnHapus);
             Controls.Add(btnTambah);
             Controls.Add(btnKurang);
             Controls.Add(panel1);
@@ -147,6 +163,7 @@
             ((System.ComponentModel.ISupportInitialize)pbGambarProduk).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnKurang).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnTambah).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnHapus).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,5 +178,6 @@
         private PictureBox pbGambarProduk;
         private PictureBox btnKurang;
         private PictureBox btnTambah;
+        private PictureBox BtnHapus;
     }
 }

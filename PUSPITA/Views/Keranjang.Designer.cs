@@ -30,7 +30,9 @@
         {
             pictureBox1 = new PictureBox();
             FLPproduk = new FlowLayoutPanel();
+            btnKembali = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnKembali).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -52,17 +54,32 @@
             FLPproduk.Size = new Size(1758, 740);
             FLPproduk.TabIndex = 22;
             // 
+            // btnKembali
+            // 
+            btnKembali.BackgroundImage = Properties.Resources.persegi_panjang_hijau;
+            btnKembali.Image = Properties.Resources.Kembali;
+            btnKembali.Location = new Point(94, 48);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(175, 74);
+            btnKembali.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnKembali.TabIndex = 23;
+            btnKembali.TabStop = false;
+            btnKembali.Click += btnKembali_Click;
+            // 
             // Keranjang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(btnKembali);
             Controls.Add(FLPproduk);
             Controls.Add(pictureBox1);
             Name = "Keranjang";
             Text = "Keranjang";
+            Load += Keranjang_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnKembali).EndInit();
             ResumeLayout(false);
         }
 
@@ -70,5 +87,6 @@
 
         private PictureBox pictureBox1;
         private FlowLayoutPanel FLPproduk;
+        private PictureBox btnKembali;
     }
 }

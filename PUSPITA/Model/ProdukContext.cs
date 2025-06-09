@@ -13,7 +13,7 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public ProdukContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
 
         public List<Produk> GetAllProduk()
