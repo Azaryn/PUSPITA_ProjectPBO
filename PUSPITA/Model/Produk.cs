@@ -15,15 +15,13 @@ namespace PUSPITA.Model
         public decimal Harga { get; set; }
         public bool Discontinued { get; set; }
 
-        // Kunci resource image berdasarkan jenis produk
         public string ImageKey
         {
             get
             {
-                // Cek apakah jenis mengandung kata "pupuk" (case insensitive)
                 if (Jenis != null && Jenis.ToLower().Contains("pupuk"))
                     return "imgPupuk";
-                // Untuk jenis pestisida (Insektisida, Herbisida, Fungisida)
+
                 else
                     return "imgPestisida";
             }

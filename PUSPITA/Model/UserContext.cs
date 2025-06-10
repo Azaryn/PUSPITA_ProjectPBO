@@ -8,7 +8,7 @@ namespace PUSPITA.Model
         public static int IdPetani { get; set; }
         public UserContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
         public bool Validasi(string username, string password, out int petaniId)
         {

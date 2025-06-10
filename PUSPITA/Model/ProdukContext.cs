@@ -13,7 +13,7 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public ProdukContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
 
         public List<Produk> GetAllProduk()
@@ -32,8 +32,8 @@ namespace PUSPITA.Model
             {
                 list.Add(new Produk
                 {
-                    ID = reader.GetInt32(reader.GetOrdinal("id")),
-                    Nama = reader.GetString(reader.GetOrdinal("nama")),
+                    ID = reader.GetInt32(reader.GetOrdinal("id_produk")),
+                    Nama = reader.GetString(reader.GetOrdinal("nama_produk")),
                     Jenis = reader.GetString(reader.GetOrdinal("jenis")),
                     Dosis = reader.GetInt32(reader.GetOrdinal("dosis")),
                     Harga = reader.GetDecimal(reader.GetOrdinal("harga")),
@@ -145,12 +145,12 @@ namespace PUSPITA.Model
         }
         public DataTable LihatPupuk()
         {
-            string queryLihat = "Select * from produk where id_jenis = 1 AND discontinued = 1";
+            string queryLihat = "SELECT p.id_produk, p.nama_produk, p.dosis, p.harga \r\nFROM produk p \r\nJOIN jenis_produk jp ON p.id_jenis = jp.id_jenis \r\nJOIN kategori_produk kp ON jp.id_kategori = kp.id_kategori \r\nWHERE kp.kategori = 'Pupuk' AND p.discontinued = 1;";
             return JalankanQueryLihat(queryLihat);
         }
         public DataTable LihatPestisida()
         {
-            string queryLihat = "SELECT p.nama_produk, p.dosis, p.harga FROM produk p JOIN jenis_produk jp ON p.id_jenis = jp.id_jenis JOIN kategori_produk kp ON jp.id_kategori = kp.id_kategori WHERE kp.kategori = 'Pestisida' AND p.discontinued = 1;";
+            string queryLihat = "SELECT p.id_produk, p.nama_produk, p.dosis, p.harga FROM produk p JOIN jenis_produk jp ON p.id_jenis = jp.id_jenis JOIN kategori_produk kp ON jp.id_kategori = kp.id_kategori WHERE kp.kategori = 'Pestisida' AND p.discontinued = 1;";
             return JalankanQueryLihat(queryLihat);
         }
         public DataTable JalankanQueryLihat(string query)

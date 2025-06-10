@@ -52,6 +52,8 @@
             pictureBox3 = new PictureBox();
             lblTotal = new Label();
             TglPesan = new Label();
+            GPembayaran = new GroupBox();
+            GPengiriman = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnKembali).BeginInit();
@@ -64,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnBayar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            GPembayaran.SuspendLayout();
+            GPengiriman.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -114,7 +118,7 @@
             // 
             pictureBox5.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox5.Image = Properties.Resources.Text_Jenis_Pembayaran__2_;
-            pictureBox5.Location = new Point(149, 283);
+            pictureBox5.Location = new Point(6, 26);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(370, 43);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -125,7 +129,7 @@
             // 
             pictureBox6.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox6.Image = Properties.Resources.Text_Tanggal_Pemesanan__2_;
-            pictureBox6.Location = new Point(725, 284);
+            pictureBox6.Location = new Point(724, 311);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(408, 42);
             pictureBox6.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -136,7 +140,7 @@
             // 
             pictureBox7.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             pictureBox7.Image = Properties.Resources.Text_Jenis_Pengiriman__2_;
-            pictureBox7.Location = new Point(1323, 284);
+            pictureBox7.Location = new Point(6, 26);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(352, 42);
             pictureBox7.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -192,7 +196,7 @@
             rdE_Bank.AutoSize = true;
             rdE_Bank.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdE_Bank.Font = new Font("Segoe UI", 20F);
-            rdE_Bank.Location = new Point(149, 405);
+            rdE_Bank.Location = new Point(6, 98);
             rdE_Bank.Name = "rdE_Bank";
             rdE_Bank.Size = new Size(139, 50);
             rdE_Bank.TabIndex = 18;
@@ -205,7 +209,7 @@
             rdPuspiPay.AutoSize = true;
             rdPuspiPay.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdPuspiPay.Font = new Font("Segoe UI", 20F);
-            rdPuspiPay.Location = new Point(149, 509);
+            rdPuspiPay.Location = new Point(6, 175);
             rdPuspiPay.Name = "rdPuspiPay";
             rdPuspiPay.Size = new Size(172, 50);
             rdPuspiPay.TabIndex = 19;
@@ -218,7 +222,7 @@
             rdJNE.AutoSize = true;
             rdJNE.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdJNE.Font = new Font("Segoe UI", 20F);
-            rdJNE.Location = new Point(1323, 405);
+            rdJNE.Location = new Point(6, 98);
             rdJNE.Name = "rdJNE";
             rdJNE.Size = new Size(95, 50);
             rdJNE.TabIndex = 20;
@@ -231,7 +235,7 @@
             rdFASPITA.AutoSize = true;
             rdFASPITA.BackgroundImage = Properties.Resources.Persegi_panjang__Hijau_muda;
             rdFASPITA.Font = new Font("Segoe UI", 20F);
-            rdFASPITA.Location = new Point(1323, 485);
+            rdFASPITA.Location = new Point(6, 175);
             rdFASPITA.Name = "rdFASPITA";
             rdFASPITA.Size = new Size(162, 50);
             rdFASPITA.TabIndex = 22;
@@ -332,11 +336,35 @@
             TglPesan.AutoSize = true;
             TglPesan.Font = new Font("Times New Roman", 18F);
             TglPesan.Image = Properties.Resources.Background_hijua_muda;
-            TglPesan.Location = new Point(858, 421);
+            TglPesan.Location = new Point(880, 394);
             TglPesan.Name = "TglPesan";
             TglPesan.Size = new Size(71, 34);
             TglPesan.TabIndex = 32;
             TglPesan.Text = "Date";
+            // 
+            // GPembayaran
+            // 
+            GPembayaran.BackgroundImage = Properties.Resources.Background_hijua_muda;
+            GPembayaran.Controls.Add(rdPuspiPay);
+            GPembayaran.Controls.Add(rdE_Bank);
+            GPembayaran.Controls.Add(pictureBox5);
+            GPembayaran.Location = new Point(126, 284);
+            GPembayaran.Name = "GPembayaran";
+            GPembayaran.Size = new Size(397, 330);
+            GPembayaran.TabIndex = 33;
+            GPembayaran.TabStop = false;
+            // 
+            // GPengiriman
+            // 
+            GPengiriman.BackgroundImage = Properties.Resources.Background_hijua_muda;
+            GPengiriman.Controls.Add(pictureBox7);
+            GPengiriman.Controls.Add(rdJNE);
+            GPengiriman.Controls.Add(rdFASPITA);
+            GPengiriman.Location = new Point(1259, 284);
+            GPengiriman.Name = "GPengiriman";
+            GPengiriman.Size = new Size(387, 330);
+            GPengiriman.TabIndex = 34;
+            GPengiriman.TabStop = false;
             // 
             // Transaksi
             // 
@@ -344,6 +372,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(1810, 1055);
+            Controls.Add(GPengiriman);
+            Controls.Add(GPembayaran);
             Controls.Add(TglPesan);
             Controls.Add(lblTotal);
             Controls.Add(pictureBox3);
@@ -353,17 +383,11 @@
             Controls.Add(Rupiah);
             Controls.Add(LblJumlah);
             Controls.Add(LblAlamat);
-            Controls.Add(rdFASPITA);
-            Controls.Add(rdJNE);
-            Controls.Add(rdPuspiPay);
-            Controls.Add(rdE_Bank);
             Controls.Add(btnBayar);
             Controls.Add(pictureBox17);
             Controls.Add(pictureBox16);
             Controls.Add(pictureBox12);
-            Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(BtnKembali);
             Controls.Add(pictureBox2);
@@ -383,6 +407,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnBayar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            GPembayaran.ResumeLayout(false);
+            GPembayaran.PerformLayout();
+            GPengiriman.ResumeLayout(false);
+            GPengiriman.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -413,5 +441,7 @@
         private PictureBox pictureBox3;
         private Label lblTotal;
         private Label TglPesan;
+        private GroupBox GPembayaran;
+        private GroupBox GPengiriman;
     }
 }

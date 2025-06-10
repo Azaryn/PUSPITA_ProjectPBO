@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS transaksi;
 DROP TABLE IF EXISTS detail_transaksi;
+DROP TABLE IF EXISTS transaksi;
 DROP TABLE IF EXISTS produk;
 DROP TABLE IF EXISTS jenis_produk;
 DROP TABLE IF EXISTS kategori_produk;
