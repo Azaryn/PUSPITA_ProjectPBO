@@ -59,7 +59,8 @@ namespace PUSPITA.Views
         private void BtnCheckout_Click(object sender, EventArgs e)
         {
             this.Close();
-
+            Transaksi transaksi = new Transaksi();
+            transaksi.Show();
         }
     }
 }
