@@ -13,7 +13,7 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public ProdukContext()
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
         }
 
         public List<Produk> GetAllProduk()
@@ -150,7 +150,7 @@ namespace PUSPITA.Model
         }
         public DataTable LihatPestisida()
         {
-            string queryLihat = "Select * from produk where id_jenis = 2  AND discontinued = 1";
+            string queryLihat = "SELECT p.nama_produk, p.dosis, p.harga FROM produk p JOIN jenis_produk jp ON p.id_jenis = jp.id_jenis JOIN kategori_produk kp ON jp.id_kategori = kp.id_kategori WHERE kp.kategori = 'Pestisida' AND p.discontinued = 1;";
             return JalankanQueryLihat(queryLihat);
         }
         public DataTable JalankanQueryLihat(string query)
