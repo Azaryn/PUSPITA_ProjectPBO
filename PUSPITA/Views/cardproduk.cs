@@ -71,7 +71,6 @@ namespace PUSPITA.Views
         private void btnTambah_clickup(object sender, EventArgs e)
         {
             TambahClicked?.Invoke(this, ProdukData);
-
         }
     }
 }

@@ -79,7 +79,7 @@
             lblDosis.BackColor = Color.FromArgb(190, 224, 199);
             lblDosis.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDosis.ForeColor = SystemColors.ActiveCaptionText;
-            lblDosis.Location = new Point(124, 252);
+            lblDosis.Location = new Point(99, 252);
             lblDosis.Name = "lblDosis";
             lblDosis.Size = new Size(55, 24);
             lblDosis.TabIndex = 3;
@@ -92,7 +92,7 @@
             lblHarga.BackColor = Color.FromArgb(190, 224, 199);
             lblHarga.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHarga.ForeColor = SystemColors.ActiveCaptionText;
-            lblHarga.Location = new Point(98, 282);
+            lblHarga.Location = new Point(99, 276);
             lblHarga.Name = "lblHarga";
             lblHarga.Size = new Size(62, 24);
             lblHarga.TabIndex = 4;
@@ -123,7 +123,6 @@
             lblNamaProduk.Size = new Size(61, 24);
             lblNamaProduk.TabIndex = 7;
             lblNamaProduk.Text = "Nama";
-
             // 
             // cardproduk
             // 
