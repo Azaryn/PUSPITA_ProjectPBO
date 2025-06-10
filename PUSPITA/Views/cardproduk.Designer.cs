@@ -53,6 +53,7 @@
             // 
             // panel1
             // 
+            panel1.BackgroundImage = Properties.Resources.Background_hijua_muda;
             panel1.Controls.Add(pbGambrProduk);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -65,10 +66,10 @@
             pbGambrProduk.BackColor = Color.White;
             pbGambrProduk.BackgroundImage = Properties.Resources.Background_hijua_muda;
             pbGambrProduk.Image = Properties.Resources.gmbrPupuk;
-            pbGambrProduk.Location = new Point(0, 2);
+            pbGambrProduk.Location = new Point(43, 0);
             pbGambrProduk.Name = "pbGambrProduk";
-            pbGambrProduk.Size = new Size(277, 206);
-            pbGambrProduk.SizeMode = PictureBoxSizeMode.Zoom;
+            pbGambrProduk.Size = new Size(172, 213);
+            pbGambrProduk.SizeMode = PictureBoxSizeMode.StretchImage;
             pbGambrProduk.TabIndex = 6;
             pbGambrProduk.TabStop = false;
             // 
@@ -79,7 +80,7 @@
             lblDosis.BackColor = Color.FromArgb(190, 224, 199);
             lblDosis.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDosis.ForeColor = SystemColors.ActiveCaptionText;
-            lblDosis.Location = new Point(124, 252);
+            lblDosis.Location = new Point(122, 252);
             lblDosis.Name = "lblDosis";
             lblDosis.Size = new Size(55, 24);
             lblDosis.TabIndex = 3;
@@ -92,7 +93,7 @@
             lblHarga.BackColor = Color.FromArgb(190, 224, 199);
             lblHarga.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHarga.ForeColor = SystemColors.ActiveCaptionText;
-            lblHarga.Location = new Point(98, 282);
+            lblHarga.Location = new Point(95, 282);
             lblHarga.Name = "lblHarga";
             lblHarga.Size = new Size(62, 24);
             lblHarga.TabIndex = 4;
@@ -103,7 +104,7 @@
             btnTambah.BackColor = Color.FromArgb(190, 224, 199);
             btnTambah.BackgroundImage = Properties.Resources.Background_hijua_muda;
             btnTambah.Image = Properties.Resources.btnTambah;
-            btnTambah.Location = new Point(80, 314);
+            btnTambah.Location = new Point(72, 314);
             btnTambah.Name = "btnTambah";
             btnTambah.Size = new Size(125, 62);
             btnTambah.SizeMode = PictureBoxSizeMode.Zoom;
@@ -118,12 +119,11 @@
             lblNamaProduk.BackColor = Color.FromArgb(190, 224, 199);
             lblNamaProduk.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblNamaProduk.ForeColor = SystemColors.ActiveCaptionText;
-            lblNamaProduk.Location = new Point(99, 228);
+            lblNamaProduk.Location = new Point(96, 228);
             lblNamaProduk.Name = "lblNamaProduk";
             lblNamaProduk.Size = new Size(61, 24);
             lblNamaProduk.TabIndex = 7;
             lblNamaProduk.Text = "Nama";
-
             // 
             // cardproduk
             // 

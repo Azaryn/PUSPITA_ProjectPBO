@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 namespace PUSPITA.Views
 {
+
     public partial class Shop : Form
     {
         private readonly ProdukContext produkContext = new ProdukContext();
@@ -31,7 +32,6 @@ namespace PUSPITA.Views
 
             ShowProduk("pupuk");
 
-            FLPproduk.BringToFront();
         }
 
         private void CardProduk_TambahClicked(object sender, Produk produk)
@@ -52,37 +52,56 @@ namespace PUSPITA.Views
 
         private void ShowProduk(string jenisProduk)
         {
+            FLPproduk.SuspendLayout();
+
             FLPproduk.Controls.Clear();
 
             DataTable dtProduk = jenisProduk == "pupuk"
                 ? produkContext.LihatPupuk()
                 : produkContext.LihatPestisida();
 
-
             List<Produk> produkList = new List<Produk>();
+
             foreach (DataRow row in dtProduk.Rows)
             {
                 try
                 {
                     Produk produkItem = new Produk
                     {
-                        Nama = row.Table.Columns.Contains("Nama_pupuk") ? row["Nama_pupuk"].ToString() :
-                               (row.Table.Columns.Contains("Nama_Pestisida") ? row["Nama_Pestisida"].ToString() : ""),
+                        Nama = row.Table.Columns.Contains("nama_produk") ? row["nama_produk"].ToString() : "",
                         Dosis = row.Table.Columns.Contains("Dosis") && row["Dosis"] != DBNull.Value ? Convert.ToInt32(row["Dosis"]) : 0,
                         Harga = row.Table.Columns.Contains("Harga") && row["Harga"] != DBNull.Value ? Convert.ToDecimal(row["Harga"]) : 0,
                         Jenis = jenisProduk
                     };
-                    produkList.Add(produkItem);
+
+                    // Pastikan produkItem tidak kosong
+                    if (!string.IsNullOrEmpty(produkItem.Nama))
+                    {
+                        produkList.Add(produkItem);
+                    }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Error creating product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }  
+            }
+            foreach (Control card in FLPproduk.Controls)
+            {
+                if (card is cardproduk cp)
+                {
+                    cp.DebugLabelVisibility();
                 }
             }
 
+            // Menampilkan produk
             foreach (var produk in produkList)
             {
+
                 var card = new cardproduk();
+                card.Width = 278;
+                card.Margin = new Padding(10);
+                card.Padding = new Padding(10);
+
                 card.SetData(produk);
 
                 Image image = produk.Jenis == "pupuk" ? Properties.Resources.gmbrPupuk
@@ -96,9 +115,9 @@ namespace PUSPITA.Views
 
                 FLPproduk.Controls.Add(card);
             }
-
+            FLPproduk.ResumeLayout(true);
+            FLPproduk.Refresh();
             this.Text = $"PUSPITA - Shop ({produkList.Count} produk {jenisProduk})";
-            FLPproduk.BringToFront();
         }
 
         private void BtnPupuk_Click(object sender, EventArgs e)
@@ -106,7 +125,7 @@ namespace PUSPITA.Views
             BtnPestisida.Visible = true;
             BtnPupuk.Visible = false;
             ShowProduk("pupuk");
-            FLPproduk.BringToFront();
+            //FLPproduk.BringToFront();
         }
 
 
@@ -115,7 +134,7 @@ namespace PUSPITA.Views
             BtnPestisida.Visible = false;
             BtnPupuk.Visible = true;
             ShowProduk("pestisida");
-            FLPproduk.BringToFront();
+            //FLPproduk.BringToFront();
         }
 
         private void btnKembali_Click(object sender, EventArgs e)

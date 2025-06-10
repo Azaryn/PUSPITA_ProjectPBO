@@ -15,7 +15,7 @@ namespace PUSPITA.Model
         protected readonly string KoneksiString;
         public HistoryContext(int Idpetani)
         {
-            KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
+            KoneksiString = "Host=localhost;Username=postgres;Password=ashar;Database=PUSPITA";
             _idPetani = Idpetani;
         }
         public DataTable AmbilHistory()
