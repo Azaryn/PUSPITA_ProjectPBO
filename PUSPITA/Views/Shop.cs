@@ -68,6 +68,7 @@ namespace PUSPITA.Views
                 {
                     Produk produkItem = new Produk
                     {
+                        ID = row.Table.Columns.Contains("id_produk") && row["id_produk"] != DBNull.Value ? Convert.ToInt32(row["id_produk"]) : 0,
                         Nama = row.Table.Columns.Contains("nama_produk") ? row["nama_produk"].ToString() : "",
                         Dosis = row.Table.Columns.Contains("Dosis") && row["Dosis"] != DBNull.Value ? Convert.ToInt32(row["Dosis"]) : 0,
                         Harga = row.Table.Columns.Contains("Harga") && row["Harga"] != DBNull.Value ? Convert.ToDecimal(row["Harga"]) : 0,

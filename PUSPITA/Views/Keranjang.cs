@@ -13,6 +13,8 @@ namespace PUSPITA.Views
 {
     public partial class Keranjang : Form
     {
+        private Produk produkData;
+
         public Keranjang()
         {
             InitializeComponent();
@@ -36,6 +38,7 @@ namespace PUSPITA.Views
             foreach (var item in PenampungKeranjang.Daftar)
             {
                 var card = new cardKeranjang();
+                int idProduk = card.ProdukID;
                 card.SetData(item.produk, item.Jumlah);
                 card.HapusClicked += Card_HapusClicked;
                 FLPproduk.Controls.Add(card);

@@ -14,6 +14,14 @@ namespace PUSPITA.Views
     public partial class cardKeranjang : UserControl
     {
         private Produk produkData;
+        //public int ProdukID => produkData?.ID ?? -1;
+        public int ProdukID
+        {
+            get
+            {
+                return produkData?.ID ?? -1;
+            }
+        }
         public event EventHandler<Produk> HapusClicked;
         public cardKeranjang()
         {
