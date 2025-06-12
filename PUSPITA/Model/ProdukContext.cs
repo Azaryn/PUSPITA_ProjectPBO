@@ -15,33 +15,6 @@ namespace PUSPITA.Model
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
-
-        public List<Produk> GetAllProduk()
-        {
-            string query = @"
-        SELECT * FROM produk
-         WHERE discontinued = 1 AND id_jenis = 1;
-    ";
-
-            var list = new List<Produk>();
-            using var kon = new NpgsqlConnection(KoneksiString);
-            kon.Open();
-            using var cmd = new NpgsqlCommand(query, kon);
-            using var reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                list.Add(new Produk
-                {
-                    ID = reader.GetInt32(reader.GetOrdinal("id_produk")),
-                    Nama = reader.GetString(reader.GetOrdinal("nama_produk")),
-                    Jenis = reader.GetString(reader.GetOrdinal("jenis")),
-                    Dosis = reader.GetInt32(reader.GetOrdinal("dosis")),
-                    Harga = reader.GetDecimal(reader.GetOrdinal("harga")),
-                    Discontinued = reader.GetInt16(reader.GetOrdinal("discontinued")) == 1
-                });
-            }
-            return list;
-        }
         public bool TambahPupuk(string namaPupuk, string jenis, int dosis, int harga)
         {
             string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga,Discontinued) values (@nama, 1, @dosis, @harga,1)";

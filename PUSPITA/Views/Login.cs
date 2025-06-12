@@ -54,7 +54,6 @@ namespace PUSPITA
 
         private void Login_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("Form LoginPetani berhasil dimuat");
             MessageBox.Show("Form LoginPetani berhasil dibuka");
         }
     }
