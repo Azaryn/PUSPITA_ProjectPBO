@@ -17,7 +17,7 @@ namespace PUSPITA.Views
         public LihatProduk()
         {
             InitializeComponent();
-            BtnPupuk.Visible = true;
+            BtnPupuk.Visible = false;
         }
 
         private void BtnPestisida_Click(object sender, EventArgs e)
@@ -25,7 +25,7 @@ namespace PUSPITA.Views
             Header.Text = "Daftar Pupuk";
             BtnPestisida.Visible = false;
             BtnPupuk.Visible = true;
-            LoadPupuk();
+            LoadPestisida();
         }
 
         private void BtnPupuk_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace PUSPITA.Views
             Header.Text = "Daftar Pestisida";
             BtnPupuk.Visible = false;
             BtnPestisida.Visible = true;
-            LoadPestisida();
+            LoadPupuk();
         }
 
         private void BtnKembali_Click(object sender, EventArgs e)
