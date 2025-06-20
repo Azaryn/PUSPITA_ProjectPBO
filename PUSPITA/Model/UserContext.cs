@@ -10,10 +10,11 @@ namespace PUSPITA.Model
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
-        public bool Validasi(string username, string password, out int petaniId)
+        public bool Validasi(string username, string password, out int petaniId, out string alamat)
         {
             petaniId = 0;
-            string query = "SELECT id_petani, Username FROM petani WHERE username = @username AND password_petani = @password";
+            alamat = "";
+            string query = "SELECT id_petani, Username, alamat FROM petani WHERE username = @username AND password_petani = @password";
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {
                 Kon.Open();
@@ -26,6 +27,7 @@ namespace PUSPITA.Model
                         if (reader.Read())
                         {
                             petaniId = reader.GetInt32(0);
+                            alamat = reader.GetString(2);
                             return true;
                         }
                     }

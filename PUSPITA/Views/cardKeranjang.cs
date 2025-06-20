@@ -35,7 +35,7 @@ namespace PUSPITA.Views
             lblHarga.Text = $"Rp {produk.Harga:N0}";
             tbQuantity.Text = jumlah.ToString();
 
-            Image image = produk.Jenis == "pupuk" ? Properties.Resources.gmbrPupuk
+            Image image = produk.Kategori == "pupuk" ? Properties.Resources.gmbrPupuk
                 : Properties.Resources.gmbrpestisida;
             SetImage(image);
         }

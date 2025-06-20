@@ -19,11 +19,13 @@ namespace PUSPITA
 
             try
             {
-                bool Valid = userContext.Validasi(username, password, out int petaniId);
+                bool Valid = userContext.Validasi(username, password, out int petaniId, out string alamat);
                 if (Valid)
                 {
                     Users.id_petani = petaniId;
+                    Users.alamat = alamat;
                     UserContext.IdPetani = petaniId;
+
                     this.Hide();
                     Dashboard_Petani dashboard = new Dashboard_Petani(); 
                     dashboard.Show();

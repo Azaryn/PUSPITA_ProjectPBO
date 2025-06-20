@@ -31,6 +31,9 @@ CREATE TABLE jenis_produk (
   jenis VARCHAR(50) NOT NULL,
   FOREIGN KEY (id_kategori) REFERENCES kategori_produk (id_kategori)
 );
+-- select * from produk
+-- select * from jenis_produk
+-- select * from kategori_produk
 
 CREATE TABLE produk (
   id_produk SERIAL PRIMARY KEY,

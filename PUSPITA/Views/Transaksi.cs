@@ -95,7 +95,7 @@ namespace PUSPITA.Views
                 {
                     foreach (var item in PenampungKeranjang.Daftar)
                     {
-                        MessageBox.Show($"{item.produk.ID}");
+                        MessageBox.Show($"Pembayaran Gagal: {ex}", "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

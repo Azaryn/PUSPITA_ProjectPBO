@@ -15,17 +15,17 @@ namespace PUSPITA.Model
         {
             KoneksiString = "Host=localhost;Username=postgres;Password=lubia2341;Database=PUSPITA";
         }
-        public bool TambahPupuk(string namaPupuk, string jenis, int dosis, int harga)
+        public bool TambahPupuk(string namaPupuk, int jenis, int dosis, int harga)
         {
-            string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga,Discontinued) values (@nama, 1, @dosis, @harga,1)";
+            string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga,Discontinued) values (@nama, @jenis, @dosis, @harga,1)";
             return JalankanQueryTambah(InsertQuery, namaPupuk, jenis, dosis, harga);
         } 
-        public bool TambahPestisida(string namaPestisida, string jenis, int dosis, int harga)
+        public bool TambahPestisida(string namaPestisida, int jenis, int dosis, int harga)
         {
-            string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga, Discontinued) values (@nama, 2, @dosis, @harga,1)";
+            string InsertQuery = "Insert into produk (nama_produk, id_jenis,dosis,harga, Discontinued) values (@nama, @jenis, @dosis, @harga,1)";
             return JalankanQueryTambah(InsertQuery, namaPestisida, jenis, dosis, harga);
         }
-        private bool JalankanQueryTambah(string query, string nama, string jenis, int dosis, int harga)
+        private bool JalankanQueryTambah(string query, string nama, int jenis, int dosis, int harga)
         {
             using (NpgsqlConnection Kon = new NpgsqlConnection(KoneksiString))
             {

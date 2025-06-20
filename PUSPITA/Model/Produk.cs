@@ -10,7 +10,7 @@ namespace PUSPITA.Model
     {
         public int ID { get; set; }
         public string Nama { get; set; }
-        public string Jenis { get; set; }
+        public string Kategori { get; set; }
         public int Dosis { get; set; }
         public decimal Harga { get; set; }
         public bool Discontinued { get; set; }
@@ -19,7 +19,7 @@ namespace PUSPITA.Model
         {
             get
             {
-                if (Jenis != null && Jenis.ToLower().Contains("pupuk"))
+                if (Kategori != null && Kategori.ToLower().Contains("pupuk"))
                     return "imgPupuk";
 
                 else

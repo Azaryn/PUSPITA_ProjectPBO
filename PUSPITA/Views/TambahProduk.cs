@@ -32,7 +32,7 @@ namespace PUSPITA.Views
             {
                 if (TBNama != null && TBDosis != null && TBHarga != null && RBPertama != null && RBKedua != null)
                 {
-                    string jenis = "";
+                    int jenis = 0;
                     string namaProduk = TBNama.Text;
                     int dosis = Convert.ToInt32(TBDosis.Text);
                     int harga = Convert.ToInt32(TBHarga.Text);
@@ -40,36 +40,35 @@ namespace PUSPITA.Views
                     ProdukContext produkContext = new ProdukContext();
                     bool Benar = false;
                     if (CheckProduk)
-                    {
+                    { 
                         if (RBPertama.Checked)
                         {
-                            jenis = "Organik";
+                            jenis = 3;
                         }
                         else if (RBKedua.Checked)
                         {
-                            jenis = "Anorganik";
+                            jenis = 4;
                         }
-                        Benar = produkContext.TambahPestisida(namaProduk, jenis, dosis, harga);
+                        else if (RBKetiga.Checked)
+                        {
+                            jenis = 5;
+                        }
+                        Benar = produkContext.TambahPupuk(namaProduk, jenis, dosis, harga);
+                        
                     }
                     else
                     {
                         if (RBPertama.Checked)
                         {
-                            jenis = "Fungisida";
+                            jenis = 1;
                         }
                         else if (RBKedua.Checked)
                         {
-                            jenis = "Herbisida";
+                            jenis = 2;
                         }
-                        else if (RBKetiga.Checked && CheckProduk)
-                        {
-                            jenis = "Insektisida";
-                        }
-                        Benar = produkContext.TambahPupuk(namaProduk, jenis, dosis, harga);
+                        Benar = produkContext.TambahPestisida(namaProduk, jenis, dosis, harga);
+
                     }
-
-
-
                     if (Benar)
                     {
                         if (CheckProduk)

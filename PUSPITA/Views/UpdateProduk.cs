@@ -67,18 +67,6 @@ namespace PUSPITA.Views
                     {
                         if (RBPertama.Checked)
                         {
-                            jenis = "Organik";
-                        }
-                        else if (RBKedua.Checked)
-                        {
-                            jenis = "Anorganik";
-                        }
-                        benar = produkContext.UpdatePestisida(nama, jenis, dosis, harga, IDPupuk);
-                    }
-                    else
-                    {
-                        if (RBPertama.Checked)
-                        {
                             jenis = "Fungisida";
                         }
                         else if (RBKedua.Checked)
@@ -88,6 +76,18 @@ namespace PUSPITA.Views
                         else if (RBKetiga.Checked && CheckProduk)
                         {
                             jenis = "Insektisida";
+                        }
+                        benar = produkContext.UpdatePestisida(nama, jenis, dosis, harga, IDPupuk);
+                    }
+                    else
+                    {
+                        if (RBPertama.Checked)
+                        {
+                            jenis = "Organik";
+                        }
+                        else if (RBKedua.Checked)
+                        {
+                            jenis = "Anorganik";
                         }
                         benar = produkContext.UpdatePupuk(nama, jenis, dosis, harga, IDPupuk);
                     }

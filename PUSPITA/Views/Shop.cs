@@ -72,7 +72,7 @@ namespace PUSPITA.Views
                         Nama = row.Table.Columns.Contains("nama_produk") ? row["nama_produk"].ToString() : "",
                         Dosis = row.Table.Columns.Contains("Dosis") && row["Dosis"] != DBNull.Value ? Convert.ToInt32(row["Dosis"]) : 0,
                         Harga = row.Table.Columns.Contains("Harga") && row["Harga"] != DBNull.Value ? Convert.ToDecimal(row["Harga"]) : 0,
-                        Jenis = jenisProduk
+                        Kategori = jenisProduk
                     };
 
                     // Pastikan produkItem tidak kosong
@@ -105,7 +105,7 @@ namespace PUSPITA.Views
 
                 card.SetData(produk);
 
-                Image image = produk.Jenis == "pupuk" ? Properties.Resources.gmbrPupuk
+                Image image = produk.Kategori == "pupuk" ? Properties.Resources.gmbrPupuk
                     : Properties.Resources.gmbrpestisida;
                 card.SetImage(image);
 
